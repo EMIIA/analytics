@@ -1,0 +1,21 @@
+<html>
+<head></head>
+<body>
+<div id="wdr-component"></div>
+<link href="https://cdn.webdatarocks.com/latest/webdatarocks.min.css" rel="stylesheet"/>
+<script src="https://cdn.webdatarocks.com/latest/webdatarocks.toolbar.min.js"></script>
+<script src="https://analytics.emiia.ai/webdatarocks.js"></script>
+<script>
+var pivot = new WebDataRocks({
+	container: "#wdr-component",
+	toolbar: true,
+	report: {
+		dataSource: {
+			filename: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSrCkJiSqJRUBEumE4jfyIMyuE2PN2kBWlGzHx6z81er1Fqf83id3ePLh2w820zSglDwkZm7hkMQU68/pub?gid=0&single=true&output=csv",
+			fieldSeparator: ":"
+		}
+	}
+});
+</script>
+</body>
+</html>
