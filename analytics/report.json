@@ -1,7 +1,7 @@
 {
     "dataSource": {
         "dataSourceType": "csv",
-        "filename": "https://cdn.webdatarocks.com/data/data.csv"
+        "filename": "https://docs.google.com/spreadsheets/d/e/2PACX-1vToBGt_KSRPRyPJWbmw3UD00XH2BOh_M7ptwwd-UbbrO6VmEmPIshKxpJ2kBp3g0FO5vWCNBEilsqly/pub?gid=70432786&single=true&output=csv"
     },
     "slice": {
         "rows": [
