@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>EMIIA.AI Analytics</title>
+  
+  
+  
+  	<style>
+#wdr-pivot-view #wdr-grid-view div.alter1 {
+  background-color: #eff9ff;
+}
+
+#wdr-pivot-view #wdr-grid-view div.alter2 {
+  background-color: #cceeff;
+}
+</style>
+
+
+
+
+</head>
+<body>
+
+
+
+
+<!-- partial:index.partial.html -->
+<link href="https://cdn.webdatarocks.com/latest/webdatarocks.min.css" rel="stylesheet"/>
+
+<script src="https://analytics.emiia.ai/analytics/analytics.js"></script>
+
+<div id="wdr-component"></div>
+<!-- partial -->
+
+
+
+  <script>
+var pivot = new WebDataRocks({
+	container: "#wdr-component",
+	height: 395,
+	customizeCell: customizeCellFunction,
+	report: "https://analytics.emiia.ai/analytics/report.json"
+});
+ </script> 
+ 
+ 
+   <script>
+ var pivot = new WebDataRocks({
+	container: "#wdr-component",
+	height: 395,
+	customizeCell: customizeCellFunction,
+	report: "https://analytics.emiia.ai/analytics/report.json"
+});
+
+function customizeCellFunction(cellBuilder, cellData) {
+  if (cellData.type == "value") {
+    if (cellData.rowIndex % 2 == 0) {
+      cellBuilder.addClass("alter1");
+    } else {
+      cellBuilder.addClass("alter2");
+    }
+  }
+}
+</script>
+ 
+ 
+ 
+ 
+ 
+ 
+
+</body>
+</html>
