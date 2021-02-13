@@ -1,0 +1,108 @@
+html { box-sizing: border-box; }
+
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+  color: #7F8C8D;
+  font: 100%/1.375em sans-serif;
+  text-align: center;
+  background: #ECF0F1;
+}
+
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  margin: 40px auto;
+  perspective: 10px;
+  overflow: hidden;
+  transform: translate(-50%,-50%);
+}
+
+.layer {
+  position: absolute;
+  top: 10%; right: 10%;
+  bottom: 10%; left: 10%;
+  padding: 10%;
+  border: 50px solid #F1C40F;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-radius: 50%;
+  opacity: 0.25;
+  transition: all 200ms;
+  transform: translateZ(-2px);
+  filter: blur(5px) grayscale(1);
+}
+
+.layer:before, .layer:after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  bottom: 0; left: 0;
+  border: 30px solid #3498DB;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-radius: 50%;
+}
+
+.layer:after {
+  border: 80px solid #E74C3C;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.layer:nth-child(2) { border-width: 20px; }
+.layer:nth-child(2):before { border-width: 80px; }
+.layer:nth-child(2):after { border-width: 60px; }
+
+.layer:nth-child(3) { border-width: 80px; }
+.layer:nth-child(3):before { border-width: 10px; }
+.layer:nth-child(3):after { border-width: 20px; }
+
+.layer:before {
+  content: attr(data-title);
+  text-transform: uppercase;
+  line-height: 300px;
+}
+
+.layer.active {
+  z-index: 10;
+  transform: translateZ(0px);
+  opacity: 1;
+  filter: blur(0);
+}
+
+button {
+  width: 2em;
+  height: 2em;
+  font-size: 1em;
+  font-family: sans-serif;
+  background-color: rgba(0,0,0,0.15);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:first-child {
+  border-radius: 0.25em 0 0 0.25em;
+}
+
+button:last-child {
+  border-radius: 0 0.25em 0.25em 0;
+}
+
+button.active {
+  color: #fff;
+  background-color: #F1C40F;
+}
+
+button:nth-child(2).active {
+  background-color: #E74C3C;
+}
+
+button:nth-child(3).active {
+  background-color: #3498DB;
+}
