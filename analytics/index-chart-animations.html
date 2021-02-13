@@ -2,16 +2,14 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Segmented Donut Chart Animation (responsive, SVG, pure SCSS, no JS)</title>
+  <title>EMIIA.AI ANALYTICS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./style-chart-animations.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="content">
-	<h1>Segmented Donut Chart Animation (SVG, pure SCSS, no JS)</h1>
-</div>
+
 
 <div class="marken-erlebnis">
 	<svg width="100%" height="100%" viewBox="0 0 90 30" class="donut donut--desktop">
@@ -27,9 +25,9 @@
     </g>
 		<g class="figcaption">
 			<text y="14.5">
-        <tspan class="large" x="40" dy="0" lengthAdjust="spacing">360&deg;</tspan>
-        <tspan x="40" dy="2.3" textLength="13.4" lengthAdjust="spacing">Marken</tspan>
-        <tspan x="40" dy="2.3">erlebnis</tspan>
+        <tspan class="large" x="40" dy="0" lengthAdjust="spacing"></tspan>
+        <tspan x="40" dy="2.3" textLength="13.4" lengthAdjust="spacing">ANALYTICS</tspan>
+        <tspan x="40" dy="2.3"></tspan>
     	</text>
 		</g>
     <g class="labels">
@@ -85,9 +83,9 @@
     </g>
 		<g class="figcaption">
 			<text y="48%">
-        <tspan class="large" x="20" dy="0" lengthAdjust="spacing">360&deg;</tspan>
-        <tspan x="20" dy="2.3" textLength="13.4" lengthAdjust="spacing">Marken</tspan>
-        <tspan x="20" dy="2.3">erlebnis</tspan>
+        <tspan class="large" x="20" dy="0" lengthAdjust="spacing"></tspan>
+        <tspan x="20" dy="2.3" textLength="13.4" lengthAdjust="spacing">Analitics</tspan>
+        <tspan x="20" dy="2.3"></tspan>
     	</text>
 		</g>
     <g class="labels">
@@ -130,14 +128,7 @@
     </g>
   </svg>
 </div>
-<div class="content">
-	<p class="intro">For a job application in early 2018, it was my task to animate a donut chart graphic. The choice of implementation was completely up to me. I am a big fan of finding <em>CSS-only</em> approaches
-		to frontend-patterns. So here is my <em>pure CSS</em>, <em>JavaScript-free</em> magical <em>SVG</em> donut chart.</p>
-	<p><small>Normally I wouldn't have the <em>animation repeat</em>, but for the sake of showcasing, I find it convenient this way.</small></p>
-	<p><small>Of course, <em>Internet Explorer and Edge</em> don't like <em>CSS transforms</em> with SVG, but for the readability and reuse of code I refrained from adding <em>SVG animations</em>.</small></p>
-	<p><small>Currently responsiveness is due to a second SVG with modified viewport and locations for everything. I could've modified the existing SVG via JS, but wanted to keep it pure.</small></p>
-	<p><small>Another caveat of this approach is that the animation <em>starts instantly</em>. I could add a delay, however this would be random instead of starting when the object comes into view. To achieve this, JS can be used.</small></p>
-</div>
+
 <!-- partial -->
   
 </body>
