@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Segmented Donut Chart Animation (responsive, SVG, pure SCSS, no JS)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="content">
+	<h1>Segmented Donut Chart Animation (SVG, pure SCSS, no JS)</h1>
+</div>
+
+<div class="marken-erlebnis">
+	<svg width="100%" height="100%" viewBox="0 0 90 30" class="donut donut--desktop">
+    <g class="segments">
+      <circle class="segment segment--branding" cx="50" cy="17" r="14.324"></circle>
+      <circle class="inner"cx="50" cy="17" r="14.324"></circle>
+      <circle class="segment segment--design" cx="45" cy="15" r="14.324"></circle>
+      <circle class="segment segment--messe" cx="45" cy="15" r="14.324"></circle>
+      <circle class="segment segment--ecommerce" cx="45" cy="15" r="14.324"></circle>
+      <circle class="segment segment--multimedia" cx="45" cy="15" r="14.324"></circle>
+      <circle class="segment segment--digital" cx="45" cy="15" r="14.324"></circle>
+      <circle class="inner"cx="45" cy="15" r="14.324" fill="#fff"></circle>
+    </g>
+		<g class="figcaption">
+			<text y="14.5">
+        <tspan class="large" x="40" dy="0" lengthAdjust="spacing">360&deg;</tspan>
+        <tspan x="40" dy="2.3" textLength="13.4" lengthAdjust="spacing">Marken</tspan>
+        <tspan x="40" dy="2.3">erlebnis</tspan>
+    	</text>
+		</g>
+    <g class="labels">
+      <g class="label label--branding">
+        <text class="label_text right" y="8.2" x="89">
+          <a href="https://www.datenwerk.de/kompetenzen/#branding" target="_blank">Branding</a>          
+        </text>
+        <polyline class="label_line" points="64.5,5.9 66,7.5 79,7.5"></polyline>
+      </g>
+      <g class="label label--design">
+        <text class="label_text right" y="15.7" x="89">
+          <a href="https://www.datenwerk.de/kompetenzen/#digital" target="_blank">Design</a>          
+        </text>
+        <polyline class="label_line" points="65,15 81,15"></polyline>
+      </g>
+      <g class="label label--messe">
+        <text class="label_text right" y="23.2" x="89">
+          <a href="https://www.datenwerk.de/kompetenzen/#messe" target="_blank">Messe</a>          
+        </text> 
+        <polyline class="label_line" points="58,22.5 81.5,22.5"></polyline>
+      </g>   
+      <g class="label label--ecommerce">
+        <text class="label_text" y="23.2" x="1">
+          <a href="https://www.datenwerk.de/kompetenzen/#e-commerce" target="_blank">E-Commerce</a>          
+        </text>
+        <polyline class="label_line" points="16,22.5 24.5,22.5"></polyline>
+      </g>
+      <g class="label label--multimedia">
+        <text class="label_text" y="15.7" x="1">          
+          <a href="https://www.datenwerk.de/kompetenzen/#multimedia" target="_blank">Multimedia</a>          
+        </text>
+        <polyline class="label_line" points="14,15 25,15"></polyline>
+      </g>      
+      <g class="label label--digital">
+        <text class="label_text" y="8.2" x="1">
+          <a href="https://www.datenwerk.de/kompetenzen/#digital" target="_blank">Digital</a>          
+        </text>
+        <polyline class="label_line" points="9,7.5 32,7.5"></polyline>        
+      </g>
+    </g>
+  </svg>
+
+	<svg width="100%" height="100%" viewBox="0 0 50 50" class="donut donut--mobile">
+    <g class="segments">
+      <circle class="segment segment--branding" cx="55.56%" cy="56.67%" r="14.324"></circle>
+      <circle class="inner"cx="55.56%" cy="56.67%" r="14.324"></circle>
+      <circle class="segment segment--design" cx="50%" cy="50%" r="14.324"></circle>
+      <circle class="segment segment--messe" cx="50%" cy="50%" r="14.324"></circle>
+      <circle class="segment segment--ecommerce" cx="50%" cy="50%" r="14.324"></circle>
+      <circle class="segment segment--multimedia" cx="50%" cy="50%" r="14.324"></circle>
+      <circle class="segment segment--digital" cx="50%" cy="50%" r="14.324"></circle>
+      <circle class="inner"cx="50%" cy="50%" r="14.324" fill="#fff"></circle>
+    </g>
+		<g class="figcaption">
+			<text y="48%">
+        <tspan class="large" x="20" dy="0" lengthAdjust="spacing">360&deg;</tspan>
+        <tspan x="20" dy="2.3" textLength="13.4" lengthAdjust="spacing">Marken</tspan>
+        <tspan x="20" dy="2.3">erlebnis</tspan>
+    	</text>
+		</g>
+    <g class="labels">
+      <g class="label label--branding">
+        <text class="label_text right" y="7" x="40">
+          <a href="https://www.datenwerk.de/kompetenzen/#branding" target="_blank">Branding</a>          
+        </text>
+        <polyline class="label_line" points="40,8 40,10"></polyline>
+      </g>
+      <g class="label label--design">
+        <text class="label_text right" y="42" x="40">
+          <a href="https://www.datenwerk.de/kompetenzen/#digital" target="_blank">Design</a>          
+        </text>
+        <polyline class="label_line" points="40,30 40,39"></polyline>
+      </g>
+      <g class="label label--messe">
+        <text class="label_text" y="42" x="25">
+          <a href="https://www.datenwerk.de/kompetenzen/#messe" target="_blank">Messe</a>          
+        </text> 
+        <polyline class="label_line" points="25,38 25,39"></polyline>
+      </g>   
+      <g class="label label--ecommerce">
+        <text class="label_text" y="42" x="10">
+          <a href="https://www.datenwerk.de/kompetenzen/#e-commerce" target="_blank">E-Commerce</a>          
+        </text>
+        <polyline class="label_line" points="10,37 10,39"></polyline>
+      </g>
+      <g class="label label--multimedia">
+        <text class="label_text" y="7" x="10">          
+          <a href="https://www.datenwerk.de/kompetenzen/#multimedia" target="_blank">Multimedia</a>          
+        </text>
+        <polyline class="label_line" points="10,8 10,19"></polyline>
+      </g>      
+      <g class="label label--digital">
+        <text class="label_text" y="7" x="50%">
+          <a href="https://www.datenwerk.de/kompetenzen/#digital" target="_blank">Digital</a>          
+        </text>
+        <polyline class="label_line" points="25,8 25,12"></polyline>        
+      </g>
+    </g>
+  </svg>
+</div>
+<div class="content">
+	<p class="intro">For a job application in early 2018, it was my task to animate a donut chart graphic. The choice of implementation was completely up to me. I am a big fan of finding <em>CSS-only</em> approaches
+		to frontend-patterns. So here is my <em>pure CSS</em>, <em>JavaScript-free</em> magical <em>SVG</em> donut chart.</p>
+	<p><small>Normally I wouldn't have the <em>animation repeat</em>, but for the sake of showcasing, I find it convenient this way.</small></p>
+	<p><small>Of course, <em>Internet Explorer and Edge</em> don't like <em>CSS transforms</em> with SVG, but for the readability and reuse of code I refrained from adding <em>SVG animations</em>.</small></p>
+	<p><small>Currently responsiveness is due to a second SVG with modified viewport and locations for everything. I could've modified the existing SVG via JS, but wanted to keep it pure.</small></p>
+	<p><small>Another caveat of this approach is that the animation <em>starts instantly</em>. I could add a delay, however this would be random instead of starting when the object comes into view. To achieve this, JS can be used.</small></p>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
