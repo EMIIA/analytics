@@ -1,0 +1,346 @@
+/*================================================
+Start Important Part 1
+==================================================*/
+/*================================================
+End Important Part 1
+==================================================*/
+/*================================================
+Start Part to make it pretty
+==================================================*/
+
+@import url('/css.css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic');
+
+@import url('https://www.emiia.ru/css.css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic');
+
+
+body {
+  margin: 0 auto;
+font-family: Montserrat, "Montserrat";
+  font-size: 18px;
+  line-height: 1.2em;
+  color: #3d434c;
+  
+  min-height: 100vh;
+    margin: 0;
+  background: #efefef;
+  
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 200;
+  line-height: 65px;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+@media (max-width: 1170px) {
+  h1 {
+    font-size: 4.3vw;
+    line-height: 5.5vw;
+    margin-bottom: 4.3vw;
+  }
+}
+@media (max-width: 780px) {
+  h1 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 28px;
+  }
+}
+
+small {
+  font-size: 90%;
+  font-weight: 300;
+  color: #58616e;
+  letter-spacing: 0.3px;
+}
+
+.intro {
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: 300;
+}
+@media (max-width: 1170px) {
+  .intro {
+    font-size: 2.3vw;
+    line-height: 3.7vw;
+  }
+}
+@media (max-width: 780px) {
+  .intro {
+    font-size: 18px;
+    line-height: 29px;
+  }
+}
+
+a {
+  color: #99a1ad;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+}
+
+em {
+  font-style: normal;
+  background-image: linear-gradient(180deg, rgba(98, 223, 247, 0.8) 0%, rgba(1, 178, 227, 0.8) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+em:hover {
+  color: #000;
+  background-size: 100% 88%;
+}
+
+.content {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0rem 0rem;
+  background-color: #efefef;
+}
+
+/*================================================
+End Part to make it pretty
+==================================================*/
+/*================================================
+Start Important Part 2
+==================================================*/
+.marken-erlebnis {
+  background-color: #efefef;
+  padding: 3.7vw 1vw 5.5vw;
+  margin: 0 auto;
+}
+
+.donut {
+  font-size: 13px;
+  display: block;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+@media (max-width: 780px) {
+  .donut--desktop {
+    display: none;
+  }
+}
+.donut--mobile {
+  display: none;
+}
+@media (max-width: 780px) {
+  .donut--mobile {
+    display: block;
+  }
+}
+
+.figcaption tspan {
+  font-size: 2.4px;
+  text-transform: uppercase;
+  fill: #255aa8;
+}
+.figcaption .large {
+  font-size: 5.5px;
+  font-weight: 300;
+}
+
+.segments {
+  transform-origin: 50% 50%;
+  transform: rotate(-85.7deg) rotateX(30deg) rotateY(50deg);
+}
+
+.segment {
+  fill: transparent;
+  opacity: 0;
+  transform-origin: 50% 50%;
+  transition: all 0.2s ease-out;
+  stroke-dasharray: 12 78;
+  stroke-width: 10;
+  stroke-dashoffset: 15;
+}
+
+.inner {
+  fill: transparent;
+}
+
+.segment--branding {
+  stroke: #62dff7;
+  -webkit-animation: segment-branding 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) infinite both;
+          animation: segment-branding 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) infinite both;
+}
+
+.segment--design {
+  stroke: #01c8fb;
+  -webkit-animation: segment-design 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) infinite both;
+          animation: segment-design 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) infinite both;
+}
+
+.segment--messe {
+  stroke: #01b2e3;
+  -webkit-animation: segment-messe 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) infinite both;
+          animation: segment-messe 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) infinite both;
+}
+
+.segment--ecommerce {
+  stroke: #0097cf;
+  -webkit-animation: segment-ecommerce 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) infinite both;
+          animation: segment-ecommerce 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) infinite both;
+}
+
+.segment--multimedia {
+  stroke: #0b75b3;
+  -webkit-animation: segment-multimedia 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) infinite both;
+          animation: segment-multimedia 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) infinite both;
+}
+
+.segment--digital {
+  stroke: #255aa8;
+  -webkit-animation: segment-digital 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) infinite both;
+          animation: segment-digital 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) infinite both;
+}
+
+@-webkit-keyframes segment-branding {
+  10%, 100% {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes segment-branding {
+  10%, 100% {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes segment-design {
+  10%, 100% {
+    opacity: 1;
+    stroke-dashoffset: -15;
+  }
+}
+@keyframes segment-design {
+  10%, 100% {
+    opacity: 1;
+    stroke-dashoffset: -15;
+  }
+}
+@-webkit-keyframes segment-messe {
+  10%, 100% {
+    opacity: 1;
+    stroke-dashoffset: -30;
+  }
+}
+@keyframes segment-messe {
+  10%, 100% {
+    opacity: 1;
+    stroke-dashoffset: -30;
+  }
+}
+@-webkit-keyframes segment-ecommerce {
+  10%, 100% {
+    opacity: 1;
+    stroke-dashoffset: -45;
+  }
+}
+@keyframes segment-ecommerce {
+  10%, 100% {
+    opacity: 1;
+    stroke-dashoffset: -45;
+  }
+}
+@-webkit-keyframes segment-multimedia {
+  10%, 100% {
+    opacity: 1;
+    stroke-dashoffset: -60;
+  }
+}
+@keyframes segment-multimedia {
+  10%, 100% {
+    opacity: 1;
+    stroke-dashoffset: -60;
+  }
+}
+@-webkit-keyframes segment-digital {
+  10%, 100% {
+    opacity: 1;
+    stroke-dashoffset: -75;
+  }
+}
+@keyframes segment-digital {
+  10%, 100% {
+    opacity: 1;
+    stroke-dashoffset: -75;
+  }
+}
+.label_text {
+  fill: #3d434c;
+  font-size: 0.16em;
+  font-weight: 300;
+  transition: all 0.2s ease-out;
+}
+.donut--mobile .label_text {
+  font-size: 0.12em;
+}
+.label_text.right {
+  text-anchor: end;
+}
+.label_text a {
+  cursor: pointer;
+}
+
+.label_line {
+  fill: none;
+  stroke: #c7cacf;
+  stroke-width: 0.1;
+}
+
+.label {
+  transform: translateY(91px);
+  opacity: 0;
+}
+.label:hover .label_text {
+  fill: black;
+}
+
+.label--branding {
+  -webkit-animation: label-animation 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) 0s infinite both;
+          animation: label-animation 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) 0s infinite both;
+}
+
+.label--design {
+  -webkit-animation: label-animation 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) 0.1666666667s infinite both;
+          animation: label-animation 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) 0.1666666667s infinite both;
+}
+
+.label--messe {
+  -webkit-animation: label-animation 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) 0.3333333333s infinite both;
+          animation: label-animation 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) 0.3333333333s infinite both;
+}
+
+.label--ecommerce {
+  -webkit-animation: label-animation 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) 0.5s infinite both;
+          animation: label-animation 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) 0.5s infinite both;
+}
+
+.label--multimedia {
+  -webkit-animation: label-animation 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) 0.6666666667s infinite both;
+          animation: label-animation 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) 0.6666666667s infinite both;
+}
+
+.label--digital {
+  -webkit-animation: label-animation 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) 0.8333333333s infinite both;
+          animation: label-animation 10s cubic-bezier(0.42, -0.19, 0.41, 1.16) 0.8333333333s infinite both;
+}
+
+@-webkit-keyframes label-animation {
+  10%, 100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes label-animation {
+  10%, 100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
