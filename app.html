@@ -1,186 +1,385 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html><html lang="ru"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   
   
   
   
+    <title>ЭМИИА ИИ АНАЛИТИКА</title>
+  
+  
+  
+  		<meta name="description" content="ЭМИИА ИИ аналитика: IoT/IIoT" />
+		<meta property="og:title" content="Аналитические программные инструменты ЭМИИА" />
+		<meta property="og:description" content="yes" />
+		<meta property="og:site_name" content="yes" />
+		<meta property="og:image" content="https://www.emiia.ai/doc/logo500-500.png" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="https://www.emiia.ai" />
+		<meta property="fb:app_id" content="146002942236376" />
 
-<meta content='J5TituBqPBUMLYBJnYUcpNSlpCGTl292gdABqJfWQE' name='google-site-verification'/>
-	
-	<meta name="yandex-verification" content="293308a987e9469d" />
-	<meta name="yandex-verification" content="6a0ec748409de80e" />
-	
-	
-	
-	
-	<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(62960464, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true,
-        ecommerce:"dataLayer"
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/62960464" style="position:absolute; left:-9999px;" alt="ЭМИИА ИИ — машинное радиозрение (радиовидение)" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-	
-	
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        
+        
+        
+        
+    <meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@EMIIA.AI">
+	<meta name="twitter:title" content="ЭМИИА ИИ (EMIIA.AI) аналитика">
+	<meta name="twitter:description" content="Обработка и визуализация данных">
+	<meta name="twitter:image" content="https://www.emiia.ai/doc/logo500-500.png">
+    
+    
+    
+    
     
     <style>
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic');
-</style>
-    
-    	<style>
-@import url('https://www.emiia.ai/css.css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic');
-</style>
-    
-   <style>  
-@import url('/css.css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic');
-</style>   
+body {
 
+}
 
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  background-color: white;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
 
-<link rel="stylesheet" href="https://www.emiia.ai/cssfamily=Montserrat.css">
-<link rel="stylesheet" href="/cssfamily=Montserrat.css">
-
-
-<meta content='3kheczDk_on8lNVDMSBV1SyxjQ99UkzI0K09FxxRdQc' name='google-site-verification'/>
-<meta content='4bf3cfac699bee42' name='yandex-verification'/>
-<meta content='nlXisRKGZbZ5jSGB1dkBkFVxzgX13T1S01VbIztWT5c' name='google-site-verification'/>
-<meta content='c23600c5cfbf220d' name='yandex-verification'/>
-<meta content='4b050d625214ad2b' name='yandex-verification'/>
- <meta content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1' name='viewport'/>
-<meta content='2a3fd1b287cdead986289cce5e6bed61' name='p:domain_verify'/>
-<meta content='4fb89592f35c40d932c25945b0def1c5' name='p:domain_verify'/>
-<meta content='ba3dc2c41b4245c9b2b39a3eb76701bc' name='p:domain_verify'/>
-
-
+.overlay-content {
+  position: relative;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
  
+}
 
 
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-<link rel="stylesheet" href="https://www.emiia.ru/lib/w3-colors-2017.css">
-
-
-
-
-
-       <link rel="stylesheet" href="https://www.emiia.ai/discount_promo_preloader.css?v=0.0.1">
-     <link rel="stylesheet" href="/discount_promo_preloader.css?v=0.0.1">
-     <link rel="stylesheet" href="https://www.emiia.ai/discount_promo_main.min.css?v=0.0.1">
-       <link rel="stylesheet" href="/discount_promo_main.min.css?v=0.0.1">
-       
-       
-       <link rel="stylesheet" href="https://www.emiia.ai/typing-effect.css">
-<link rel="stylesheet" href="/typing-effect.css">
-
-
-<link rel="stylesheet" href="https://www.emiia.ai/forms.css">
-<link rel="stylesheet" href="/forms.css">
-
-
-<link href="https://www.emiia.ai/text.css" rel="stylesheet">
-<link href="/text.css" rel="stylesheet">
-
-
-  
-  
-  <meta property="og:image" content="https://upload.emiia.ru/emiia20.png" />
-  <meta property="og:url" content="https://www.emiia.ai/">
-<meta property="og:title" content="EMIIA AI — Machine Radio vision">
-<meta property="og:description" content="EMIIA.AI — first AI software for pattern recognition through radio waves">
-  
-
-
-
-  <title>EMIIA.AI Analytics</title>
-  
-  
-  
-  <meta name="Description" content="EMIIA.AI — first AI software for pattern recognition through radio waves"/>
-
-
-
-  
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-  
-  <meta name="Description" content="EMIIA.AI — first AI software for pattern recognition through radio waves"/>
-  <meta content='EMIIA.AI' name='apple-mobile-web-app-title'/>
-  <link content='EMIIA.AI' href='https://upload.emiia.ru/emiia20.png' rel='apple-touch-icon' title='EMIIA.AI — Machine Radio vision'/>
-  
-  
-  
-  
-  
-  
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="https://www.emiia.ai/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://www.emiia.ai//favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://www.emiia.ai//favicon-16x16.png">
-<link rel="manifest" href="https://www.emiia.ru/site.webmanifest">
-<link rel="mask-icon" href="https://www.emiia.ai/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#2d89ef">
-<meta name="theme-color" content="#ffffff">
-  
-  
-  <link rel="image_src" href="/emiia-cognitive-radio-optics.png"/>
-  <link rel="image_src" href="https://www.emiia.ru/emiia-cognitive-radio-optics.png"/>
-
-  
-  
-  <link href="https://www.emiia.ai/aos.css" rel="stylesheet">
-  <link href="/aos.css" rel="stylesheet">
-  
- 
-  
-  
-  
-
-
-
-
-
-
-
-
-<!-- Shady DOM styles for custom-style --><!-- Shady DOM styles for dom-template --><!-- Shady DOM styles for dom-repeat --><!-- Shady DOM styles for array-selector --><!-- Shady DOM styles for dom-if --><!-- Shady DOM styles for google-consumer-survey --><style>body {transition: opacity ease-in 0.2s; } 
-body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
-</style>
-<title>EMIIA.AI   — data processing and visualization</title>
-  <style type="text/css">
   #sandbox {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      border: none;
+      border: 0;
       display: block;
+      z-index: -1;
   }
-  </style>
+
+
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 35px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 9px;
+  right: 83px;
+  font-size: 45px;
+  color: black;
+}
+
+@media screen and (max-height: 250px) {
+  .overlay a {font-size: 10px}
+  .overlay .closebtn {
+  font-size: 10px;
+  top: 0px;
+  right: 30px;
+  z-index: 5;
+  }
+}
+</style>
+    
+    
+  
+  
+  
+  
+  
+	<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic');
+</style>
+
+	<style>
+@import url('https://www.emiia.ru/css.css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic');
+</style>
+
+  <style>  
+@import url('/css.css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic');
+</style>
+
+<link rel="stylesheet" href="https://www.emiia.ru/cssfamily=Montserrat.css">
+<link rel="stylesheet" href="/cssfamily=Montserrat.css">
+
+
 
   
+  
+<style>
+  body {
+  @import url('https://www.emiia.ru/css.css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic');
+  @import url('/css.css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic');
+
+}
+button {
+  padding: 1em 0.8em;
+  background: #efefef;
+  border: none;
+  border-radius: .5rem;
+  color: #3d434c;
+  font-size: .5rem;
+  font-family: Montserrat, "Montserrat";
+  font-weight: 100;
+  letter-spacing: .0rem;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+              -6px -6px 10px rgba(255, 255, 255, .5),
+              6px 6px 8px rgba(255, 255, 255, .075),
+              6px 6px 10px rgba(0, 0, 0, .15);
+}
+button:hover {
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+              -2px -2px 4px rgba(255, 255, 255, .4),
+              2px 2px 2px rgba(255, 255, 255, .05),
+              2px 2px 4px rgba(0, 0, 0, .1);
+
+}
+button:active {
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
+              inset -2px -2px 4px rgba(255, 255, 255, .5),
+              inset 2px 2px 2px rgba(255, 255, 255, .075),
+              inset 2px 2px 4px rgba(0, 0, 0, .15);
+}
+  
+ </style> 
+  
+  
+  
+  
+  
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./normalize.min.css">
+  
+<link rel="stylesheet" href="https://analytics.emiia.ai/analytics/style-chart-animations.css">
+<link rel="stylesheet" href="./style-chart-animations.css">
+
+
+
 
 </head>
 <body>
 
-<iframe id="sandbox" name="sandbox" allowfullscreen="true" sandbox="allow-scripts allow-modals allow-same-origin allow-popups" src="https://www.appsheet.com/start/ddc54838-9ce9-4a28-8d70-bd82c1309aee#appName=EMIIAAI-2006435&group=%5B%5D&page=fastTable&sort=%5B%7B%22Column%22%3A%22Price%22%2C%22Order%22%3A%22Ascending%22%7D%5D&table=EMIIA.AI&view=EMIIA.AI"></iframe>
 
 
+
+
+    <br/>
+    <br/>
+
+
+     <p class="content" style="text-align: center"><a href="https://www.emiia.ai" target="_self" style="cursor: pointer; font-size:15.4px;  text-decoration: none; padding:0px; color:#3d85c6; background-color:transparent; border-radius:0px; border: 0px solid #000000; margin-left: 0%;"><img src="https://analytics.emiia.ai/logo_analytics.svg" width="150" height="50" alt="ЭМИИА ИИ — машинное радиозрение"   title="ЭМИИА ИИ — машинное радиозрение (радиовидение/радио зрение)" ></a></p>
+
+
+
+<div class="content">
+<div class="marken-erlebnis">
+	<svg width="100%" height="100%" viewBox="0 0 90 30" class="donut donut--desktop">
+    <g class="segments">
+      <circle class="segment segment--branding" cx="50" cy="17" r="14.324"></circle>
+      <circle class="inner"cx="50" cy="17" r="14.324"></circle>
+      <circle class="segment segment--design" cx="45" cy="15" r="14.324"></circle>
+      <circle class="segment segment--messe" cx="45" cy="15" r="14.324"></circle>
+      <circle class="segment segment--ecommerce" cx="45" cy="15" r="14.324"></circle>
+      <circle class="segment segment--multimedia" cx="45" cy="15" r="14.324"></circle>
+      <circle class="segment segment--digital" cx="45" cy="15" r="14.324"></circle>
+      <circle class="inner"cx="45" cy="15" r="14.324" fill="#fff"></circle>
+    </g>
+		<g class="figcaption">
+			<text y="14.5">
+        <tspan class="large" x="40" dy="0" lengthAdjust="spacing"></tspan>
+        <tspan x="40" dy="2.3" textLength="13.4" lengthAdjust="spacing"></tspan>
+        <tspan x="40" dy="2.3"></tspan>
+    	</text>
+		</g>
+    <g class="labels">
+      <g class="label label--branding">
+        <text class="label_text right" y="8.2" x="89">
+          <a href="https://www.emiia.ai/" target="_blank">Security</a>          
+        </text>
+        <polyline class="label_line" points="64.5,5.9 66,7.5 79,7.5"></polyline>
+      </g>
+      <g class="label label--design">
+        <text class="label_text right" y="15.7" x="89">
+          <a href="https://www.emiia.ai/" target="_blank">IoT/IIoT</a>          
+        </text>
+        <polyline class="label_line" points="65,15 81,15"></polyline>
+      </g>
+      <g class="label label--messe">
+        <text class="label_text right" y="23.2" x="89">
+          <a href="https://www.emiia.ai/" target="_blank">Building</a>          
+        </text> 
+        <polyline class="label_line" points="58,22.5 81.5,22.5"></polyline>
+      </g>   
+      <g class="label label--ecommerce">
+        <text class="label_text" y="23.2" x="1">
+          <a href="https://www.emiia.ai/" target="_blank">Industry 4.0</a>          
+        </text>
+        <polyline class="label_line" points="16,22.5 24.5,22.5"></polyline>
+      </g>
+      <g class="label label--multimedia">
+        <text class="label_text" y="15.7" x="1">          
+          <a href="https://www.emiia.ai/" target="_blank">Logistics</a>          
+        </text>
+        <polyline class="label_line" points="14,15 25,15"></polyline>
+      </g>      
+      <g class="label label--digital">
+        <text class="label_text" y="8.2" x="1">
+          <a href="https://www.emiia.ai/" target="_blank">Retail</a>          
+        </text>
+        <polyline class="label_line" points="9,7.5 32,7.5"></polyline>        
+      </g>
+    </g>
+  </svg>
+
+	<svg width="100%" height="100%" viewBox="0 0 50 50" class="donut donut--mobile">
+    <g class="segments">
+      <circle class="segment segment--branding" cx="55.56%" cy="56.67%" r="14.324"></circle>
+      <circle class="inner"cx="55.56%" cy="56.67%" r="14.324"></circle>
+      <circle class="segment segment--design" cx="50%" cy="50%" r="14.324"></circle>
+      <circle class="segment segment--messe" cx="50%" cy="50%" r="14.324"></circle>
+      <circle class="segment segment--ecommerce" cx="50%" cy="50%" r="14.324"></circle>
+      <circle class="segment segment--multimedia" cx="50%" cy="50%" r="14.324"></circle>
+      <circle class="segment segment--digital" cx="50%" cy="50%" r="14.324"></circle>
+      <circle class="inner"cx="50%" cy="50%" r="14.324" fill="#fff"></circle>
+    </g>
+		<g class="figcaption">
+			<text y="48%">
+        <tspan class="large" x="20" dy="0" lengthAdjust="spacing"></tspan>
+        <tspan x="20" dy="2.3" textLength="13.4" lengthAdjust="spacing"></tspan>
+        <tspan x="20" dy="2.3"></tspan>
+    	</text>
+		</g>
+    <g class="labels">
+      <g class="label label--branding">
+        <text class="label_text right" y="7" x="40">
+          <a href="https://www.emiia.ai/" target="_blank">Security</a>          
+        </text>
+        <polyline class="label_line" points="40,8 40,10"></polyline>
+      </g>
+      <g class="label label--design">
+        <text class="label_text right" y="42" x="40">
+          <a href="https://www.emiia.ai/" target="_blank">
+Logistics</a>          
+        </text>
+        <polyline class="label_line" points="40,30 40,39"></polyline>
+      </g>
+      <g class="label label--messe">
+        <text class="label_text" y="42" x="25">
+          <a href="https://www.emiia.ai/" target="_blank">Retail</a>          
+        </text> 
+        <polyline class="label_line" points="25,38 25,39"></polyline>
+      </g>   
+      <g class="label label--ecommerce">
+        <text class="label_text" y="42" x="10">
+          <a href="https://www.emiia.ai/" target="_blank">Industry 4.0</a>          
+        </text>
+        <polyline class="label_line" points="10,37 10,39"></polyline>
+      </g>
+      <g class="label label--multimedia">
+        <text class="label_text" y="7" x="10">          
+          <a href="https://www.emiia.ai/" target="_blank">IoT/IIoT</a>          
+        </text>
+        <polyline class="label_line" points="10,8 10,19"></polyline>
+      </g>      
+      <g class="label label--digital">
+        <text class="label_text" y="7" x="50%">
+          <a href="https://www.emiia.ai/" target="_blank">Building</a>          
+        </text>
+        <polyline class="label_line" points="25,8 25,12"></polyline>        
+      </g>
+    </g>
+  </svg>
+
+
+
+
+</div>
+
+
+
+
+     <p class="content" style="text-align: center; font-size:13px">
+  
+
+
+
+     
+<button class="icon chart" style="cursor:pointer"  onclick="openNav()" alt="ЭМИИА"   title="Data: Объект №1">Объект №1</button>&nbsp;&nbsp;&nbsp;&nbsp; <button>Объект №2</button>&nbsp;&nbsp;&nbsp;&nbsp; <button>Склад №1</button>   
+  
+
+
+       <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="sandbox"> 
+  
+<iframe  z-index="3" id="sandbox" name="sandbox" allowfullscreen="true" sandbox="allow-scripts allow-modals allow-same-origin allow-popups" src="https://www.appsheet.com/start/ddc54838-9ce9-4a28-8d70-bd82c1309aee#appName=EMIIAAI-2006435&group=%5B%5D&page=fastTable&sort=%5B%7B%22Column%22%3A%22Price%22%2C%22Order%22%3A%22Ascending%22%7D%5D&table=EMIIA.AI&view=EMIIA.AI"></iframe>
+  
+
+   </div>
+</div> 
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+ <p class="content" style="text-align: center; font-size:13px">
+ 
+<span style="color: #3d434c; font-size:8px;">Version: 0 003-56770000-TRL-6/9-2021 &nbsp;&nbsp;</a></p>
+
+  </div>
+</div>
+  
 </body>
+
+
+
+
+ <script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
 
 
 
