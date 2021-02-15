@@ -11,9 +11,9 @@
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    id="svg20953"
    version="1.1"
-   viewBox="0 0 4.8325711 5.364429"
-   height="5.364429mm"
-   width="4.8325706mm">
+   viewBox="0 0 4.8141356 4.8143578"
+   height="4.8143578mm"
+   width="4.8141351mm">
   <defs
      id="defs20947">
     <marker
@@ -27,7 +27,7 @@
       <path
          inkscape:connector-curvature="0"
          transform="matrix(0.2,0,0,0.2,-0.6,0)"
-         style="fill:#ffffff;fill-rule:evenodd;stroke:#4e9bda;stroke-width:1.00000003pt;stroke-opacity:1"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#4e9bda;stroke-width:1pt;stroke-opacity:1"
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path3340" />
     </marker>
@@ -42,7 +42,7 @@
       <path
          inkscape:connector-curvature="0"
          transform="matrix(0.4,0,0,0.4,-1.8,0)"
-         style="fill:#ffffff;fill-rule:evenodd;stroke:#4e9bda;stroke-width:1.00000003pt;stroke-opacity:1"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#4e9bda;stroke-width:1pt;stroke-opacity:1"
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path3337" />
     </marker>
@@ -102,7 +102,7 @@
       <path
          inkscape:connector-curvature="0"
          transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
-         style="fill:#4e9bda;fill-opacity:1;fill-rule:evenodd;stroke:#4e9bda;stroke-width:1.00000003pt;stroke-opacity:1"
+         style="fill:#4e9bda;fill-opacity:1;fill-rule:evenodd;stroke:#4e9bda;stroke-width:1pt;stroke-opacity:1"
          d="M 0,0 5,-5 -12.5,0 5,5 Z"
          id="path3189" />
     </marker>
@@ -136,8 +136,8 @@
      showgrid="false"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="24.166265"
-     inkscape:cx="2.5049948"
+     inkscape:cy="22.867525"
+     inkscape:cx="22.302169"
      inkscape:zoom="11.400853"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -158,7 +158,7 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-49.393216,-142.68369)"
+     transform="translate(-49.411673,-143.02731)"
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
@@ -174,7 +174,7 @@
        sodipodi:cx="51.818741"
        sodipodi:type="arc"
        id="path1761"
-       style="fill:#ffffff;stroke:#ffffff;stroke-width:1.05247;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:6;fill-opacity:1;stroke-opacity:1" />
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.05247;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:6;stroke-opacity:1" />
     <g
        transform="matrix(0.84067847,0,0,0.84067847,8.2872532,23.249117)"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.65591px;line-height:1.25;font-family:Orbitron;-inkscape-font-specification:Orbitron;stroke-width:0.349193"
