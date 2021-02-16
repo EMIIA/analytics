@@ -66,7 +66,7 @@
 
 
 
-<path height="35" width="50" d="m18.907189 28.791731h2.931998c.552987.0.998172.49811.998172 1.11684v7.680526c0 .618729-.445185 1.11684-.998172 1.11684h-2.931998c-.552987.0-.998172-.498111-.998172-1.11684v-7.680526c0-.61873.445185-1.11684.998172-1.11684z" style="fill:#000;fill-opacity:1;stroke:none;stroke-width:2.02539;stroke-linejoin:round;stroke-miterlimit:6;stroke-dasharray:none;stroke-opacity:1" id="rect3061-3-2-0" width="1" height="1" >
+<path height="35" width="50" d="m18.907189 28.791731h2.931998c.552987.0.998172.49811.998172 1.11684v7.680526c0 .618729-.445185 1.11684-.998172 1.11684h-2.931998c-.552987.0-.998172-.498111-.998172-1.11684v-7.680526c0-.61873.445185-1.11684.998172-1.11684z" style="fill:#000;fill-opacity:1;stroke:none;stroke-width:2.02539;stroke-linejoin:round;stroke-miterlimit:6;stroke-dasharray:none;stroke-opacity:1" id="rect3061-3-2-0">
 
 
     
@@ -78,20 +78,13 @@
        type="translate"
        attributeName="transform"/>
        
-       
-
-
-       
-       
-       
-
-
+      
     
       
   </path>
   
   
-  <path height="35" width="50" d="m18.907189 28.791731h2.931998c.552987.0.998172.49811.998172 1.11684v7.680526c0 .618729-.445185 1.11684-.998172 1.11684h-2.931998c-.552987.0-.998172-.498111-.998172-1.11684v-7.680526c0-.61873.445185-1.11684.998172-1.11684z" style="fill:#000;fill-opacity:1;stroke:none;stroke-width:2.02539;stroke-linejoin:round;stroke-miterlimit:6;stroke-dasharray:none;stroke-opacity:1" id="rect3061-3-2-0" width="1" height="1" >
+  <path height="35" width="50" d="m18.907189 28.791731h2.931998c.552987.0.998172.49811.998172 1.11684v7.680526c0 .618729-.445185 1.11684-.998172 1.11684h-2.931998c-.552987.0-.998172-.498111-.998172-1.11684v-7.680526c0-.61873.445185-1.11684.998172-1.11684z" style="fill:#000;fill-opacity:1;stroke:none;stroke-width:2.02539;stroke-linejoin:round;stroke-miterlimit:6;stroke-dasharray:none;stroke-opacity:1" id="rect3061-3-2-0">
   
   
  </path>
