@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+
+
+    <style type="text/css">
+        @keyframes strokeanim {
+            to { stroke-dashoffset: 0; }
+        }
+        line#dashstart {
+            stroke: royalblue;
+            stroke-width: 3;
+            stroke-dasharray: 30;
+            stroke-dashoffset: 30;          
+            
+
+          animation: strokeanim 1s alternate infinite 4s;  
+
+        }
+    </style>
+    
+    
+    
+      <animate 
+           xlink:href="#blue-rectangle"
+           attributeName="x" 
+           from="50"
+           to="42" 
+           dur="3s"
+           begin="1s"
+           repeatCount="indefinite"
+           fill="freeze" 
+           id="rect-anim"/>
+    
+    
+    <line id="dashstart" x1="0" y1="0" x2="30" y2="0"></line>
+</svg>
