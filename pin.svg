@@ -9,7 +9,7 @@
     <animateTransform 
        repeatCount="indefinite"
        dur="2s"
-       values="0,0;0,-2;0,0"
+       values="0,0;0,-4;0,0"
        type="translate"
        attributeName="transform"/>
             
