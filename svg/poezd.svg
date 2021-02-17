@@ -98,4 +98,5 @@
     <animateMotion xlink:href="#train" begin="0s" dur="18s" repeatCount="indefinite">
       <mpath xlink:href="#trainPath" />
     </animateMotion>
+    </g>
   </svg>
