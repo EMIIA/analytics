@@ -1,0 +1,101 @@
+<svg width="50%" height="50%" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<defs>    
+    <filter id="blur" x="-1" y="-1" width="5" height="5">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" />
+    </filter>
+      <rect id="rect" width="95" height="20" fill="#663300" />
+</defs>
+<g>
+  <use xlink:href="#rect" x="150" y="10"/>
+  <use xlink:href="#rect" x="150" y="50"/>
+  <use xlink:href="#rect" x="150" y="90"/>
+  <use xlink:href="#rect" x="150" y="130"/>
+  <use xlink:href="#rect" x="150" y="170"/>
+  <use xlink:href="#rect" x="150" y="210"/>
+  <use xlink:href="#rect" x="150" y="250"/>
+  <use xlink:href="#rect" x="150" y="290"/>
+  <use xlink:href="#rect" x="150" y="330"/>
+  <use xlink:href="#rect" x="150" y="370"/>
+</g>
+    <g>
+      <line x1="230" y1="400" x2="230" y2="0" stroke="#232b2b" stroke-width="5" />
+      <line x1="165" y1="400" x2="165" y2="0" stroke="#232b2b" stroke-width="5" />
+    </g>
+    <g id="train" transform="translate(-350 0)">
+      <g>
+        <path class="st0" d="M272.8,277.5h-56.2v-72.9c0-9.7,7.9-17.6,17.6-17.6h21c9.7,0,17.6,7.9,17.6,17.6V277.5z" />
+        <line class="st1" x1="258.5" y1="187.5" x2="258.5" y2="275.5" />
+        <line class="st1" x1="231.5" y1="188" x2="231.5" y2="276" />
+        <rect x="200.6" y="275.9" class="st2" width="88" height="66" />
+        <path class="st3" d="M252.5,275.5h-16V196c0-1.6,1.3-3,3-3h10.1c1.6,0,3,1.3,3,3V275.5z" />
+        <circle class="st4" cx="244.5" cy="210.5" r="7.5" />
+        <circle class="st5" cx="244.5" cy="210.5" r="4.5" />
+        <rect width="5" height="20" x="212" y="210"/>
+        <rect width="5" height="20" x="212" y="250"/>
+        <rect width="5" height="20" x="272" y="210"/>
+        <rect width="5" height="20" x="272" y="250"/>
+        <g>
+          <circle cx="244.5" cy="220.5" r="8.5" fill="gray" filter="url(#blur)" />
+          <animateTransform attributeName="transform" type="rotate" values="0 244.5 220.5;360 246.5 220.5" dur="1s" repeatCount="indefinite"
+          />
+        </g>
+        <g>
+          <circle cx="244.5" cy="220.5" r="8.5" fill="gray" filter="url(#blur)" />
+          <animateTransform attributeName="transform" type="rotate" values="0 244.5 220.5;90 244.5 220.5" dur="1s" transform="scale(1.1)" repeatCount="indefinite"
+          />
+        </g>
+        <g>
+          <circle cx="246.5" cy="230.5" r="6" fill="gray" filter="url(#blur)" />
+          <animateTransform attributeName="transform" type="rotate" values="0 246.5 230.5;90 246.5 230.5" dur="1s" repeatCount="indefinite"
+          />
+        </g>
+        <g>
+          <circle cx="244.5" cy="238.5" r="7" fill="gray" filter="url(#blur)" />
+          <animateTransform attributeName="transform" type="rotate" values="0 244.5 238.5;90 244.5 238.5" dur="1s" repeatCount="indefinite"
+          />
+        </g>
+        <g>
+          <circle cx="242.5" cy="245.5" r="4" fill="gray" filter="url(#blur)" />
+          <animateTransform attributeName="transform" type="rotate" values="0 242.5 245.5;360 242.5 245.5" dur="1s" repeatCount="indefinite"
+          />
+        </g>
+        <g>
+          <circle cx="244.5" cy="250.5" r="9" fill="gray" filter="url(#blur)" />
+          <animateTransform attributeName="transform" type="rotate" values="0 244.5 250.5;90 244.5 250.5" dur="1s" repeatCount="indefinite"
+          />
+        </g>
+        <g>
+          <circle cx="246.5" cy="260.5" r="9" fill="gray" filter="url(#blur)" />
+          <animateTransform attributeName="transform" type="rotate" values="0 246.5 260.5;90 246.5 260.5" dur="1s" repeatCount="indefinite"
+          />
+        </g>
+        <g>
+          <circle cx="244.5" cy="270.5" r="8" fill="gray" filter="url(#blur)" />
+          <animateTransform attributeName="transform" type="rotate" values="0 244.5 270.5;90 246.5 270.5" dur="1s" transform="scale(1.5)" repeatCount="indefinite"
+          />
+        </g>
+        <g>
+          <circle cx="242.5" cy="275.5" r="6" fill="gray" filter="url(#blur)" />
+          <animateTransform attributeName="transform" type="rotate" values="0 242.5 275.5;90 242.5 275.5" dur="1s" transform="scale(1.8)" repeatCount="indefinite"
+          />
+        </g>
+        <g>
+          <circle cx="242.5" cy="280.5" r="9" fill="gray" filter="url(#blur)" />
+          <animateTransform attributeName="transform" type="rotate" values="0 242.5 280.5;90 242.5 280.5" dur="1s" transform="scale(1.6)" repeatCount="indefinite"
+          />
+        </g>
+      <g>
+        <rect width="10" height="9" x="240" y="341" />
+        <rect width="90" height="150" x="200" y="350" fill="gray" rx="5" />
+      </g>
+      <g>
+        <rect width="10" height="9" x="240" y="500" />
+        <rect width="90" height="150" x="200" y="509" fill="gray" rx="5" />
+      </g>
+    </g>
+    <path id="trainPath" style="fill:none;stroke: transparent;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+      d="m 302.80952,297 c 0,-97.08928571 0,-297.08928571 0,-997.08928571" />
+    <animateMotion xlink:href="#train" begin="0s" dur="18s" repeatCount="indefinite">
+      <mpath xlink:href="#trainPath" />
+    </animateMotion>
+  </svg>
