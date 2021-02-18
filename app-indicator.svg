@@ -35,9 +35,9 @@
      inkscape:window-maximized="1"
      inkscape:window-y="-11"
      inkscape:window-x="-11"
-     inkscape:cy="13.729766"
-     inkscape:cx="18.009195"
-     inkscape:zoom="26.875"
+     inkscape:cy="20.950639"
+     inkscape:cx="42.82359"
+     inkscape:zoom="13.4375"
      fit-margin-bottom="0"
      fit-margin-right="0"
      fit-margin-left="0"
@@ -54,16 +54,8 @@
      borderopacity="1"
      bordercolor="#666666"
      pagecolor="#ffffff" />
-  <path
-     style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path2"
-     d="M 5.1028332,2.2666219 A 3.9688701,3.9688701 0 0 0 1.133963,6.235492 v 5.669815 a 3.9688701,3.9688701 0 0 0 3.9688702,3.96887 h 5.6698138 a 3.9688701,3.9688701 0 0 0 3.96887,-3.96887 V 9.0703993 a 0.56698145,0.56698145 0 0 1 1.133962,0 v 2.8349077 a 5.1028331,5.1028331 0 0 1 -5.102832,5.102834 H 5.1028332 A 5.1028331,5.1028331 0 0 1 0,11.905307 V 6.235492 A 5.1028331,5.1028331 0 0 1 5.1028332,1.132659 h 2.8349073 a 0.56698146,0.56698146 0 0 1 0,1.1339629 z" />
-  <path
-     style="fill:#c82323;fill-opacity:1;stroke-width:1.13396"
-     id="path4"
-     d="m 17.009443,3.4005848 a 3.401889,3.401889 0 1 1 -6.803777,0 3.401889,3.401889 0 0 1 6.803777,0 z" />
   <g
-     transform="matrix(1.1339629,0,0,1.1339629,-0.22231046,-0.0013039)"
+     transform="matrix(1.1339629,0,0,1.1339629,9.4534915e-4,-0.59665274)"
      style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:2.41503px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Medium';fill:#c82323;fill-opacity:1;stroke-width:0.452818"
      id="text839"
      aria-label="- 7,56 %">
@@ -126,4 +118,9 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:Montserrat;stroke-width:0.564477"
        d="m 14.835158,16.730618 v 2.107378 H 14.618399 V 16.923292 H 14.12166 v -0.192674 z" />
   </g>
+  <path
+     d="m 5.2252702,0.68983483 c -2.4390705,0 -4.41632787,1.97725737 -4.41632787,4.41632827 v 6.6244909 c 0,2.439071 1.97725737,4.416328 4.41632787,4.416328 h 6.6244908 c 2.439071,0 4.416328,-1.977257 4.416328,-4.416328 V 5.1061631 c 0,-2.4390709 -1.977257,-4.41632827 -4.416328,-4.41632827 z"
+     id="path2-7"
+     style="fill:none;stroke:#000000;stroke-width:0.331224;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     sodipodi:nodetypes="sssssssss" />
 </svg>
