@@ -1,0 +1,65 @@
+body.night {
+	background-color: rgb(220, 220, 220);
+}
+
+.night h2 {
+	text-shadow: 1px 1px 0px rgb(196, 196, 196);
+}
+
+.night #metro { 
+	background-color: #262626;
+}
+
+.night #metro ul li { 
+	text-shadow: none;
+	background-color: transparent;
+	color: white;
+}
+
+.night #interchanges span { 
+	border-top: dotted 2px #c0c0c0; 
+	border-bottom: dotted 2px #c0c0c0; 
+}
+
+.night #metro #select-year select {
+	color: #c0c0c0;
+	background-color: rgba(64, 64, 64, 0.8);
+	border-color: #808080;
+}
+
+.night #metro #select-year h2 {
+	background-color: rgba(38, 38, 38, 0.5);
+	text-shadow: none;
+}
+
+.night #metro a.button {
+	background-color: rgba(64, 64, 64, 0.8);
+	border: solid 1px rgba(28, 28, 28, 0.8);
+	color: rgb(128, 128, 128);
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.night #metro a.button:hover {
+	background-color: rgba(80, 80, 80, 0.8);
+	border-color: rgba(32, 32, 32, 0.8);
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+}
+
+.night #metro #switches a {
+	color: rgb(128,128,128);
+	border-bottom: dashed 1px rgb(128,128,128);
+	background-color: rgba(38, 38, 38, 0.5);
+}
+.night #lang a, .night #lang span {
+	background: none;
+}
+.night #metro #switches a:hover {
+	color: red;
+	border-bottom-color: red;
+}
+
+.night .tooltip {
+	color: white;
+	background: rgb(96, 96, 96);
+	border: none;
+}
