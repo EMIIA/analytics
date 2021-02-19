@@ -1,36 +1,22 @@
-// Stations data
-
-
 var data = {
 	CoordinatesList: new Array(),
-	/* 
-		Coordinates of each station are organized as follows:
-		
-		CoordinatesList[LineNo][StationNo] = 
-			[latitude, longitude, depth under ground (negative), local height of ground surface above sea level]
-	*/
 	NamesList: new Array(),
-	/* 
-		Contains names of stations and corresponding years. A station could be renamed, even multiple times.
-		Information about name/year of a station is organized as follows:
-		
-		NamesList[LineNo][StationNo] = 
-			[['Initial Name', year opened], ['New Name', year renamed], ...]
-				
-		A station could be closed for reconstruction for several years and then opened again. Then:
-		
-		NamesList[LineNo][StationNo] = 
-			[['Name', year opened, year closed], ['Name (old of new)', year reopened], ...]
-			
-		Data about names/years of one station is sorted by year in increasing order.
-	*/
 	ClassesList: new Array(),
-	/* Names of CSS classes identifying lines */
 	Interchanges: new Array()
-	/* Pairs of stations making interchanges (see below) */
 };
 
-// Koltsevaya Line (Ring Line):
+// Формат данных о станциях: 
+
+// Координаты: 
+// [широта, долгота, глубина_заложения, высота_поверхности_земли_над_уровнем_моря]
+
+// Массив названий станции в разные года, упорядоченных по возрастанию года:
+// [[название, год_открытия], [...], ...]
+// если станция закрывалась:
+// [[название, год_открытия, год_закрытия], [название (новое или старое), год_открытия], [...], ...]
+
+
+// Кольцевая линия:
 
 data.CoordinatesList[0] = [
 	[55.761076, 37.577431, -36, 137],
@@ -45,26 +31,26 @@ data.CoordinatesList[0] = [
 	[55.729705, 37.608886, -40, 130],
 	[55.735642, 37.591613, -40, 132],
 	[55.744345, 37.564568, -48, 126],
-	[55.761076, 37.577431, -36, 137]	/* hack, no station */
+	[55.761076, 37.577431, -36, 137]
 ];
 data.NamesList[0] = [
-	[['Krasnopresnenskaya', 1954]],
-	[['Belorusskaya, KL', 1952]],
-	[['Novoslobodskaya', 1952]],
-	[['Botanicheskiy Sad, KL', 1952], ['Prospekt Mira, KL', 1966]],
-	[['Komsomolskaya, KL', 1952]],
-	[['Kurskaya, KL', 1950]],
-	[['Taganskaya, KL', 1950]],
-	[['Paveletskaya, KL', 1950]],
-	[['Serpukhovskaya', 1950], ['Dobryninskaya', 1961]],
-	[['Kaluzhskaya', 1950], ['Oktyabrskaya, KL', 1961]],
-	[['Park Kultury im. Gorkogo, KL', 1950], ['Park Kultury, KL', 1980, 2011], ['Park Kultury, KL', 2012]],
-	[['Kiyevskaya, KL', 1954]],
-	[['', 1954]]	/* hack, no station */
+	[['Краснопресненская', 1954]],
+	[['Белорусская, КЛ', 1952]],
+	[['Новослободская', 1952]],
+	[['Ботанический сад, КЛ', 1952], ['Проспект Мира, КЛ', 1966]],
+	[['Комсомольская, КЛ', 1952]],
+	[['Курская, КЛ', 1950]],
+	[['Таганская, КЛ', 1950]],
+	[['Павелецкая, КЛ', 1950]],
+	[['Серпуховская', 1950], ['Добрынинская', 1961]],
+	[['Калужская', 1950], ['Октябрьская, КЛ', 1961]],
+	[['Парк Культуры им. Горького, КЛ', 1950], ['Парк Культуры, КЛ', 1980, 2011], ['Парк Культуры, КЛ', 2012]],
+	[['Киевская, КЛ', 1954]],
+	[['', 1954]]
 ];
 data.ClassesList[0] = "L0";
 
-// Sokolnicheskaya Line:
+// Сокольническая линия:
 
 data.CoordinatesList[1] = [
 	[55.560455, 37.468170, -25, 177],
@@ -95,36 +81,36 @@ data.CoordinatesList[1] = [
 	[55.814722, 37.734353, -8, 143]
 ];
 data.NamesList[1] = [
-	[['Kommunarka', 2019]],
-	[['Olkhovaya', 2019]],
-	[['Prokshino', 2019]],
-	[['Filatov Lug', 2019]],
-	[['Salaryevo', 2016]],
-	[['Rumyantsevo', 2016]],
-	[['Troparyovo', 2014]],
-	[['Yugo-Zapadnaya', 1963]],
-	[['Prospekt Vernadskogo', 1963]],
-	[['Universitet', 1959]],
-	[['Leninskie Gory', 1959, 1983], ['Vorobyovy Gory', 2002]],
-	[['Sportivnaya', 1957]],
-	[['Frunzenskaya', 1957, 2016], ['Frunzenskaya', 2017]],
-	[['Park Kultury im. Gorkogo, SL', 1935], ['Park Kultury, SL', 1980]],
-	[['Dvorets Sovetov', 1935], ['Kropotkinskaya', 1957]],
-	[['Biblioteka Imeni Lenina', 1935]],
-	[['Okhotny Ryad', 1935], ['Imeni Kaganovicha', 1955], ['Okhotny Ryad', 1957], ['Prospekt Marksa', 1961], ['Okhotny Ryad', 1990]],
-	[['Dzerzhinskaya', 1935], ['Lubyanka', 1990]],
-	[['Kirovskaya', 1935, 1941], ['Kirovskaya', 1945], ['Chistiye Prudy', 1990]],
-	[['Krasniye Vorota', 1935], ['Lermontovskaya', 1962], ['Krasniye Vorota', 1986]],
-	[['Komsomolskaya, SL', 1935]],
-	[['Krasnoselskaya', 1935]],
-	[['Sokolniki', 1935]],
-	[['Preobrazhenskaya Ploshchad', 1965]],
-	[['Cherkizovskaya', 1990]],
-	[['Ulitsa Podbelskogo', 1990], ['Bulvar Rokossovskogo, SL', 2014]]
+	[['Коммунарка', 2019]],
+	[['Ольховая', 2019]],
+	[['Прокшино', 2019]],
+	[['Филатов Луг', 2019]],
+	[['Саларьево', 2016]],
+	[['Румянцево', 2016]],
+	[['Тропарево', 2014]],
+	[['Юго-Западная', 1963]],
+	[['Проспект Вернадского', 1963]],
+	[['Университет', 1959]],
+	[['Ленинские горы', 1959, 1983], ['Воробьевы горы', 2002]],
+	[['Спортивная', 1957]],
+	[['Фрунзенская', 1957, 2016], ['Фрунзенская', 2017]],
+	[['Парк Культуры им. Горького, СЛ', 1935], ['Парк Культуры, СЛ', 1980]],
+	[['Дворец Советов', 1935], ['Кропоткинская', 1957]],
+	[['Библиотека имени Ленина', 1935]],
+	[['Охотный ряд', 1935], ['Имени Кагановича', 1955], ['Охотный ряд', 1957], ['Проспект Маркса', 1961], ['Охотный ряд', 1990]],
+	[['Дзержинская', 1935], ['Лубянка', 1990]],
+	[['Кировская', 1935, 1941], ['Кировская', 1945], ['Чистые пруды', 1990]],
+	[['Красные ворота', 1935], ['Лермонтовская', 1962], ['Красные ворота', 1986]],
+	[['Комсомольская, СЛ', 1935]],
+	[['Красносельская', 1935]],
+	[['Сокольники', 1935]],
+	[['Преображенская площадь', 1965]],
+	[['Черкизовская', 1990]],
+	[['Улица Подбельского', 1990], ['Бульвар Рокоссовского, СЛ', 2014]]
 ];
 data.ClassesList[1] = "L1";
 
-// Zamoskvoretskaya Line:
+// Замоскворецкая линия:
 
 data.CoordinatesList[2] = [
 	[55.878276, 37.480766, -14, 178],
@@ -153,34 +139,34 @@ data.CoordinatesList[2] = [
 	[55.632696, 37.766083, -10, 119]
 ];
 data.NamesList[2] = [
-	[['Khovrino', 2017]],
-	[['Belomorskaya', 2018]],
-	[['Rechnoy Vokzal', 1964]],
-	[['Vodny Stadion', 1964]],
-	[['Voykovskaya', 1964]],
-	[['Sokol', 1938]],
-	[['Aeroport', 1938]],
-	[['Dinamo', 1938]],
-	[['Belorusskaya, ZL', 1938]],
-	[['Mayakovskaya', 1938]],
-	[['Gorkovskaya', 1979], ['Tverskaya', 1990]],
-	[['Ploshchad Sverdlova', 1938], ['Teatralnaya', 1990]],
-	[['Novokuznetskaya', 1943]],
-	[['Paveletskaya, ZL', 1943]],
-	[['Zavod im. Stalina', 1943], ['Avtozavodskaya, ZL', 1956]],
-	[['Tekhnopark', 2015]],
-	[['Kolomenskaya', 1969]],
-	[['Kashirskaya, ZL', 1969]],
-	[['Kantemirovskaya', 1984]],
-	[['Lenino', 1984], ['Tsaritsyno', 1990]],
-	[['Orekhovo', 1984]],
-	[['Domodedovskaya', 1985]],
-	[['Krasnogvardeyskaya', 1985]],
-	[['Alma-Atinskaya', 2012]]
+	[['Ховрино', 2017]],
+	[['Беломорская', 2018]],
+	[['Речной вокзал', 1964]],
+	[['Водный стадион', 1964]],
+	[['Войковская', 1964]],
+	[['Сокол', 1938]],
+	[['Аэропорт', 1938]],
+	[['Динамо', 1938]],
+	[['Белорусская, ЗЛ', 1938]],
+	[['Маяковская', 1938]],
+	[['Горьковская', 1979], ['Тверская', 1990]],
+	[['Площадь Свердлова', 1938], ['Театральная', 1990]],
+	[['Новокузнецкая', 1943]],
+	[['Павелецкая, ЗЛ', 1943]],
+	[['Завод им. Сталина', 1943], ['Автозаводская, ЗЛ', 1956]],
+	[['Технопарк', 2015]],
+	[['Коломенская', 1969]],
+	[['Каширская, ЗЛ', 1969]],
+	[['Кантемировская', 1984]],
+	[['Ленино', 1984], ['Царицыно', 1990]],
+	[['Орехово', 1984]],
+	[['Домодедовская', 1985]],
+	[['Красногвардейская', 1985]],
+	[['Алма-Атинская', 2012]]
 ];
 data.ClassesList[2] = "L2";
 
-// Arbatsko-Pokrovskaya Line:
+// Арбатско-покровская линия:
 
 data.CoordinatesList[3] = [
 	[55.855969, 37.35407, -11, 175],
@@ -207,32 +193,32 @@ data.CoordinatesList[3] = [
 	[55.809309, 37.798573, -8, 168]
 ];
 data.NamesList[3] = [
-	[['Pyatnitskoye Shosse', 2012]],
-	[['Mitino', 2009]],
-	[['Volokolamskaya', 2009]],
-	[['Myakinino', 2009]],
-	[['Strogino', 2008]],
-	[['Krylatskoye', 1989]],
-	[['Molodyozhnaya', 1965]],
-	[['Kuntsevskaya, APL', 2008]],
-	[['Slavyansky Bulvar', 2008]],
-	[['Park Pobedy, APL', 2003]],
-	[['Kiyevskaya, APL', 1953]],
-	[['Smolenskaya, APL', 1953]],
-	[['Arbatskaya, APL', 1953]],
-	[['Ploshchad Revolyutsii', 1938]],
-	[['Kurskaya, APL', 1938]],
-	[['Baumanskaya', 1944, 2015], ['Baumanskaya', 2016]],
-	[['Elektrozavodskaya', 1944, 2007], ['Elektrozavodskaya', 2008]],
-	[['Stalinskaya', 1944], ['Semyonovskaya', 1961, 2005], ['Semyonovskaya', 2006]],
-	[['Izmaylovskiy Park Kultury i Otdykha im. Stalina', 1944], ['Izmaylovskaya', 1948], ['Izmaylovskiy Park', 1963], ['Partizanskaya', 2005]],
-	[['Pervomayskaya', 1954], ['Izmaylovskiy Park', 1961], ['Izmaylovskaya', 1963]],
-	[['Pervomayskaya', 1961]],
-	[['Shchyolkovskaya', 1963]]
+	[['Пятницкое шоссе', 2012]],
+	[['Митино', 2009]],
+	[['Волоколамская', 2009]],
+	[['Мякинино', 2009]],
+	[['Строгино', 2008]],
+	[['Крылатское', 1989]],
+	[['Молодежная', 1965]],
+	[['Кунцевская, АПЛ', 2008]],
+	[['Славянский бульвар', 2008]],
+	[['Парк Победы, АПЛ', 2003]],
+	[['Киевская, АПЛ', 1953]],
+	[['Смоленская, АПЛ', 1953]],
+	[['Арбатская, АПЛ', 1953]],
+	[['Площадь революции', 1938]],
+	[['Курская, АПЛ', 1938]],
+	[['Бауманская', 1944, 2015], ['Бауманская', 2016]],
+	[['Электрозаводская', 1944, 2007], ['Электрозаводская', 2008]],
+	[['Сталинская', 1944], ['Семеновская', 1961, 2005], ['Семеновская', 2006]],
+	[['Измайловский парк культуры и отдыха им. Сталина', 1944], ['Измайловская', 1948], ['Измайловский парк', 1963], ['Партизанская', 2005]],
+	[['Первомайская', 1954], ['Измайловский парк', 1961], ['Измайловская', 1963]],
+	[['Первомайская', 1961]],
+	[['Щелковская', 1963]]
 ];
 data.ClassesList[3] = "L3";
 
-// Filyovskaya Line:
+// Филевская линия:
 
 data.CoordinatesList[4] = [
 	[55.730707, 37.445996, 0, 153],
@@ -245,32 +231,32 @@ data.CoordinatesList[4] = [
 	[55.743529, 37.565299, -9, 126],
 	[55.749965, 37.541218, -22.5, 130],
 	[55.748231, 37.534467, -25, 130],
-	[55.749965, 37.541218, -22.5, 130],	/* hack, no station */
-	[55.743529, 37.565299, -9, 126],	/* hack, no station */
+	[55.749965, 37.541218, -22.5, 130],
+	[55.743529, 37.565299, -9, 126],
 	[55.748741, 37.582342, -8, 141],
 	[55.751861, 37.601206, -8, 143],
 	[55.75252, 37.609049, -7, 145]
 ];
 data.NamesList[4] = [
-	[['Kuntsevskaya, FL', 1965]],
-	[['Pionerskaya', 1961]],
-	[['Filyovsky Park', 1961]],
-	[['Bagrationovskaya', 1961]],
-	[['Fili', 1959]],
-	[['Kutuzovskaya, FL', 1958]],
-	[['Studencheskaya', 1958]],
-	[['Kiyevskaya', 1937, 1953], ['Kiyevskaya, FL', 1958]],
-	[['Delovoy Tsentr', 2005], ['Vystavochnaya', 2008]],
-	[['Mezhdunarodnaya', 2006]],
-	[['', 2005]], /* hack, no station */
-	[['', 1937]], /* hack, no station */
-	[['Smolenskaya', 1935, 1953], ['Smolenskaya, FL', 1958]],
-	[['Arbatskaya', 1935, 1953], ['Arbatskaya, FL', 1958]],
-	[['Ul. Kominterna', 1935], ['Kalininskaya', 1946, 1953], ['Kalininskaya', 1958], ['Alexandrovsky Sad', 1990]]
+	[['Кунцевская, ФЛ', 1965]],
+	[['Пионерская', 1961]],
+	[['Филевский парк', 1961]],
+	[['Багратионовская', 1961]],
+	[['Фили', 1959]],
+	[['Кутузовская, ФЛ', 1958]],
+	[['Студенческая', 1958]],
+	[['Киевская', 1937, 1953], ['Киевская, ФЛ', 1958]],
+	[['Деловой центр', 2005], ['Выставочная', 2008]],
+	[['Международная', 2006]],
+	[['', 2005]],
+	[['', 1937]],
+	[['Смоленская', 1935, 1953], ['Смоленская, ФЛ', 1958]],
+	[['Арбатская', 1935, 1953], ['Арбатская, ФЛ', 1958]],
+	[['Ул. Коминтерна', 1935], ['Калининская', 1946, 1953], ['Калининская', 1958], ['Александровский сад', 1990]]
 ];
 data.ClassesList[4] = "L4";
 
-// Kaluzhsko-Rizhskaya Line:
+// Калужско-Рижская линия:
 
 data.CoordinatesList[5] = [
 	[55.887231, 37.661511, -10, 152],
@@ -299,34 +285,34 @@ data.CoordinatesList[5] = [
 	[55.600986, 37.554099, -7, 220]
 ];
 data.NamesList[5] = [
-	[['Medvedkovo', 1978]],
-	[['Babushkinskaya', 1978]],
-	[['Sviblovo', 1978]],
-	[['Botanicheskiy Sad, KRL', 1978]],
-	[['VSKhV', 1958], ['VDNKh', 1959]],
-	[['Mir', 1958], ['Shcherbakovskaya', 1966], ['Alexeyevskaya', 1990]],
-	[['Rizhskaya', 1958]],
-	[['Botanicheskiy Sad, KRL', 1958], ['Prospekt Mira, KRL', 1966]],
-	[['Kolkhoznaya', 1972], ['Sukharevskaya', 1990]],
-	[['Turgenevskaya', 1972]],
-	[['Ploshchad Nogina, KRL', 1971], ['Kitay-Gorod, KRL', 1990]],
-	[['Novokuznetskaya', 1971], ['Tretyakovskaya, KRL', 1983]],
-	[['Oktyabrskaya, KRL', 1962]],
-	[['Shabolovskaya', 1980]],
-	[['Leninskiy Prospekt', 1962]],
-	[['Akademicheskaya', 1962]],
-	[['Profsoyuznaya', 1962]],
-	[['Noviye Cheryomushki', 1962]],
-	[['Kaluzhskaya', 1964], ['Kaluzhskaya', 1974]],
-	[['Belyayevo', 1974]],
-	[['Konkovo', 1987]],
-	[['Tyoplyi Stan', 1987]],
-	[['Yasenevo', 1990]],
-	[['Bitsevsky Park', 1990], ['Novoyasenevskaya', 2008]]
+	[['Медведково', 1978]],
+	[['Бабушкинская', 1978]],
+	[['Свиблово', 1978]],
+	[['Ботанический сад, КРЛ', 1978]],
+	[['ВСХВ', 1958], ['ВДНХ', 1959]],
+	[['Мир', 1958], ['Щербаковская', 1966], ['Алексеевская', 1990]],
+	[['Рижская', 1958]],
+	[['Ботанический сад, КРЛ', 1958], ['Проспект Мира, КРЛ', 1966]],
+	[['Колхозная', 1972], ['Сухаревская', 1990]],
+	[['Тургеневская', 1972]],
+	[['Площадь Ногина, КРЛ', 1971], ['Китай-город, КРЛ', 1990]],
+	[['Новокузнецкая', 1971], ['Третьяковская, КРЛ', 1983]],
+	[['Октябрьская, КРЛ', 1962]],
+	[['Шаболовская', 1980]],
+	[['Ленинский проспект', 1962]],
+	[['Академическая', 1962]],
+	[['Профсоюзная', 1962]],
+	[['Новые Черемушки', 1962]],
+	[['Калужская', 1964], ['Калужская', 1974]],
+	[['Беляево', 1974]],
+	[['Коньково', 1987]],
+	[['Теплый стан', 1987]],
+	[['Ясенево', 1990]],
+	[['Битцевский парк', 1990], ['Новоясеневская', 2008]]
 ];
 data.ClassesList[5] = "L5";
 
-// Tagansko-Krasnopresnenskaya Line:
+// Таганско-Краснопресненская линия:
 
 data.CoordinatesList[6] = [
 	[55.860647, 37.436497, -6, 172],
@@ -354,33 +340,33 @@ data.CoordinatesList[6] = [
 	[55.674300, 37.858200, -15, 132]
 ];
 data.NamesList[6] = [
-	[['Planernaya', 1975]],
-	[['Skhodnenskaya', 1975]],
-	[['Tushinskaya', 1975]],
-	[['Spartak', 2014]],
-	[['Shchukinskaya', 1975]],
-	[['Oktyabrskoye Pole', 1972]],
-	[['Polezhaevskaya', 1972]],
-	[['Begovaya', 1972]],
-	[['Ulitsa 1905 Goda', 1972]],
-	[['Barrikadnaya', 1972]],
-	[['Pushkinskaya', 1975]],
-	[['Kuznetsky Most', 1975]],
-	[['Ploshchad Nogina, TKL', 1971], ['Kitay-Gorod, TKL', 1990]],
-	[['Taganskaya, TKL', 1966]],
-	[['Proletarskaya', 1966]],
-	[['Volgogradsky Prospekt', 1966]],
-	[['Tekstilshchiki', 1966]],
-	[['Kuzminki', 1966]],
-	[['Ryazanskiy Prospekt', 1966]],
-	[['Zhdanovskaya', 1966], ['Vykhino', 1989]],
-	[['Lermontovsky Prospekt', 2013]],
-	[['Zhulebino', 2013]],
-	[['Kotelniki', 2015]]
+	[['Планерная', 1975]],
+	[['Сходненская', 1975]],
+	[['Тушинская', 1975]],
+	[['Спартак', 2014]],
+	[['Щукинская', 1975]],
+	[['Октябрьское поле', 1972]],
+	[['Полежаевская', 1972]],
+	[['Беговая', 1972]],
+	[['Улица 1905 года', 1972]],
+	[['Баррикадная', 1972]],
+	[['Пушкинская', 1975]],
+	[['Кузнецкий мост', 1975]],
+	[['Площадь Ногина, ТКЛ', 1971], ['Китай-город, ТКЛ', 1990]],
+	[['Таганская, ТКЛ', 1966]],
+	[['Пролетарская', 1966]],
+	[['Волгоградский проспект', 1966]],
+	[['Текстильщики', 1966]],
+	[['Кузьминки', 1966]],
+	[['Рязанский проспект', 1966]],
+	[['Ждановская', 1966], ['Выхино', 1989]],
+	[['Лермонтовский проспект', 2013]],
+	[['Жулебино', 2013]],
+	[['Котельники', 2015]]
 ];
 data.ClassesList[6] = "L6";
 
-// Kalininskaya Line:
+// Калининская линия:
 
 data.CoordinatesList[7] = [
 	[55.740941, 37.627604, -46, 128],
@@ -393,18 +379,18 @@ data.CoordinatesList[7] = [
 	[55.745108, 37.863957, -9, 156]
 ];
 data.NamesList[7] = [
-	[['Tretyakovskaya, KLL', 1986]],
-	[['Marksistskaya', 1979]],
-	[['Ploshchad Ilicha', 1979]],
-	[['Aviamotornaya', 1979]],
-	[['Shosse Entuziastov, KLL', 1979]],
-	[['Perovo', 1979]],
-	[['Novogireevo', 1979]],
-	[['Novokosino', 2012]]
+	[['Третьяковская, КЛЛ', 1986]],
+	[['Марксистская', 1979]],
+	[['Площадь Ильича', 1979]],
+	[['Авиамоторная', 1979]],
+	[['Шоссе Энтузиастов, КЛЛ', 1979]],
+	[['Перово', 1979]],
+	[['Новогиреево', 1979]],
+	[['Новокосино', 2012]]
 ];
 data.ClassesList[7] = "L7";
 
-// Kalininskaya-Solntsevskaya Line:
+// Калининско-Солнцевская линия:
 
 data.CoordinatesList[8] = [
 	[55.633983, 37.334934, -12, 184],
@@ -427,35 +413,35 @@ data.CoordinatesList[8] = [
 	[55.792329, 37.586392, -65, 165]
 ];
 data.NamesList[8] = [
-	[['Rasskazovka', 2018]],
-	[['Novoperedelkino', 2018]],
-	[['Borovskoe Shosse', 2018]],
-	[['Solntsevo', 2018]],
-	[['Govorovo', 2018]],
-	[['Ozernaya', 2018]],
-	[['Michurinskiy Prospekt', 2018]],
-	[['Ramenki', 2017]],
-	[['Lomonosovskiy Prospekt', 2017]],
-	[['Minskaya', 2017]],
-	[['Park Pobedy, KSL', 2014]],
-	[['Delovoy Tsentr, KSL', 2014, 2018]],
+	[['Рассказовка', 2018]],
+	[['Новопеределкино', 2018]],
+	[['Боровское шоссе', 2018]],
+	[['Солнцево', 2018]],
+	[['Говорово', 2018]],
+	[['Озёрная', 2018]],
+	[['Мичуринский проспект', 2018]],
+	[['Раменки', 2017]],
+	[['Ломоносовский проспект', 2017]],
+	[['Минская', 2017]],
+	[['Парк Победы, КСЛ', 2014]],
+	[['Деловой центр, КСЛ', 2014, 2018]],
 	[['', 2018]],
-	[['Shelepikha, KSL', 2018]],
-	[['Khoroshevskaya, KSL', 2018]],
-	[['CSKA, KSL', 2018]],
-	[['Petrovsky Park, KSL', 2018]],
-	[['Savyolovskaya, KSL', 2018]]
+	[['Шелепиха, КСЛ', 2018]],
+	[['Хорошёвская, КСЛ', 2018]],
+	[['ЦСКА, КСЛ', 2018]],
+	[['Петровский парк, КСЛ', 2018]],
+	[['Савеловская, КСЛ', 2018]]
 ];
 data.ClassesList[8] = "L7";
 
-// Serpukhovsko-Timiryazevskaya Line:
+// Серпуховско-Тимирязевская линия:
 
 data.CoordinatesList[9] = [
 	[55.897962, 37.587184, -9, 169],
 	[55.883762, 37.60327, -10, 154],
 	[55.863311, 37.604754, -9, 144],
 	[55.847322, 37.590071, -11, 157],
-	[55.834903, 37.574803, -61, 166],
+	[55.834912, 37.575012, -61, 166],
 	[55.817875, 37.576339, -64, 164],
 	[55.807228, 37.581511, -59, 169],
 	[55.793367, 37.587604, -52, 163],
@@ -478,35 +464,35 @@ data.CoordinatesList[9] = [
 	[55.569657, 37.577156, -10, 169]
 ];
 data.NamesList[9] = [
-	[['Altufyevo', 1994]],
-	[['Bibirevo', 1992]],
-	[['Otradnoye', 1991]],
-	[['Vladykino, STL', 1991]],
-	[['Petrovsko-Razumovskaya, STL', 1991]],
-	[['Timiryazevskaya', 1991]],
-	[['Dmitrovskaya', 1991]],
-	[['Savyolovskaya, STL', 1988]],
-	[['Mendeleyevskaya', 1988]],
-	[['Tsvetnoy Bulvar', 1988]],
-	[['Chekhovskaya', 1987]],
-	[['Borovitskaya', 1986]],
-	[['Polyanka', 1986]],
-	[['Serpukhovskaya', 1983]],
-	[['Tulskaya', 1983]],
-	[['Nagatinskaya', 1983]],
-	[['Nagornaya', 1983]],
-	[['Nakhimovsky Prospekt', 1983]],
-	[['Sevastopolskaya', 1983]],
-	[['Chertanovskaya', 1983]],
-	[['Yuzhnaya', 1983]],
-	[['Prazhskaya', 1985]],
-	[['Ulitsa Akademika Yangelya', 2000]],
-	[['Annino', 2001]],
-	[['Bulvar Dmitriya Donskogo', 2002]]
+	[['Алтуфьево', 1994]],
+	[['Бибирево', 1992]],
+	[['Отрадное', 1991]],
+	[['Владыкино, СТЛ', 1991]],
+	[['Петровско-Разумовская, СТЛ', 1991]],
+	[['Тимирязевская', 1991]],
+	[['Дмитровская', 1991]],
+	[['Савеловская, СТЛ', 1988]],
+	[['Менделеевская', 1988]],
+	[['Цветной бульвар', 1988]],
+	[['Чеховская', 1987]],
+	[['Боровицкая', 1986]],
+	[['Полянка', 1986]],
+	[['Серпуховская', 1983]],
+	[['Тульская', 1983]],
+	[['Нагатинская', 1983]],
+	[['Нагорная', 1983]],
+	[['Нахимовский проспект', 1983]],
+	[['Севастопольская', 1983]],
+	[['Чертановская', 1983]],
+	[['Южная', 1983]],
+	[['Пражская', 1985]],
+	[['Улица Академика Янгеля', 2000]],
+	[['Аннино', 2001]],
+	[['Бульвар Дмитрия Донского', 2002]]
 ];
 data.ClassesList[9] = "L8";
 
-// Lyublinsko-Dmitrovskaya Line:
+// Люблинско-Дмитровская линия:
 
 data.CoordinatesList[10] = [
 	[55.866719, 37.547101, -20, 164],
@@ -534,33 +520,33 @@ data.CoordinatesList[10] = [
 	[55.612452, 37.745183, -14, 159]
 ];
 data.NamesList[10] = [
-	[['Seligerskaya', 2018]],
-	[['Verkhnie Likhobory', 2018]],
-	[['Okruzhnaya, LDL', 2018]],
-	[['Petrovsko-Razumovskaya, LDL', 2016]],
-	[['Fonvizinskaya', 2016]],
-	[['Butyrskaya', 2016]],
-	[['Maryina Roshcha', 2010]],
-	[['Dostoyevskaya', 2010]],
-	[['Trubnaya', 2007]],
-	[['Sretensky Bulvar', 2007]],
-	[['Chkalovskaya', 1995]],
-	[['Rimskaya', 1995]],
-	[['Krestyanskaya Zastava', 1995]],
-	[['Dubrovka, LDL', 1999]],
-	[['Kozhukhovskaya', 1995]],
-	[['Pechatniki', 1995]],
-	[['Volzhskaya', 1995]],
-	[['Lyublino', 1996]],
-	[['Bratislavskaya', 1996]],
-	[['Maryino', 1996]],
-	[['Borisovo', 2011]],
-	[['Shipilovskaya', 2011]],
-	[['Zyablikovo', 2011]]
+	[['Селигерская', 2018]],
+	[['Верхние Лихоборы', 2018]],
+	[['Окружная, ЛДЛ', 2018]],
+	[['Петровско-Разумовская, ЛДЛ', 2016]],
+	[['Фонвизинская', 2016]],
+	[['Бутырская', 2016]],
+	[['Марьина Роща', 2010]],
+	[['Достоевская', 2010]],
+	[['Трубная', 2007]],
+	[['Сретенский бульвар', 2007]],
+	[['Чкаловская', 1995]],
+	[['Римская', 1995]],
+	[['Крестьянская Застава', 1995]],
+	[['Дубровка, ЛДЛ', 1999]],
+	[['Кожуховская', 1995]],
+	[['Печатники', 1995]],
+	[['Волжская', 1995]],
+	[['Люблино', 1996]],
+	[['Братиславская', 1996]],
+	[['Марьино', 1996]],
+	[['Борисово', 2011]],
+	[['Шипиловская', 2011]],
+	[['Зябликово', 2011]]
 ];
 data.ClassesList[10] = "L9";
 
-// Kakhovskaya Line:
+// Каховская линия:
 
 data.CoordinatesList[11] = [
 	[55.652992, 37.59828, -8, 193],
@@ -568,13 +554,13 @@ data.CoordinatesList[11] = [
 	[55.655139, 37.648626, -7, 170]
 ];
 data.NamesList[11] = [
-	[['Kakhovskaya', 1969, 2019], ['Kakhovskaya', 2021]],
-	[['Varshavskaya', 1969]],
-	[['Kashirskaya, KHL', 1969]]
+	[['Каховская', 1969, 2019], ['Каховская', 2021]],
+	[['Варшавская', 1969]],
+	[['Каширская, КХЛ', 1969]]
 ];
 data.ClassesList[11] = "L10";
 
-// Butovskaya Light Metro Line (above ground):
+// Бутовская линия:
 
 data.CoordinatesList[12] = [
 	[55.599956, 37.556875, -9.5, 220],
@@ -586,17 +572,17 @@ data.CoordinatesList[12] = [
 	[55.538019, 37.516059, 10, 168]
 ];
 data.NamesList[12] = [
-	[['Bitsevsky Park', 2014]],
-	[['Lesoparkovaya', 2014]],
-	[['Ulitsa Starokachalovskaya', 2003]],
-	[['Ulitsa Skobelevskaya', 2003]],
-	[['Bulvar Admirala Ushakova', 2003]],
-	[['Ulitsa Gorchakova', 2003]],
-	[['Buninskaya Alleya', 2003]]
+	[['Битцевский парк', 2014]],
+	[['Лесопарковая', 2014]],
+	[['Улица Старокачаловская', 2003]],
+	[['Улица Скобелевская', 2003]],
+	[['Бульвар Адмирала Ушакова', 2003]],
+	[['Улица Горчакова', 2003]],
+	[['Бунинская Аллея', 2003]]
 ];
 data.ClassesList[12] = "L11";
 
-// Monorail Line (above ground):
+// Монорельс:
 
 data.CoordinatesList[13] = [
 	[55.818993, 37.578693, 6, 163],
@@ -607,16 +593,17 @@ data.CoordinatesList[13] = [
 	[55.829233, 37.644906, 6, 139]
 ];
 data.NamesList[13] = [
-	[['Timiryazevskaya, M', 2004]],
-	[['Ul. Milashenkova', 2004]],
-	[['Teletsentr', 2004]],
-	[['Ul. Akademika Korolyova', 2004]],
-	[['Vystavochy Tsentr', 2004]],
-	[['Ul. Sergeya Eyzenshteyna', 2004]]
+	[['Тимирязевская, М', 2004]],
+	[['Ул. Милашенкова', 2004]],
+	[['Телецентр', 2004]],
+	[['Ул. Академика Королева', 2004]],
+	[['Выставочный центр', 2004]],
+	[['Ул. Сергея Эйзенштейна', 2004]]
 ];
 data.ClassesList[13] = "M";
 
-// Moscow Central Ring:
+
+// Московское центральное кольцо:
 
 data.CoordinatesList[14] = [
 	[55.777087, 37.507381, 0, 143],
@@ -653,42 +640,42 @@ data.CoordinatesList[14] = [
 	[55.777087, 37.507381, 0, 143]
 ];
 data.NamesList[14] = [
-	[['Khoroshevo', 2016]],
-	[['Zorge', 2016]],
-	[['Panfilovskaya', 2016]],
-	[['Streshnevo', 2016]],
-	[['Baltiyskaya', 2016]],
-	[['Koptevo', 2016]],
-	[['Likhobory', 2016]],
-	[['Okruzhnaya, MCC', 2016]],
-	[['Vladykino, MCC', 2016]],
-	[['Botanicheskiy Sad, MCC', 2016]],
-	[['Rostokino', 2016]],
-	[['Belokamennaya', 2016]],
-	[['Bulvar Rokossovskogo, MCC', 2016]],
-	[['Lokomotiv', 2016]],
-	[['Izmaylovo', 2016]],
-	[['Sokolinaya Gora', 2016]],
-	[['Shosse Entuziastov, MCC', 2016]],
-	[['Andronovka', 2016]],
-	[['Nizhegorodskaya', 2016]],
-	[['Novokhokhlovskaya', 2016]],
-	[['Ugreshskaya', 2016]],
-	[['Dubrovka, MCC', 2016]],
-	[['Avtozavodskaya, MCC', 2016]],
-	[['ZIL', 2016]],
-	[['Verkhnie Kotly', 2016]],
-	[['Krymskaya', 2016]],
-	[['Ploshchad Gagarina', 2016]],
-	[['Luzhniki', 2016]],
-	[['Kutuzovskaya, MCC', 2016]],
-	[['Delovoy Tsentr, MCC', 2016]],
-	[['Shelepikha, MCC', 2016]],
+	[['Хорошёво', 2016]],
+	[['Зорге', 2016]],
+	[['Панфиловская', 2016]],
+	[['Стрешнево', 2016]],
+	[['Балтийская', 2016]],
+	[['Коптево', 2016]],
+	[['Лихоборы', 2016]],
+	[['Окружная, МЦК', 2016]],
+	[['Владыкино, МЦК', 2016]],
+	[['Ботанический сад, МЦК', 2016]],
+	[['Ростокино', 2016]],
+	[['Белокаменная', 2016]],
+	[['Бульвар Рокоссовского, МЦК', 2016]],
+	[['Локомотив', 2016]],
+	[['Измайлово', 2016]],
+	[['Соколиная гора', 2016]],
+	[['Шоссе Энтузиастов, МЦК', 2016]],
+	[['Андроновка', 2016]],
+	[['Нижегородская', 2016]],
+	[['Новохохловская', 2016]],
+	[['Угрешская', 2016]],
+	[['Дубровка, МЦК', 2016]],
+	[['Автозаводская, МЦК', 2016]],
+	[['ЗИЛ', 2016]],
+	[['Верхние Котлы', 2016]],
+	[['Крымская', 2016]],
+	[['Площадь Гагарина', 2016]],
+	[['Лужники', 2016]],
+	[['Кутузовская, МЦК', 2016]],
+	[['Деловой центр, МЦК', 2016]],
+	[['Шелепиха, МЦК', 2016]],
 	[['', 2016]]
 ];
 data.ClassesList[14] = "L12";
 
-// Big Ring Line together with Kalininsko-Solntsevskaya Line:
+// Большая кольцевая линия вместе с Калининско-Солнцевской:
 
 data.CoordinatesList[15] = [
 	[55.757227, 37.523965, -18, 139],
@@ -698,15 +685,15 @@ data.CoordinatesList[15] = [
 	[55.792329, 37.586392, -65, 165]
 ];
 data.NamesList[15] = [
-	[['Shelepikha, BRL', 2018]],
-	[['Khoroshevskaya, BRL', 2018]],
-	[['CSKA, BRL', 2018]],
-	[['Petrovsky Park, BRL', 2018]],
-	[['Savyolovskaya, BRL', 2018]]
+	[['Шелепиха, БКЛ', 2018]],
+	[['Хорошёвская, БКЛ', 2018]],
+	[['ЦСКА, БКЛ', 2018]],
+	[['Петровский парк, БКЛ', 2018]],
+	[['Савеловская, БКЛ', 2018]]
 ];
 data.ClassesList[15] = "L13";
 
-// Big Ring Line:
+// Большая кольцевая линия:
 
 data.CoordinatesList[16] = [
 	[55.757227, 37.523965, -18, 139],
@@ -714,11 +701,11 @@ data.CoordinatesList[16] = [
 ];
 data.NamesList[16] = [
 	[['', 2018]],
-	[['Delovoy Tsentr, BRL', 2018]]
+	[['Деловой центр, БКЛ', 2018]]
 ];
 data.ClassesList[16] = "L10";
 
-// Nekrasovskaya Line:
+// Некрасовская линия:
 
 data.CoordinatesList[17] = [
 	[55.703433, 37.851233, -27, 141],
@@ -727,105 +714,102 @@ data.CoordinatesList[17] = [
 	[55.702853, 37.928294, -16, 126]
 ];
 data.NamesList[17] = [
-	[['Kosino', 2019]],
-	[['Ulitsa Dmitriyevskogo', 2019]],
-	[['Lukhmanovskaya', 2019]],
-	[['Nekrasovka', 2019]]
+	[['Косино', 2019]],
+	[['Улица Дмитриевского', 2019]],
+	[['Лухмановская', 2019]],
+	[['Некрасовка', 2019]]
 ];
 data.ClassesList[17] = "L14";
 
-// Interchanges:
-/* 
-	Pairs of stations making interchanges. 
-	Stations are identified by their latest names.
-*/
+// Пересадки:
+// (задаются попарно, станции идентифицируются по именам в настоящий момент времени)
 
 data.Interchanges = [
-	// Inside the Ring Line:
-	['Teatralnaya', 'Okhotny Ryad'],
-	['Arbatskaya, APL', 'Biblioteka Imeni Lenina'],
-	['Arbatskaya, APL', 'Borovitskaya'],
-	['Biblioteka Imeni Lenina', 'Borovitskaya'],
-	['Alexandrovsky Sad', 'Biblioteka Imeni Lenina'],
-	['Alexandrovsky Sad', 'Arbatskaya, APL'],
-	['Teatralnaya', 'Ploshchad Revolyutsii'],
-	['Turgenevskaya', 'Chistiye Prudy'],
-	['Turgenevskaya', 'Sretensky Bulvar'],
-	['Chistiye Prudy', 'Sretensky Bulvar'],
-	['Tretyakovskaya, KRL', 'Novokuznetskaya'],
-	['Tretyakovskaya, KRL', 'Tretyakovskaya, KLL'],
-	['Tretyakovskaya, KLL', 'Novokuznetskaya'],
-	['Pushkinskaya', 'Tverskaya'],
-	['Pushkinskaya', 'Chekhovskaya'],
-	['Tverskaya', 'Chekhovskaya'],
-	['Tsvetnoy Bulvar', 'Trubnaya'],
-	['Kuznetsky Most', 'Lubyanka'],
-	['Kitay-Gorod, TKL', 'Kitay-Gorod, KRL'],
-	// On the Ring Line:
-	['Park Kultury, KL', 'Park Kultury, SL'],
-	['Komsomolskaya, KL', 'Komsomolskaya, SL'],
-	['Belorusskaya, KL', 'Belorusskaya, ZL'],
-	['Paveletskaya, KL', 'Paveletskaya, ZL'],
-	['Kiyevskaya, KL', 'Kiyevskaya, APL'],
-	['Kiyevskaya, KL', 'Kiyevskaya, FL'],
-	['Kiyevskaya, APL', 'Kiyevskaya, FL'],
-	['Kurskaya, KL', 'Kurskaya, APL'],
-	['Kurskaya, KL', 'Chkalovskaya'],
-	['Kurskaya, APL', 'Chkalovskaya'],
-	['Prospekt Mira, KL', 'Prospekt Mira, KRL'],
-	['Oktyabrskaya, KRL', 'Oktyabrskaya, KL'],
-	['Dobryninskaya', 'Serpukhovskaya'],
-	['Krasnopresnenskaya', 'Barrikadnaya'],
-	['Novoslobodskaya', 'Mendeleyevskaya'],
-	['Taganskaya, KL', 'Taganskaya, TKL'],
-	['Taganskaya, KL', 'Marksistskaya'],
-	['Taganskaya, TKL', 'Marksistskaya'],
-	// Outside the Ring Line:
-	['Kuntsevskaya, FL', 'Kuntsevskaya, APL'],
-	['Rimskaya', 'Ploshchad Ilicha'],
-	['Krestyanskaya Zastava', 'Proletarskaya'],
-	['Krasnogvardeyskaya', 'Zyablikovo'],
-	['Kakhovskaya', 'Sevastopolskaya'],
-	['Kashirskaya, ZL', 'Kashirskaya, KHL'],
-	['Ulitsa Starokachalovskaya', 'Bulvar Dmitriya Donskogo'],
-	['Vystavochnaya', 'Delovoy Tsentr, KSL'],
-	['Park Pobedy, APL', 'Park Pobedy, KSL'],
-	['Novoyasenevskaya', 'Bitsevsky Park'],
-	['Petrovsko-Razumovskaya, STL', 'Petrovsko-Razumovskaya, LDL'],
-	['Lermontovsky Prospekt', 'Kosino'],
-	// On Monorail:
-	['Timiryazevskaya, M', 'Timiryazevskaya'],
-	['Ul. Milashenkova', 'Fonvizinskaya'],
-	['Vystavochy Tsentr', 'VDNKh'],
-	// On the Moscow Central Ring:
-	['Khoroshevo', 'Polezhaevskaya'],
-	['Khoroshevskaya, KSL', 'Polezhaevskaya'],
-	['Khoroshevskaya, KSL', 'Khoroshevo'],
-	['Panfilovskaya', 'Oktyabrskoye Pole'],
-	['Baltiyskaya', 'Voykovskaya'],
-	['Vladykino, MCC', 'Vladykino, STL'],
-	['Botanicheskiy Sad, MCC', 'Botanicheskiy Sad, KRL'],
-	['Bulvar Rokossovskogo, MCC', 'Bulvar Rokossovskogo, SL'],
-	['Lokomotiv', 'Cherkizovskaya'],
-	['Izmaylovo', 'Partizanskaya'],
-	['Shosse Entuziastov, MCC', 'Shosse Entuziastov, KLL'],
-	['Dubrovka, MCC', 'Dubrovka, LDL'],
-	['Avtozavodskaya, MCC', 'Avtozavodskaya, ZL'],
-	['Verkhnie Kotly', 'Nagatinskaya'],
-	['Ploshchad Gagarina', 'Leninskiy Prospekt'],
-	['Luzhniki', 'Sportivnaya'],
-	['Kutuzovskaya, MCC', 'Kutuzovskaya, FL'],
-	['Delovoy Tsentr, MCC', 'Mezhdunarodnaya'],
-	['Shelepikha, MCC', 'Shelepikha, KSL'],
-	['Okruzhnaya, MCC', 'Okruzhnaya, LDL'],
-	// On the Big Ring Line:
-	['Savyolovskaya, BRL', 'Savyolovskaya, KSL'],
-	['Savyolovskaya, KSL', 'Savyolovskaya, STL'],
-	['Petrovsky Park, KSL', 'Dinamo'],
-	['Petrovsky Park, BRL', 'Petrovsky Park, KSL'],
-	['CSKA, BRL', 'CSKA, KSL'],
-	['Khoroshevskaya, BRL', 'Khoroshevskaya, KSL'],
-	['Shelepikha, BRL', 'Shelepikha, KSL'],
-	['Delovoy Tsentr, BRL', 'Vystavochnaya'],
-	['Delovoy Tsentr, BRL', 'Delovoy Tsentr, KSL']
+	// Внутри Кольцевой линии:
+	['Театральная', 'Охотный ряд'],
+	['Арбатская, АПЛ', 'Библиотека имени Ленина'],
+	['Арбатская, АПЛ', 'Боровицкая'],
+	['Библиотека имени Ленина', 'Боровицкая'],
+	['Александровский сад', 'Библиотека имени Ленина'],
+	['Александровский сад', 'Арбатская, АПЛ'],
+	['Театральная', 'Площадь революции'],
+	['Тургеневская', 'Чистые пруды'],
+	['Тургеневская', 'Сретенский бульвар'],
+	['Чистые пруды', 'Сретенский бульвар'],
+	['Третьяковская, КРЛ', 'Новокузнецкая'],
+	['Третьяковская, КРЛ', 'Третьяковская, КЛЛ'],
+	['Третьяковская, КЛЛ', 'Новокузнецкая'],
+	['Пушкинская', 'Тверская'],
+	['Пушкинская', 'Чеховская'],
+	['Тверская', 'Чеховская'],
+	['Цветной бульвар', 'Трубная'],
+	['Кузнецкий мост', 'Лубянка'],
+	['Китай-город, ТКЛ', 'Китай-город, КРЛ'],
+	// На Кольцевой линии:
+	['Парк Культуры, КЛ', 'Парк Культуры, СЛ'],
+	['Комсомольская, КЛ', 'Комсомольская, СЛ'],
+	['Белорусская, КЛ', 'Белорусская, ЗЛ'],
+	['Павелецкая, КЛ', 'Павелецкая, ЗЛ'],
+	['Киевская, КЛ', 'Киевская, АПЛ'],
+	['Киевская, КЛ', 'Киевская, ФЛ'],
+	['Киевская, АПЛ', 'Киевская, ФЛ'],
+	['Курская, КЛ', 'Курская, АПЛ'],
+	['Курская, КЛ', 'Чкаловская'],
+	['Курская, АПЛ', 'Чкаловская'],
+	['Проспект Мира, КЛ', 'Проспект Мира, КРЛ'],
+	['Октябрьская, КРЛ', 'Октябрьская, КЛ'],
+	['Добрынинская', 'Серпуховская'],
+	['Краснопресненская', 'Баррикадная'],
+	['Новослободская', 'Менделеевская'],
+	['Таганская, КЛ', 'Таганская, ТКЛ'],
+	['Таганская, КЛ', 'Марксистская'],
+	['Таганская, ТКЛ', 'Марксистская'],
+	// Вне Кольцевой линии:
+	['Кунцевская, ФЛ', 'Кунцевская, АПЛ'],
+	['Римская', 'Площадь Ильича'],
+	['Крестьянская Застава', 'Пролетарская'],
+	['Красногвардейская', 'Зябликово'],
+	['Каховская', 'Севастопольская'],
+	['Каширская, ЗЛ', 'Каширская, КХЛ'],
+	['Улица Старокачаловская', 'Бульвар Дмитрия Донского'],
+	['Выставочная', 'Деловой центр, КСЛ'],
+	['Парк Победы, АПЛ', 'Парк Победы, КСЛ'],
+	['Новоясеневская', 'Битцевский парк'],
+	['Петровско-Разумовская, СТЛ', 'Петровско-Разумовская, ЛДЛ'],
+	['Лермонтовский проспект', 'Косино'],
+	// На Монорельсе:
+	['Тимирязевская, М', 'Тимирязевская'],
+	['Ул. Милашенкова', 'Фонвизинская'],
+	['Выставочный центр', 'ВДНХ'],
+	// На Московском центральном кольце:
+	['Хорошёво', 'Полежаевская'],
+	['Хорошёвская, КСЛ', 'Полежаевская'],
+	['Хорошёвская, КСЛ', 'Хорошёво'],
+	['Панфиловская', 'Октябрьское поле'],
+	['Балтийская', 'Войковская'],
+	['Владыкино, МЦК', 'Владыкино, СТЛ'],
+	['Ботанический сад, МЦК', 'Ботанический сад, КРЛ'],
+	['Бульвар Рокоссовского, МЦК', 'Бульвар Рокоссовского, СЛ'],
+	['Локомотив', 'Черкизовская'],
+	['Измайлово', 'Партизанская'],
+	['Шоссе Энтузиастов, МЦК', 'Шоссе Энтузиастов, КЛЛ'],
+	['Дубровка, МЦК', 'Дубровка, ЛДЛ'],
+	['Автозаводская, МЦК', 'Автозаводская, ЗЛ'],
+	['Верхние Котлы', 'Нагатинская'],
+	['Площадь Гагарина', 'Ленинский проспект'],
+	['Лужники', 'Спортивная'],
+	['Кутузовская, МЦК', 'Кутузовская, ФЛ'],
+	['Деловой центр, МЦК', 'Международная'],
+	['Шелепиха, МЦК', 'Шелепиха, КСЛ'],
+	['Окружная, МЦК', 'Окружная, ЛДЛ'],
+	// На Большой кольцевой линии:
+	['Савеловская, БКЛ', 'Савеловская, КСЛ'],
+	['Савеловская, КСЛ', 'Савеловская, СТЛ'],
+	['Петровский парк, КСЛ', 'Динамо'],
+	['Петровский парк, БКЛ', 'Петровский парк, КСЛ'],
+	['ЦСКА, БКЛ', 'ЦСКА, КСЛ'],
+	['Хорошёвская, БКЛ', 'Хорошёвская, КСЛ'],
+	['Шелепиха, БКЛ', 'Шелепиха, КСЛ'],
+	['Деловой центр, БКЛ', 'Выставочная'],
+	['Деловой центр, БКЛ', 'Деловой центр, КСЛ']
 ];
