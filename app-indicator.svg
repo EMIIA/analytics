@@ -48,9 +48,9 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="13.4375"
-     inkscape:cx="28.032341"
-     inkscape:cy="7.1230821"
+     inkscape:zoom="9.5017474"
+     inkscape:cx="38.652829"
+     inkscape:cy="-0.65744735"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
@@ -61,10 +61,11 @@
      id="path2-7"
      d="m 5.9741584,2.4547006 c -2.4390705,0 -4.4163278,1.9772574 -4.4163278,4.4163283 v 6.6244901 c 0,2.439071 1.9772573,4.416328 4.4163278,4.416328 h 6.6244906 c 2.439071,0 4.416328,-1.977257 4.416328,-4.416328 V 6.8710289 c 0,-2.4390709 -1.977257,-4.4163283 -4.416328,-4.4163283 z" />
   <path
-     style="fill:#c82323;fill-opacity:1;stroke-width:0.888372"
-     d="m 19.335163,3.3348839 a 2.6651165,2.6651165 0 1 1 -5.330233,0 2.6651165,2.6651165 0 0 1 5.330233,0 z"
+     style="fill:#c82323;fill-opacity:1;stroke:#c82323;stroke-width:0.942143;stroke-opacity:1"
+     d="m 19.684673,3.5230821 a 2.826429,2.8264297 0 1 1 -5.652858,0 2.826429,2.8264297 0 0 1 5.652858,0 z"
      id="path6950" />
   <g
+     transform="matrix(1.0605272,0,0,1.0605275,-0.7649801,0.04215996)"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.73798px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#ffffff;fill-opacity:1;stroke-width:0.888372"
      id="text7564"
      aria-label="2">
