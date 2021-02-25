@@ -1,8 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   
-   height="250.639"
-   width="250.615997">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="250" height="250" viewBox="0 0 250 250" >
+
 
   <path
      id="path2"
@@ -14,6 +11,10 @@
        values="#ffffff; white; #d7d7d7; white"
        dur="2s" />
   </path>
+  
+  
+  
+  
   <path
      id="path4"
      fill="#ffffff"
@@ -25,6 +26,12 @@
        values="white; white; #d7d7d7; #ffffff"
        dur="3s" />
   </path>
+  
+  
+  
+  
+  
+  
   <path
      id="path6"
      d="m 40.20307,36.738618 a 4.992,4.992 0 0 1 -4.986,4.986 4.991,4.991 0 0 1 -4.986,-4.986 4.991,4.991 0 0 1 4.986,-4.985 4.992,4.992 0 0 1 4.986,4.985 z m -8.019,0 a 3.036,3.036 0 0 0 3.033,3.034 3.037,3.037 0 0 0 3.033,-3.034 3.036,3.036 0 0 0 -3.033,-3.033 3.036,3.036 0 0 0 -3.033,3.033 z">
@@ -46,6 +53,5 @@
      begin="0s"
      dur="10s" />
   
-
 
 </svg>
