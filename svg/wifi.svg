@@ -1,0 +1,58 @@
+ <svg  xmlns="http://www.w3.org/2000/svg"
+        width="200"
+        height="200"
+        preserveAspectRatio="xMidYMid"
+        viewBox="0 0 100 100"
+      >
+      
+      
+      <style>
+        .outer {
+    stroke-dashoffset:0;
+    animation: rotate 2s linear infinite;
+  }
+
+.inner {
+    animation: reverseRotate 2s linear infinite;
+  }
+
+ @keyframes rotate {
+    100% {
+      stroke-dashoffset:126px;
+    }
+  }
+
+  @keyframes reverseRotate {
+    100% {
+      stroke-dashoffset:-55px;
+    }
+  }
+
+svg{border:0px solid}
+    </style>
+    
+    
+        <circle
+          class='outer'
+          cx="50"
+          cy="50"
+          r="40"
+          fill="none"
+          stroke="#374a67"
+          stroke-dasharray="63"
+          stroke-linecap="round"
+          stroke-width="4"
+        />
+        <circle
+          class='inner'
+          cx="50"
+          cy="50"
+          r="35"
+          fill="none"
+          stroke="#d50000"
+          stroke-dasharray="55"
+          stroke-dashoffset="55"
+          stroke-linecap="round"
+          stroke-width="4"
+        />
+      </svg>
