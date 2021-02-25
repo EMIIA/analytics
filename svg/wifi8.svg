@@ -1,22 +1,16 @@
-<svg width="46px" height="46px" viewBox="0 0 60 60
-" version="1.1">
+<svg width="40px" height="40px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
 
 
-    
+
+    <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
+    <title>loader01 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-    
-    
-    
         <g id="Group-3" sketch:type="MSLayerGroup" fill="#4990E2">
             <rect id="Rectangle-1" sketch:type="MSShapeGroup" x="16.5873418" y="0" width="3" height="9.13705584"></rect>
-            
-            
             <rect id="Rectangle-2" fill-opacity="0.58" sketch:type="MSShapeGroup" x="16.678481" y="26.8629442" width="3" height="9.13705584"></rect>
-            
-            
             <rect id="Rectangle-4" fill-opacity="0.79" sketch:type="MSShapeGroup" transform="translate(31.530380, 17.954315) rotate(-270.000000) translate(-31.530380, -17.954315) " x="30.0303797" y="13.3857868" width="3" height="9.13705584"></rect>
-            
-           
             <rect id="Rectangle-3" fill-opacity="0.37" sketch:type="MSShapeGroup" transform="translate(4.735443, 18.045685) rotate(-270.000000) translate(-4.735443, -18.045685) " x="3.23544304" y="13.4771574" width="3" height="9.13705584"></rect>
             <rect id="Rectangle-4" fill-opacity="0.72" sketch:type="MSShapeGroup" transform="translate(29.758244, 24.676171) rotate(-240.000000) translate(-29.758244, -24.676171) " x="28.2582441" y="20.1076435" width="3" height="9.13705584"></rect>
             <rect id="Rectangle-3" fill-opacity="0.3" sketch:type="MSShapeGroup" transform="translate(6.507579, 11.323829) rotate(-240.000000) translate(-6.507579, -11.323829) " x="5.00757864" y="6.75530065" width="3" height="9.13705584"></rect>
@@ -39,18 +33,7 @@
     
     
     
-    
-      <g id="Page-2"
-     transform="matrix(0.88749905,0,0,0.85674568,80.916334,-7.2475878)"
-     style="stroke:#000000;stroke-width:2.09938707;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
-     
-    <path
-    
-    
-           style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.09938707;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000"
-
-       d="m -64.055251,67.837213 c 4.162715,-4.191748 9.32138,-9.391833 12.323425,-12.349454 4.563925,-4.642106 8.049215,-8.691281 9.56125,-12.776677 0.82766,-2.236271 1.206655,-4.431572 1.290495,-6.557793 0.005,-0.11823 0.003,-0.236483 0.0112,-0.35404 0.14969,-2.252505 -0.0367,-4.242811 -0.374895,-6.133147 -2.118245,-11.838393 -12.461305,-19.009346 -22.30523,-18.986119 -5.57198,0.01314 -11.190295,1.930542 -15.69425,5.839115 -2.270275,1.970161 -4.26285,4.451871 -5.675875,7.297811 -1.289595,2.597344 -2.096499,5.498064 -2.191175,8.590174 -0.11325,3.698729 0.103998,8.488595 2.239744,12.777949 0.42451,0.852572 0.924816,1.68537 1.513386,2.485895 0.437594,0.595179 1.457415,1.840209 1.939066,2.434279 1.971216,2.431307 3.71307,4.196941 6.009159,6.544863 3.269187,3.342987 6.491565,6.816125 11.35362,11.187144 z" />
-  </g>
+    <path id="path5471-7" fill="none" stroke="#000" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="2.199" d="M29.863 16.06v11.36m-12.289-4.597v4.659m6.113-8.136v8.136"/><g id="g906" stroke="#000" stroke-dasharray="none" stroke-miterlimit="4" stroke-opacity="1" stroke-width="2.099" transform="matrix(.8875 0 0 .85675 80.916 -7.248)"><path id="path892" style="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1" fill="none" fill-opacity="1" fill-rule="nonzero" stroke="#000" stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="2.099" d="M-64.055 67.837c4.162-4.192 9.321-9.392 12.323-12.35 4.564-4.641 8.05-8.69 9.561-12.776a21.13 21.13 0 0 0 1.29-6.558c.006-.118.004-.236.012-.354.15-2.252-.037-4.243-.375-6.133-2.118-11.838-12.461-19.01-22.305-18.986-5.572.013-11.19 1.93-15.694 5.84-2.27 1.97-4.263 4.451-5.676 7.297-1.29 2.597-2.097 5.498-2.191 8.59-.114 3.699.104 8.489 2.24 12.778.424.853.924 1.685 1.513 2.486.437.595 1.457 1.84 1.939 2.434 1.971 2.432 3.713 4.197 6.009 6.545 3.27 3.343 6.492 6.816 11.354 11.187z" baseline-shift="baseline" clip-rule="nonzero" color="#000" color-interpolation="sRGB" color-interpolation-filters="linearRGB" color-rendering="auto" direction="ltr" display="inline" dominant-baseline="auto" font-family="sans-serif" font-size="medium" font-stretch="normal" font-style="normal" font-variant="normal" font-weight="400" image-rendering="auto" letter-spacing="normal" overflow="visible" paint-order="markers fill stroke" shape-rendering="auto" stop-color="#000" text-anchor="start" text-decoration="none" text-rendering="auto" vector-effect="none" visibility="visible" word-spacing="normal" writing-mode="lr-tb"/></g>
     
     
     
