@@ -1,22 +1,37 @@
-var viewer;
+const ApiHost = 'https://jsfiddle-forge-backend.herokuapp.com';
+const $viewer = $('#viewer');
+const $models = $('#models');
 
-function viewit(modelName, lightPreset) {
-    var config3d = {
-          extensions: ['Autodesk.Viewing.WebVR']
-      };
-    var options = {
-        'document' : modelName, 
-         'env':'Local', 
-        };
-    var viewerElement = document.getElementById('viewer');
-    viewer = new Autodesk.Viewing.Private.GuiViewer3D(viewerElement, {});
+async function populateModels() {
+  try {
+    const resp = await fetch(`${ApiHost}/api/models`);
+    const models = await resp.json();
+    $models.append(models.map(model => $(`<option value="${model.urn}">${model.name}</option>`)));
+  } catch (err) {
+    $viewer.addClass('error').text(err);
+  }
+}
 
-    Autodesk.Viewing.Initializer(options,function() {
-        viewer.initialize();
-        viewer.load(options.document);
-        viewer.setLightPreset(lightPreset);
-   viewer.loadExtension('Autodesk.Viewing.WebVR', Autodesk.Viewing.createViewerConfig());
-    });
-} 
+async function getAccessToken(callback) {
+  try {
+    const resp = await fetch(`${ApiHost}/api/token`);
+    if (!resp.ok) {
+      throw new Error(await resp.text());
+    }
+    const auth = await resp.json();
+    callback(auth.access_token, auth.expires_in);
+  } catch (err) {
+    $viewer.addClass('error').text(err);
+  }
+}
 
-viewit( "https://kevinvandecar.github.io/assets/x-wing_max/svf/xwing.SVF", 7);
+async function run() {
+  await populateModels();
+  const utils = await Autodesk.Viewing.Utilities.Initialize($viewer[0], getAccessToken);
+  utils.load($models.val());
+  $models.on('change', function() {
+    utils.load($models.val());
+  });
+}
+
+run();
