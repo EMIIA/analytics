@@ -12,8 +12,8 @@ html {
 
 #models {
   position: absolute;
-  left: 1em;
-  top: 1em;
+  left: 0em;
+  top: 0em;
   z-index: 1;
 }
 
