@@ -1,0 +1,23 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+#viewer {
+  height: 100%;
+  z-index: 0;
+}
+
+#models {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  z-index: 1;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
