@@ -457,7 +457,7 @@ code {
   background-image: url(../assets/ic_modelviewer_red.svg);
 }
 .icon-modelviewer-black {
-  background-image: url(../assets/ic_modelviewer.svg);
+  background-image: url(../assets/ic_modelviewer.svg); 
 }
 
 .lockup {
@@ -625,7 +625,7 @@ paper-button {
   margin-top: var(--grouping-title-margin-top);
   position: sticky;
   top: 0;
-  background: white;
+  background: #F8F9FA;
   padding: 14px 0 12px 0;
   border-bottom: var(--border-style);
   z-index: 100;
