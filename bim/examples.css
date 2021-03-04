@@ -71,6 +71,7 @@
   transition-timing-function: linear;
 }
 
+
 .header {
   background-image: linear-gradient(to right, #F8F9FA, rgba(255, 255, 255, 0.9));
   padding: 10px 20px 10px 40px;
@@ -369,6 +370,7 @@ model-viewer:focus {
   justify-content: center;
   border: 0px solid #555;
   box-sizing: border-box;
+  background-color: #F8F9FA;
 }
 
 .background-demo {
@@ -381,6 +383,7 @@ model-viewer:focus {
   justify-content: center;
   border: 0px solid #555;
   box-sizing: border-box;
+  background-color: #F8F9FA;
 }
 
 .examples-container > .sample > .demo {
@@ -411,6 +414,7 @@ model-viewer:focus {
   margin-left: auto;
   margin-right: auto;
   overflow-x: auto;
+  background-color: #F8F9FA;
 }
 
 .sample .quick-start-example pre {
@@ -523,6 +527,7 @@ code {
   left: 0;
   right: 0;
   z-index: 1000;
+  background-color: #F8F9FA;
 }
 
 .center {
