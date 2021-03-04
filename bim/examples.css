@@ -425,9 +425,11 @@ model-viewer:focus {
   z-index: 1000;
   margin: 16px;
   background-color: rgba(0,0,0,.5);
+  background-color: #F8F9FA;
 }
 .content pre {
   background-color: rgba(0,0,0,.04);
+  background-color: #F8F9FA;
 }
 
 pre,
@@ -500,6 +502,7 @@ code {
   grid-area: content;
   position: relative;
   padding-top: 20px;
+  background-color: #F8F9FA;
 }
 
 .wrapper {
@@ -771,6 +774,7 @@ paper-button {
     justify-content: center;
     border: 0px solid #555;
     box-sizing: border-box;
+    background-color: #F8F9FA;
   }
   
   .examples-container > .sample > #demo-container-1 {
@@ -849,7 +853,7 @@ paper-button {
     position: relative;
     height: 76vh;
     flex-direction: column-reverse;
-    background-color: #455A64;
+    background-color: #F8F9FA;
   }
   .index {
     width: 48px;
