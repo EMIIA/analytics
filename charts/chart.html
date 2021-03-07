@@ -1,0 +1,204 @@
+<html lang='fr'>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Updating Highcharts Dynamically">
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <title>Fetching and updating Highcharts dynamically</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            color: black;
+            padding: 20px;
+            margin: 0 auto;
+            overflow-x: hidden;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3>Fetching and updating Highcharts dynamically</h3>
+    <p style="text-align: center;margin-top:0px;">Example : ISS Position</p>
+
+    <div style="text-align: center">
+
+        <p style="opacity:0.7;font-size:14px;">
+            Latitude : <span id="lat"></span>°
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            Longitude : <span id="lon"></span>°
+        </p>
+
+    </div>
+
+    <br />
+
+    <div id="container_live_data" style="width: 100%; height: 400px; margin: 0 auto;"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+    <script>
+        const api_url = 'https://api.wheretheiss.at/v1/satellites/25544';
+
+        async function getISS() {
+            const response = await fetch(api_url);
+            const data = await response.json();
+            const {
+                latitude,
+                longitude
+            } = data;
+
+            document.getElementById('lat').textContent = latitude.toFixed(1);
+            document.getElementById('lon').textContent = longitude.toFixed(3);
+        }
+
+        getISS();
+
+        //To update Position on map
+        setInterval(getISS, 1000);
+    </script>
+
+    <script>
+        $(document).ready(function() {
+
+            const chart_live_data = new Highcharts.Chart({
+
+                chart: {
+                    renderTo: 'container_live_data',
+
+                    style: {
+                        fontFamily: 'Quicksand'
+                    },
+
+                    events: {
+                        load: function() {
+
+                            // removing series
+                            var series = this.series[0];
+
+                            setInterval(function() {
+                                series.data[0].remove(true);
+                            }, 3000);
+
+                        }
+                    },
+
+                },
+
+                credits: {
+                    enabled: false
+                },
+
+                navigation: {
+                    buttonOptions: {
+                        enabled: false,
+                    }
+                },
+
+                title: {
+                    text: ' ',
+                    /*
+                    style: {
+                        color: 'grey',
+                        fontSize: '16px'
+                    }
+                    */
+                },
+
+                xAxis: {
+                    // categories: ['TEST 1', 'TEST 2'],
+                    title: {
+                        text: 'Latitude',
+                        
+                        style: {
+                            color: 'grey',
+                            fontSize: '16px'
+                        },
+                        
+                    }
+                },
+
+
+                yAxis: {
+                    // gridLineWidth: 0,
+                    gridLineColor: 'transparent',
+                    
+                    labels: {
+                        style: {
+                            color: 'grey',
+                            fontSize: '14px'
+                        }
+                    },
+                    
+                    title: {
+                        text: 'Longitude',
+                        
+                        style: {
+                            color: 'grey',
+                            fontSize: '16px'
+                        },
+                        
+                    }
+                },
+                
+                series: [{
+                    showInLegend: false,
+                    color: '#333',
+                    /*
+                    negativeColor: '#7ac1ff',
+                    */
+                    tooltip: {
+
+                        headerFormat: '',
+                        pointFormat: 'Latitude : {point.x}° - Longitude : {point.y}°',
+
+                    },
+                    cursor: 'pointer',
+                    type: 'line',
+                    name: 'ISS Position',
+                    dataLabels: {
+                        enabled: true,
+                        /*
+                        format: '{point.name}'
+                        */
+
+                    },
+                }],
+            });
+
+            function updateData() {
+                setInterval(function() {
+
+                    var get_newLongitude = $('#lon').text();
+                    var get_newLongitude_bis = parseFloat(get_newLongitude);
+                    // console.log(get_newLongitude_bis)
+
+                    var get_newLatitude = $('#lat').text();
+                    var get_newLatitude_bis = parseFloat(get_newLatitude);
+                    // console.log(get_newLatitude_bis)
+
+                    chart_live_data.series[0].addPoint([get_newLatitude_bis, get_newLongitude_bis]);
+
+                }, 1000);
+            };
+            updateData();
+
+        });
+    </script>
+
+    <script>
+        // setInterval('window.location.reload()', 60000);
+    </script>
+
+</body></html>
