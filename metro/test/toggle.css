@@ -1,0 +1,33 @@
+.toggle {
+	display: inline-block;
+	position: relative;
+	width: 40px;
+	height: 20px;
+	background-color: rgba(224,224,224,0.8);
+	border-radius: 10px;
+	border: solid 1px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+.toggle.on {
+	background-color: rgba(112, 168, 241, 0.8); 
+}
+.toggle.off:after, .toggle.on:after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: white; /* rgb(68, 68, 68); */
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+.toggle.off:after {
+	left: 0;
+}
+.toggle.on:after {
+	left: 20px;
+}
+.toggle:after {
+	transition: left 0.1s ease-in 0s;
+}
