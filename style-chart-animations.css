@@ -20,7 +20,9 @@ font-family: Montserrat, "Montserrat";
   line-height: 1.2em;
   color: #3d434c;
   
-
+  min-height: 100vh;
+    margin: 0;
+  background: #efefef;
   
 }
 
