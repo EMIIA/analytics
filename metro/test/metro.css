@@ -150,7 +150,7 @@ sup { color: rgb(160,160,160); }
 	transition-duration: 0s;	
 }
 
-#L0 li { background-image: URL('hover.png'), URL('L0.png'); }
+#L0 li { background-image: URL('hover.png'), URL('L0.svg'); }
 #L0 span { background-color: #894e35; }
 
 #L1 li { background-image: URL('hover.png'), URL('L1.png'); }
