@@ -1,0 +1,451 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML>
+<HEAD>
+	<title>Модель Московского метро в 3D</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta content="3D-модель метро, трехмерная, схема линий метро" name="keywords">
+	<!--<meta name="viewport" content="width=690, initial-scale=1">-->
+	<meta property="og:image" content="http://varf.ru/metro3d/style/screenshot2.png"/>
+    
+    
+    
+	<link href="https://analytics.emiia.ai/metro/test/metro.css?v=20210225-6" rel="stylesheet" type="text/css">
+    
+    
+    
+    
+    
+	<script type="text/javascript" src="https://analytics.emiia.ai/metro/test/metro.min.js?v=20210227"></script>
+	<script type="text/javascript" src="https://analytics.emiia.ai/metro/test/data.js?v=20210226-1"></script>
+	<script type="text/javascript" src="https://analytics.emiia.ai/metro/test/throttle.js"></script>
+	<script type="text/javascript" src="https://analytics.emiia.ai/metro/test/tooltip.js"></script>
+	<script type="text/javascript" src="https://analytics.emiia.ai/metro/test/animate.js"></script>
+	<script type="text/javascript" src="https://analytics.emiia.ai/metro/test/get-params.js"></script>
+	<script type="text/javascript" src="https://analytics.emiia.ai/metro/test/get-css.js"></script>
+	<script type="text/javascript" src="https://analytics.emiia.ai/metro/test/mouse-motion-controller.js?v=20210301"></script>
+    
+    
+    
+    
+    
+	<link href=" https://varf.ru/metro3d/style/tooltip.css" rel="stylesheet" type="text/css">
+	<link href=" https://varf.ru/metro3d/style/toggle.css" rel="stylesheet" type="text/css">
+	<link href=" https://varf.ru/metro3d/style/night.css?v=20210223" rel="stylesheet" type="text/css">
+    
+
+</HEAD>
+<BODY>
+		<div id="lang">
+			<span>RU</span>
+			<a id="en" href="/?en=1">EN</a>
+        <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		</div>
+		
+	<h1>Модель Московского метро в 3D</h1>
+	
+	<h2><span data-tooltip="Для дисплея с физической<br>плотностью точек 96 dpi">Масштаб<sup>*</sup></span>: в 1 см &mdash; <span id="scale_coord">12.3 км</span> (по горизонтали), <span id="scale_depth">8 м</span> (в глубину)</h2>
+		
+	<div id="metro" class="noAnimation">
+		<a name="metro"></a>
+		
+		<a class="button" id="up" href="#metro"><span data-tooltip="Вращайте мышью с зажатой левой кнопкой">&uarr;</span></a>
+		<a class="button" id="down" href="#metro"><span data-tooltip="Вращайте мышью с зажатой левой кнопкой">&darr;</span></a>
+		<a class="button" id="left" href="#metro"><span data-tooltip="Вращайте мышью с зажатой левой кнопкой">&larr;</span></a>
+		<a class="button" id="right" href="#metro"><span data-tooltip="Вращайте мышью с зажатой левой кнопкой">&rarr;</span></a>
+		<a class="button" id="plus" href="#metro"><span data-tooltip="Масштабируйте мышью с зажатой правой кнопкой">+</span></a>
+		<a class="button" id="minus" href="#metro"><span data-tooltip="Масштабируйте мышью с зажатой правой кнопкой">&minus;</span></a>
+		<a class="button" id="flat" href="#metro"><span data-tooltip="Вид сверху">&#8962;<!--<span data-tooltip="Вид сверху">&#8597;</span><span data-tooltip="Вид сверху">&#8596;</span>--></span></a>
+		
+		<div id="select-year">
+			<h2>Год:</h2>
+			<select id="year">
+			</select>
+		</div>
+		
+		<div id="switches">
+			<span>Названия &nbsp;<span class="toggle on" id="captions"></span></span>
+			<span>Рельеф &nbsp;<span class="toggle on" id="terrain"></span></span>
+			<span>Свет &nbsp;<span class="toggle on" id="night"></span></span>
+			<!--<a id="animation" href="#">Анимация: ВКЛ</a>-->
+			<a id="scroll" href="#details">Подробнее&nbsp;<b>&darr;</b></a>
+		</div>
+		
+
+
+
+
+
+
+		</div>
+
+
+
+
+
+
+
+	
+	<script type="text/javascript">
+		// Создание метро:		
+		var MoscowMetro = new Metro('metro');
+		MoscowMetro.inputGetParams();						// ввод GET-параметров
+		for (var i=0; i<data.CoordinatesList.length; i++)	// создание линий, станций и тоннелей
+			MoscowMetro.addLine(data.CoordinatesList[i], data.NamesList[i], data.ClassesList[i]);
+		MoscowMetro.setInterchanges(data.Interchanges);		// создание пересадок
+		MoscowMetro.applyFilter();							// применение фильтра к станциям и тоннелям
+		
+		// Заполнение списка лет:
+		var years = document.getElementById('year');
+		var currentYear = (new Date()).getFullYear();
+		var selectedYear = MoscowMetro.filter.getSelectedYear();
+		for (var i=currentYear; i>=1935; i--) {
+			var option = document.createElement('option');
+			option.text = i;
+			option.value = i;
+			if (i == selectedYear) option.selected = true;
+			years.options.add(option);
+		}
+		// Изолирование выпадающего списка от события нажатия мыши:
+		years.onmousedown = function(e) {
+			if (!e) e = window.event;
+			if (e.stopPropagation) e.stopPropagation();
+			else e.cancelBubble = true;		
+		}
+
+		// Первая отрисовка:
+		var startDraw = new Date;
+		MoscowMetro.outputGetParams();
+		MoscowMetro.draw();
+		showScale();
+		
+		// Действия мышью:
+		var MetroRotation = new MouseMotionController(document.getElementById('metro'));
+		// Вращение:
+		MetroRotation.actionLeft = function(x1,y1, x2,y2) {
+			MoscowMetro.rotate(
+				-180*(x2-x1)/MoscowMetro.elemMetro.offsetWidth,
+				180*(y2-y1)/MoscowMetro.elemMetro.offsetHeight
+			);
+		}
+		// Масштабирование:
+		MetroRotation.actionRight = function(x1,y1, x2,y2) {
+			MoscowMetro.zoom(1+(y2-y1)/MoscowMetro.elemMetro.offsetHeight);
+			showScale();
+		}
+		// Выбор веток:
+		MetroRotation.actionClick = function(e) {
+			// Получение объекта события и цели:
+			var event = e || window.event;
+			var target = event.target || event.srcElement;
+			// Клик на станции либо туннеле - выбор ветки:
+			if ((target.tagName == 'LI' || target.tagName == 'SPAN') && target.parentNode.tagName == 'UL') {
+				var ULs = this.getElementsByTagName('UL');
+				var trans = '0.2';
+				// Обычный выбор:
+				if (!event.ctrlKey) {
+					for (var i=0; i<ULs.length; i++)
+						if (ULs[i] != target.parentNode) ULs[i].style.opacity = trans;
+					target.parentNode.style.opacity = '1';
+				}
+				// Ctrl-выбор:
+				else {
+					if (target.parentNode.style.opacity == '1') target.parentNode.style.opacity = trans;
+					else target.parentNode.style.opacity = '1';
+				}
+			}
+			// Клик в пустоте - снятие выбора веток:
+			if (target == this) {
+				var ULs = this.getElementsByTagName('UL');
+				for (var i=0; i<ULs.length; i++)
+					ULs[i].style.opacity = '1';
+			}	
+		}
+		// Обновление GET-параметров:
+		MetroRotation.actionUp = function(e) {
+			MoscowMetro.outputGetParams();
+		}
+
+				
+		// Управление кнопками:
+		var dAngle = 15;						// Приращение угла поворота (градусы)
+		var factorDistance = 1.1;				// Увеличение расстояния обзора (множитель)
+		var animationDuration = 500;			// Длительность анимации (задержка между вызовами управления, мс)
+		var frameDelay = new Date - startDraw;	// Интервал одного кадра анимации, мс
+		
+		// Вращение вверх:
+		document.getElementById('up').onclick = throttle(
+			function() {
+				animate({
+					duration: animationDuration,
+					delay: frameDelay,
+					delta: makeEaseInOut(quad),
+					from: MoscowMetro.camera.getAngles(),
+					step: function(progress) {
+						MoscowMetro.camera.setAngles(this.from.phi, Number(this.from.theta) - Number(progress*dAngle));
+						MoscowMetro.draw();
+					},
+					complete: MoscowMetro.outputGetParams
+				});
+			},
+			animationDuration, 
+			true
+		);
+		
+		// Вращение вниз:
+		document.getElementById('down').onclick = throttle(
+			function() {
+				animate({
+					duration: animationDuration,
+					delay: frameDelay,
+					delta: makeEaseInOut(quad),
+					from: MoscowMetro.camera.getAngles(),
+					step: function(progress) {
+						MoscowMetro.camera.setAngles(this.from.phi, Number(this.from.theta) + Number(progress*dAngle));
+						MoscowMetro.draw();
+					},
+					complete: MoscowMetro.outputGetParams
+				});
+			},
+			animationDuration, 
+			true
+		);
+		
+		// Вращение влево:
+		document.getElementById('left').onclick = throttle(
+			function() {
+				animate({
+					duration: animationDuration,
+					delay: frameDelay,
+					delta: makeEaseInOut(quad),
+					from: MoscowMetro.camera.getAngles(),
+					step: function(progress) {
+						MoscowMetro.camera.setAngles(Number(this.from.phi) + Number(progress*dAngle), this.from.theta);
+						MoscowMetro.draw();
+					},
+					complete: MoscowMetro.outputGetParams
+				});
+			},
+			animationDuration, 
+			true
+		);
+
+		// Вращение вправо:
+		document.getElementById('right').onclick = throttle(
+			function() {
+				animate({
+					duration: animationDuration,
+					delay: frameDelay,
+					delta: makeEaseInOut(quad),
+					from: MoscowMetro.camera.getAngles(),
+					step: function(progress) {
+						MoscowMetro.camera.setAngles(Number(this.from.phi) - Number(progress*dAngle), this.from.theta);
+						MoscowMetro.draw();
+					},
+					complete: MoscowMetro.outputGetParams
+				});
+			},
+			animationDuration, 
+			true
+		);
+
+		// Приближение:
+		document.getElementById('plus').onclick = throttle(
+			function() {
+				animate({
+					duration: animationDuration,
+					delay: frameDelay,
+					delta: makeEaseInOut(quad),
+					from: MoscowMetro.camera.getViewDistance(),
+					step: function(progress) {
+						MoscowMetro.camera.setViewDistance(this.from*(1 - progress*(1-1/factorDistance)));
+						MoscowMetro.draw();
+						showScale();
+					},
+					complete: MoscowMetro.outputGetParams
+				});
+			},
+			animationDuration, 
+			true
+		);
+
+		// Удаление:
+		document.getElementById('minus').onclick = throttle(
+			function() {
+				animate({
+					duration: animationDuration,
+					delay: frameDelay,
+					delta: makeEaseInOut(quad),
+					from: MoscowMetro.camera.getViewDistance(),
+					step: function(progress) {
+						MoscowMetro.camera.setViewDistance(this.from*(1 + progress*(factorDistance-1)));
+						MoscowMetro.draw();
+						showScale();
+					},
+					complete: MoscowMetro.outputGetParams
+				});
+			},
+			animationDuration, 
+			true
+		);
+		
+		// Вид сверху:
+		document.getElementById('flat').onclick = throttle(
+			function() {
+				animate({
+					duration: animationDuration,
+					delay: frameDelay,
+					delta: makeEaseInOut(quad),
+					from: MoscowMetro.camera.getAngles(),
+					step: function(progress) {
+						MoscowMetro.camera.setAngles(
+							Number(this.from.phi)   + Number(progress*(-90-this.from.phi)), 
+							Number(this.from.theta) + Number(progress*( 90-this.from.theta))
+						);
+						MoscowMetro.draw();
+					},
+					complete: MoscowMetro.outputGetParams
+				});
+			},
+			animationDuration, 
+			true
+		);
+		
+		// Переключатель английского языка:
+		document.getElementById('en').onclick = function() {
+			this.href = writeGetParams({en: 1}, {hardcode: true, noHash: true});
+			return true;
+		}
+		
+		// Переключатель убрать/показать названия:
+		document.getElementById('captions').onclick = function() { 
+			toggleClass(MoscowMetro.elemMetro, 'noCaptions'); 
+			if (this.className == 'toggle on') this.className = 'toggle off'
+			else this.className = 'toggle on'
+			return false; 
+		};
+		
+		// Переключатель убрать/показать рельеф местности:
+		document.getElementById('terrain').onclick = function() { 
+			if (MoscowMetro.geo.getShowTerrain() == 1) {
+				MoscowMetro.geo.setShowTerrain(0);
+			}
+			else {
+				MoscowMetro.geo.setShowTerrain(1);
+			} 
+			for (let i = 0; i < MoscowMetro.Lines.length; i++)
+				for (let j = 0; j < MoscowMetro.Lines[i].Stations.length; j++)
+					MoscowMetro.Lines[i].Stations[j].Coords = MoscowMetro.geo.geoCoords2XYZ(MoscowMetro.Lines[i].Stations[j].geoCoords);
+			MoscowMetro.camera.setDefaultAverageHeight();
+			MoscowMetro.draw();
+			if (this.className == 'toggle on') this.className = 'toggle off'
+			else this.className = 'toggle on'
+			return false; 
+		};
+/*		
+		// Переключатель убрать/показать анимацию (только для управления кнопками):
+		document.getElementById('animation').onclick = function() { 
+			if (animationDuration > 0) {
+				this.setAttribute('data-animation-duration', animationDuration);
+				animationDuration = 0;
+				this.innerHTML = 'Анимация: ВЫКЛ';
+			}
+			else {
+				animationDuration = parseInt(this.getAttribute('data-animation-duration'));
+				if (isNaN(animationDuration)) animationDuration = 0;
+				this.innerHTML = 'Анимация: ВКЛ';
+			}
+			return false; 
+		};
+*/		
+		// Переключатель выключить/включить свет:
+		document.getElementById('night').onclick = function() { 
+			toggleClass(document.body, 'night'); 
+			if (this.className == 'toggle on') this.className = 'toggle off'
+			else this.className = 'toggle on'
+			return false; 
+		};
+		
+		// Кнопки закрытия рекламы:
+		var adBannerClosers = document.getElementsByClassName('ad-banner-close');
+		for (var i=0; i < adBannerClosers.length; i++) { 
+			adBannerClosers[i].onclick = function() {
+				// Закрытие связанных баннеров, если они есть:
+				var linkedBanners = this.getAttribute('data-linked-banners');
+				if (linkedBanners) {
+					linkedBanners = linkedBanners.split(' ');
+					for (var k=0; k < linkedBanners.length; k++)  {
+						var adBanner = document.getElementById(linkedBanners[k]);
+						if (adBanner) adBanner.parentNode.removeChild(adBanner);
+					}
+				}
+				// Закрытие родительского баннера:
+				var adBanner = this.parentNode;
+				if (adBanner) adBanner.parentNode.removeChild(adBanner);
+			}
+		}
+					
+		// Автоматическое закрытие рекламы, если она не показывается: 
+		var adBanners = document.getElementsByClassName('ad-banner');
+		for (var i=0; i < adBanners.length; i++)
+			setTimeout(function(adBanner) {
+				if (parseInt(getComputedStyle(adBanner).height) == 0)
+					adBanner.parentNode.removeChild(adBanner);
+			}, 10000, adBanners[i]);
+					
+		// Выбор года:
+		document.getElementById('year').onchange = function() {
+			MoscowMetro.filter.setSelectedYear(this.value);
+			MoscowMetro.applyFilter();
+			MoscowMetro.outputGetParams();
+			MoscowMetro.draw();
+		}
+		document.getElementById('year').onkeyup = document.getElementById('year').onchange;
+		
+		// Изменение размеров окна:
+		window.onresize = function() { 
+			MoscowMetro.updateSize(); 
+			MoscowMetro.draw(); 
+			showScale(); 
+		};
+		
+		// Вывод масштаба:
+		function showScale() {
+			var destCoord = document.getElementById('scale_coord');
+			var destDepth = document.getElementById('scale_depth');
+			var scale = MoscowMetro.camera.getMetersPerCm(96);
+			destCoord.innerHTML = Math.round(scale[0]) + ' м';
+			destDepth.innerHTML = Math.round(scale[1]*10)/10 + ' м';
+		}
+		
+		// Добавление/удаление класса:
+		function toggleClass(elem, className) {
+			if (elem.className.includes(className)) 
+				elem.className = elem.className.split(className).join('');
+			else 
+				elem.className += ' ' + className;
+		}
+		
+		// Добавление/удаление класса с помощью переключателя:
+		function classOnOff(switchElem, targetElem, className, onText, offText) {
+			if (switchElem.innerHTML == onText) {
+				targetElem.className += ' ' + className;
+				switchElem.innerHTML = offText; 
+			}
+			else {
+				targetElem.className = targetElem.className.split(className).join('');
+				switchElem.innerHTML = onText; 
+			}
+		}
+	</script>
+	
+    
+		
+
+		
+
+</BODY>
+</HTML>
