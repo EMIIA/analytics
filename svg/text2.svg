@@ -1,0 +1,12 @@
+<svg width="600" height="400" viewBox="100 100 400 300">
+
+ <path id="pathChain" d="M100,200 C100,100 250,100 250,200 S 400,300 400,200" stroke="grey" fill="none"/>
+
+<text font-size="36"  font-family="Times New Roman" fill="grey" >
+<textPath id="result"    xlink:href="#pathChain">
+<tspan dx="0" > &#7441; </tspan> <tspan dx="-15">   &#45; </tspan><tspan dx="-15"> &#7441;</tspan><tspan dx="-15">   &#45;</tspan><tspan dx="-15">   &#7441; </tspan><tspan dx="-15">   &#45; </tspan><tspan dx="-15"> &#7441;</tspan><tspan dx="-15">   &#45;</tspan><tspan dx="-15">   &#7441; </tspan><tspan dx="-15">   &#45; </tspan><tspan dx="-15"> &#7441;</tspan><tspan dx="-15">   &#45;</tspan><tspan dx="-15">   &#7441; </tspan><tspan dx="-15">   &#45; </tspan><tspan dx="-15"> &#7441;</tspan><tspan dx="-15">   &#45;</tspan><tspan dx="-15">   &#7441; </tspan><tspan dx="-15">   &#45; </tspan><tspan dx="-15"> &#7441;</tspan><tspan dx="-15">   &#45;</tspan><tspan dx="-15">   &#7441; </tspan>
+<animate  dur="10s" repeatCount="2" attributeName="startOffset" values="1%;55%;1%"/> 
+</textPath>
+</text>				
+			
+</svg>  
