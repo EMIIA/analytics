@@ -21,7 +21,7 @@ width="50%" height="50%" viewBox="0 0 400 450">
 <text id="txt1" lengthAdjust="spacingAndGlyphs" textLength="700" font-size="24">
 <textPath id="result" method="align" spacing="auto" startOffset="1%" xlink:href="#path1">
 <tspan dy="-10">__________________</tspan>
-<animate  dur="4s" repeatCount="1" attributeName="startOffset" values="4%;54%"/ > 
+<animate  dur="4s" repeatCount="1" attributeName="startOffset" values="4%;54%" > 
 
 
 
