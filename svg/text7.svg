@@ -9,7 +9,7 @@
 <text style="font-size:1.41111px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
        xml:space="preserve">
 
-    <textpath xlink:href="#myPath" stroke="#000000">
+    <textpath href="#myPath" stroke="#000000">
       Text laid out along a path.
       
       <animate attributeName="startOffset" from="0%" to ="100%" begin="0s" dur="5s" repeatCount="indefinite" keyTimes="0;1" calcMode="spline" keySplines="0.1 0.2 .22 1"/>
