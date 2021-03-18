@@ -1,0 +1,16 @@
+<svg id="svg1" xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"  width="450" height="100" style="border:0px solid gray">
+  <g id="gr1">  
+   <!-- Рамка вокруг текста -->
+ <rect id="rect1" x="2" y="12" width="445" height="85"  fill="#1A2153"/>
+  <text id="txt1" x="6" y="75" font-size="60" stroke="white" fill="white" pointer-events="none" > Начальный текст Другой текст</text>
+  </g>
+      <!-- анимация первой половины фразы  -->
+   <!-- Вся фраза  передвигается влево и показывается вторая половина фразы -->
+    <animate xlink:href="#txt1" attributeName="x" begin="gr1.mouseover"  
+         to="-435" dur="0.2s"  calcMode="discrete" fill="freeze"/>
+		<!-- Возврат фразы в исходное состояние при отводе курсора -->
+		<animate xlink:href="#txt1" attributeName="x"  begin="gr1.mouseout"
+         to="5" dur="0.2s" calcMode="discrete" fill="freeze" /> 
+  
+</svg>
