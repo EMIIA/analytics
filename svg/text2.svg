@@ -1,10 +1,14 @@
-<svg viewBox="0 0 300 150">
-  <defs>
-    <path id="shape" d="M20,20H280V130H20Z" />
-  </defs>
-  <text>
-    <textPath xlink:href="#shape">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.
-      <animate attributeName="startOffset" from="-400" to="0" dur="10s" repeatCount="indefinite" />
-    </textPath>
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" 
+width="400px" height="40px" viewBox="0 0 400 40" >
+    <rect width="75%" height="100%" fill="#1A2153" />      
+	  <text
+       style="font-size:20px;fill:gold; stroke:yellow; font-family:Garamond"
+       x="0"
+       y="0">
+       <tspan x="20" y="50">Люблю грозу в начале мая,</tspan>
+       <tspan x="20" y="100">Когда весенний, первый гром,</tspan>
+       <tspan x="20" y="150">Как бы резвяся и играя,</tspan>
+       <tspan x="20" y="200">Грохочет в небе голубом.</tspan>
+    <animateMotion path="M 0 0 L 0 -200"  dur="6s" repeatCount="indefinite" />
+    </text>
 </svg>
