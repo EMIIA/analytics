@@ -1,0 +1,11 @@
+<svg id="svg1" xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"  width="450" height="100" style="border:0px solid gray">
+  
+  <rect x="2" y="12" width="445" height="85" fill="#1A2153"/>
+  <text x="5" y="75" font-size="60" stroke="yellow" fill="gold"> Начальный текст Другой текст
+     <!-- анимация первой половины фразы  -->
+   <!-- Вся фраза  передвигается влево и показывается вторая половина фразы -->
+	<animate  attributeName="x" begin="svg1.click" 
+         values="5;-435" dur="0.8s" repeatCount="1" fill="freeze"/>
+  </text>
+</svg>
