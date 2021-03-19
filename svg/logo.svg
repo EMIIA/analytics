@@ -1,0 +1,58 @@
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+
+<defs>  
+  <linearGradient id="logo-gradient" x1="50%" y1="0%" x2="50%" y2="100%" > 
+            
+    <stop offset="0%" stop-color="#009688">
+      <animate attributeName="stop-color" values="#009688; #99d5cf; #009688" dur="4s" repeatCount="indefinite"></animate>
+    </stop>
+    <stop offset="100%" stop-color="#99d5cf">
+      <animate attributeName="stop-color" values="#99d5cf; #009688; #99d5cf" dur="4s" repeatCount="indefinite"></animate>
+    </stop>
+
+  </linearGradient> 
+</defs>  
+  
+<path fill="url('#logo-gradient')" d="M99.9,69.5L99.9,69.5V69h-12v0.5v0c-0.1,3.4-1.8,6.5-4.3,8.5c-0.2,0.1-0.3,0.2-0.5,0.4
+	c-1.9,1.4-4.3,2.2-6.8,2.2H58.8V31.9c-0.6-8-5.3-14.8-11.9-18.5c-3.4-1.9-7.4-3-11.6-3H23.6c-4.2,0-8.2,1.1-11.6,3
+	C5.3,17.1,0.6,24.1,0,32.2C0,32.8,0,33.3,0,33.9c0,0.4,0,0.8,0.1,1.2c0.3,5.8,2.7,11.1,6.5,15.1C7,50.6,7.4,51,7.9,51.4
+	c-0.7,0.6-1.3,1.3-2,2C2.5,57.2,0.4,62.1,0,67.5C0,68,0,68.5,0,69c0,0.5,0,1,0.1,1.5c0.2,3.6,1.3,7,3,10c2,3.5,4.9,6.5,8.4,8.6
+	c3.5,2.1,7.7,3.4,12.1,3.4h52.8c4.5,0,8.6-1.2,12.1-3.4c3.5-2.1,6.4-5.1,8.4-8.6c0.4-0.7,0.8-1.4,1.1-2.2c1.1-2.4,1.7-5,1.9-7.8
+	C100,70.2,100,69.8,99.9,69.5C100,69.5,99.9,69.5,99.9,69.5z M23.6,80.5C17.2,80.5,12,75.4,12,69c0-6.4,5.2-11.6,11.6-11.6h23.2
+	l0,23.1H23.6z M23.6,45.4c-6.4,0-11.6-5.2-11.6-11.6c0-6.4,5.2-11.6,11.6-11.6h11.6c6.4,0,11.6,5.2,11.6,11.6l0,11.6H23.6z"/>
+  
+  
+<circle fill="url('#logo-gradient')" cx="94" cy="51.4" r="6">
+
+  <animate 
+  // achse der animation
+    attributeName="cy"
+  // anfang der animation
+    from="0"
+  // punkt des endes der animation
+    to="51.4"
+  // animationszeit
+    dur="3s"
+  // aktiviert die moeglichkeit mehr als von 0 zu 1 zu arbeiten
+    calcMode="spline"
+  // platzierung auf der zeitleiste anhand from zu to
+    values="51.4; 20; 55; 40; 55; 20; 51.4"
+  // zeitleiste
+    keyTimes="0; 0.3; 0.4; 0.5; 0.6; 0.7; 1"
+  // geschwindigkeit - css standarts darunter
+  // ease in 0.47, 0, 0.745, 0.715
+  // ease out 0.39, 0.575, 0.565, 1
+    keySplines="0.47, 0, 0.745, 0.715;
+                0.39, 0.575, 0.565, 1;
+                0.47, 0, 0.745, 0.715;
+                0.39, 0.575, 0.565, 1;
+                0.47, 0, 0.745, 0.715;
+                0.39, 0.575, 0.565, 1"
+  // loop
+    repeatCount="indefinite"
+  // id
+    id="circ-anim"
+  />
+</circle>
+</svg>
