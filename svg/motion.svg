@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="202"
+   height="96"
+   id="svg2">
+   
+   <style type="text/css">  
+      @keyframes move {  
+        from {  stroke-dashoffset: 0;  }  
+        to   {  stroke-dashoffset: 96;  }  
+      }  
+      @-moz-keyframes move {  
+        from {  stroke-dashoffset: 0;  }  
+        to   {  stroke-dashoffset: 96;  }  
+      }  
+      @-webkit-keyframes move {  
+        from {  stroke-dashoffset: 0;  }  
+        to   {  stroke-dashoffset: 96;  }  
+      }  
+  </style>
+  
+  <g id="layer1">
+    <path
+       d="m 201,16 -200,0"
+       id="path1"
+       style="stroke:#000000;stroke-width:30" />
+    <path
+       d="m 201,16 -200,0"
+       id="path2"
+       style="stroke:#ff0000;stroke-width:20" />
+    <path
+       d="m 201,16 -200,0"
+       id="path3"
+       style="stroke:#000000;stroke-width:16;stroke-dasharray:48, 48;
+  animation-duration: 3s;  
+  -moz-animation-duration: 3s;  
+  -webkit-animation-duration: 3s;  
+  animation-name: move; 
+  -moz-animation-name: move; 
+  -webkit-animation-name: move; 
+  animation-timing-function: linear; 
+  -moz-animation-timing-function: linear; 
+  -webkit-animation-timing-function: linear; 
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;  " />
+  </g>
+  <g id="layer2">
+    <path
+       d="m 1,80 200,0"
+       id="path21"
+       style="stroke:#000000;stroke-width:30" />
+    <path
+       d="m 1,80 200,0"
+       id="path22"
+       style="stroke:#0000ff;stroke-width:20" />
+    <path
+       d="m 1,80 200,0"
+       id="path23"
+       style="stroke:#0044ff;stroke-width:20;stroke-dasharray:0, 12, 72, 13;
+  animation-duration: 3s;  
+  -moz-animation-duration: 3s;  
+  -webkit-animation-duration: 3s;  
+  animation-name: move; 
+  -moz-animation-name: move; 
+  -webkit-animation-name: move; 
+  animation-timing-function: linear; 
+  -moz-animation-timing-function: linear; 
+  -webkit-animation-timing-function: linear; 
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;  " />
+    <path
+       d="m 1,80 200,0"
+       id="path23"
+       style="stroke:#0088ff;stroke-width:20;stroke-dasharray:0, 24, 48, 24;
+  animation-duration: 3s;  
+  -moz-animation-duration: 3s;  
+  -webkit-animation-duration: 3s;  
+  animation-name: move; 
+  -moz-animation-name: move; 
+  -webkit-animation-name: move; 
+  animation-timing-function: linear; 
+  -moz-animation-timing-function: linear; 
+  -webkit-animation-timing-function: linear; 
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;  " />
+    <path
+       d="m 1,80 200,0"
+       id="path23"
+       style="stroke:#00ccff;stroke-width:20;stroke-dasharray:0, 36, 24, 36;
+  animation-duration: 3s;  
+  -moz-animation-duration: 3s;  
+  -webkit-animation-duration: 3s;  
+  animation-name: move; 
+  -moz-animation-name: move; 
+  -webkit-animation-name: move; 
+  animation-timing-function: linear; 
+  -moz-animation-timing-function: linear; 
+  -webkit-animation-timing-function: linear; 
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;  " />
+    <path
+       d="m 1,80 200,0"
+       id="path23"
+       style="stroke:#00ffff;stroke-width:20;stroke-dasharray:0, 45, 6, 45;
+  animation-duration: 3s;  
+  -moz-animation-duration: 3s;  
+  -webkit-animation-duration: 3s;  
+  animation-name: move; 
+  -moz-animation-name: move; 
+  -webkit-animation-name: move; 
+  animation-timing-function: linear; 
+  -moz-animation-timing-function: linear; 
+  -webkit-animation-timing-function: linear; 
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;  " />
+  </g>
+</svg>
