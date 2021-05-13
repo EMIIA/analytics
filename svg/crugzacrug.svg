@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300px" height="200px">
+  <rect>
+    <animate id="o1" begin="0;o1.end" dur="10s"
+    attributeName="visibility" from="hide" to="hide"/>
+  </rect>
+  <circle fill="orange" cx="-50" cy="100" r="20">
+    <animate begin="o1.begin" 
+    attributeName="cx" from="250" to="50" dur="5.05s"/>
+  </circle>
+  <circle fill="blue" cx="150" cy="100" r="50" />
+  <circle fill="orange" cx="-50" cy="100" r="20">
+    <animate begin="o1.begin+5s" 
+    attributeName="cx" from="50" to="250" dur="5.05s"/>
+  </circle>
+</svg>
