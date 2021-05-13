@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 width="300px" height="200px" viewBox="0 0 685 310">
+  <defs>
+	  <path id="loop-normal" d="M 342.5,155 C 355,172.5 447,305 525,305 607,305 675,237 675,155 675,73 607,5 525,5 447,5 355,137.5 342.5,155 330,172.5 238,305 160,305 78,305 10,237 10,155 10,73 78,5 160,5 238,5 330,137.5 342.5,155 Z"/>
+
+    <!-- radial gradient has same color at constnnt distance from center,
+         regardless of direction-->
+	  <radialGradient id="fade" cx="0" cy="0" fx="0" fy="0" r="200" gradientUnits="userSpaceOnUse">
+	    <stop stop-color="#000" stop-opacity="1" offset="0" />
+      <!-- change offset to make faiding "tail" longer or shorter -->
+	    <stop stop-color="#000" stop-opacity="1" offset="0.6" />
+	    <stop stop-color="#000" stop-opacity="0" offset="1" />
+	  </radialGradient>
+
+    <!-- mask shows only stroked area of path. Stroke length must be longer
+         than gradient radius, as path can be curved-->
+	  <mask id="tail" maskUnits="userSpaceOnUse">
+      <use style="fill:none;stroke:#fff;stroke-width:6;stroke-dasharray:250 1664"
+           xlink:href="#loop-normal">
+        <animate attributeName="stroke-dashoffset" from="250" to="-1664"
+          	     dur="3s" repeatCount="indefinite"/>  
+      </use>
+	  </mask>
+  </defs>
+  <use style="fill:none;stroke:#ccc;stroke-width:6;"
+       xlink:href="#loop-normal" />
+
+  <!-- outer group makes sure mask is applied after animateMotion -->
+  <g style="mask:url(#tail)">
+    <!-- circle with gradient radius -->
+    <circle style="fill:url(#fade);" cx="0" cy="0" r="200"> 
+      <animateMotion keyPoints="0;1" keyTimes="0;1"
+                     dur="3s" repeatCount="indefinite">
+	      <mpath xlink:href="#loop-normal"/>
+      </animateMotion>
+    </circle>
+  </g>
+
+	<!-- leading dot circle -->
+  <circle style="fill:#000" cx="0" cy="0" r="7"> 
+	  <animateMotion keyPoints="0;1" keyTimes="0;1"
+	                 dur="3s" repeatCount="indefinite">
+		  <mpath xlink:href="#loop-normal"/>
+	  </animateMotion>
+	</circle>
+</svg>
