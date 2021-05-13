@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="400px" height="300px">
+    <style type="text/css">
+        <![CDATA[
+            text {
+                font-size: 14px;
+            }
+            .back {
+                stroke: #ccc;
+                stroke-width: 1px;
+                fill:none;
+            }
+            .front {
+                stroke: #800;
+                stroke-width: 3px;
+                fill:none;
+            }
+        ]]>
+    </style>
+    <g transform="translate(10, 10)">
+        <g>
+            <path d="M0,30 L30,0 L60,30 S70,20 90,7 S120,10 120,30" class="back"></path>
+            <path d="M0,30 L30,0 L60,30 S70,20 90,7 S120,10 120,30" class="front" style="stroke-dasharray: 57, 173;"></path>
+            <text transform="translate(130, 20)">30% stroke-dasharray: 57, 173;</text>
+        </g>
+        <g transform="translate(0, 60)">
+            <path d="M0,30 L30,0 L60,30 S70,20 90,7 S120,10 120,30" class="back"></path>
+            <path d="M0,30 L30,0 L60,30 S70,20 90,7 S120,10 120,30" class="front" style="stroke-dasharray: 86.5, 173;"></path>
+            <text transform="translate(130, 20)">50% stroke-dasharray: 86.5, 173;</text>
+        </g>
+        <g transform="translate(0, 120)">
+            <path d="M0,30 L30,0 L60,30 S70,20 90,7 S120,10 120,30" class="back"></path>
+            <path d="M0,30 L30,0 L60,30 S70,20 90,7 S120,10 120,30" class="front" style="stroke-dasharray: 173, 173;"></path>
+            <text transform="translate(130, 20)">100% stroke-dasharray: 173, 173;</text>
+        </g>
+        <g transform="translate(0, 180)">
+            <path d="M0,30 L30,0 L60,30 S70,20 90,7 S120,10 120,30" class="back"></path>
+            <path d="M0,30 L30,0 L60,30 S70,20 90,7 S120,10 120,30" class="front" style="stroke-dasharray: 0, 173;">
+                <animate
+                    attributeName="stroke-dasharray"
+                    from="0, 173" to="173, 173"
+                    dur="3s"
+                    repeatCount="indefinite"/>
+            </path>
+        </g>
+    </g>
+</svg>
