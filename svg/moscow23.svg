@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="210" width="500">
+ <line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+ <line x1="150" y1="150" x2="200" y2="200" style="stroke:rgb(0, 0, 153);stroke-width:2">
+  <animateTransform attributeName="transform"
+      type="translate"
+      from="2 2"
+      to="-150 -150"
+      begin="0s"
+      dur="1s"
+      repeatCount="indefinite"
+    />
+ </line>
+ </svg>
