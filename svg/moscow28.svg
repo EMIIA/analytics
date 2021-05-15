@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="258" height="470" viewBox="-50 50 451.5 82.25">
+
+
+
+<path  d="M 104.11312,249.08602 C 42.999451,16.072809 42.964451,15.519565 42.964451,15.519565" fill="none" stroke="#000" stroke-width="3" stroke-dasharray="50" stroke-dashoffset="10">
+
+	 <animate id="p1" attributeName="stroke-dashoffset" begin="0s;f1.end+0s" values="2000;0;2000" dur="30s" 
+	 calcMode="linear"/>
+     
+	 <animate id="f1" attributeName="fill" begin="p1.end-0s" values="white; white; white" dur="0.01s"  
+	 calcMode="linear" />
+
+</path>
+
+
+
+<path  d="M 104.11312,249.08602 C 42.999451,16.072809 42.964451,15.519565 42.964451,15.519565" fill="none" stroke="#000" stroke-width="3" stroke-dasharray="50" stroke-dashoffset="10">
+
+	 <animate id="p1" attributeName="stroke-dashoffset" begin="0s;f1.end+0s" values="-2000;0;-2000" dur="30s" 
+	 calcMode="linear"/>
+     
+	 <animate id="f1" attributeName="fill" begin="p1.end-0s" values="white; white; white" dur="0.01s"  
+	 calcMode="linear" />
+
+</path>
+
+
+
+
+</svg>
