@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="210" width="500">
+
+
+ 
+ 
+<path id="loop-normal" d="M 104.11312,249.08602 C 42.999451,16.072809 42.964451,15.519565 42.964451,15.519565"
+
+        />
+       
+       
+       
+       <circle id="plug" class="circ" cx="0" cy="0" r="7"/> 
+	<animateMotion
+		xlink:href="#plug"
+	  	dur="10s"
+		rotate="auto"
+		repeatCount="indefinite"
+		calcMode="linear"
+		keyTimes="0;1"    
+		keyPoints="0;1">
+		<mpath xlink:href="#loop-normal"/>
+	</animateMotion> 
+    
+
+    
+ 
+</svg>
