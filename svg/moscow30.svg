@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="258" height="47" viewBox="-50 50 451.5 82.25">
+
+
+
+<path  d="M24.604 53.866v8.572h-60.96v25.188h49v8.679h-49v25.188h60.96v8.573H-44.93v-76.2z" fill="none" stroke="#3d85c6ff" stroke-width="1" stroke-dasharray="30" stroke-dashoffset="100">
+
+	 <animate id="p1" attributeName="stroke-dashoffset" begin="0s;f1.end+0s" values="2000;0;2000" dur="300s" 
+	 calcMode="linear"/>
+     
+</path>
+
+
+
+<path  d="M24.604 53.866v8.572h-60.96v25.188h49v8.679h-49v25.188h60.96v8.573H-44.93v-76.2z" fill="none" stroke="#bfbfc0ff" stroke-width="1" stroke-dasharray="30" stroke-dashoffset="100">
+
+	 <animate id="p1" attributeName="stroke-dashoffset" begin="0s;f1.end+0s" values="2000;0;2000" dur="200s" 
+	 calcMode="linear"/>
+     
+</path>
+
+
+
+<path  d="M24.604 53.866v8.572h-60.96v25.188h49v8.679h-49v25.188h60.96v8.573H-44.93v-76.2z" fill="none" stroke="#ff8e00ff" stroke-width="1" stroke-dasharray="40"  stroke-dasharray="30">
+
+	 <animate id="p1" attributeName="stroke-dashoffset" begin="0s;f1.end+0s" values="2000;0;2000" dur="180s" 
+	 calcMode="linear"/>
+     
+</path>
+
+
+
+
+<path  d="M24.604 53.866v8.572h-60.96v25.188h49v8.679h-49v25.188h60.96v8.573H-44.93v-76.2z" fill="none" stroke="#30c900ff" stroke-width="1" stroke-dasharray="10"  stroke-dasharray="30">
+
+	 <animate id="p1" attributeName="stroke-dashoffset" begin="0s;f1.end+0s" values="2000;0;2000" dur="250s" 
+	 calcMode="linear"/>
+     
+</path>
+
+
+
+</svg>
