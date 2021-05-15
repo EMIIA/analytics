@@ -1,79 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 508 285.75" height="500" width="600" xmlns:v="https://vecta.io/nano">
+<svg xmlns="http://www.w3.org/2000/svg" width="258" height="470" viewBox="-50 50 451.5 82.25">
 
 
 
-  
+<path  d="M250.033 1.053l-7.414 61.32c-5.07 35.593-4.562 35.413-6.16 60.459-.639 10.018 4.237 23.65 7.598 31.816 14.356 34.881 16.557 57.034 20.127 75.578l-1.768 14.766-2.408 18.26c-1.944 10.61-3.025 20.039-3.025 20.039l.262.029s1.081-9.419 3.023-20.02c.429-2.339 1.471-10.592 2.41-18.275l1.771-14.785.002-.021-.004-.02c-3.569-18.53-5.771-40.73-20.145-75.652-3.356-8.154-8.213-21.781-7.58-31.697 1.598-25.049 1.088-24.849 6.158-60.439 2.641-18.538 4.835-39.419 7.414-61.326l-.262-.031z" fill="none" stroke="#000" stroke-width="3" stroke-dasharray="50" stroke-dashoffset="10">
 
-
-     	  <path fill="url(#skyGradient)" id="loop-normal" d="M250.033 1.053l-7.414 61.32c-5.07 35.593-4.562 35.413-6.16 60.459-.639 10.018 4.237 23.65 7.598 31.816 14.356 34.881 16.557 57.034 20.127 75.578l-1.768 14.766-2.408 18.26c-1.944 10.61-3.025 20.039-3.025 20.039l.262.029s1.081-9.419 3.023-20.02c.429-2.339 1.471-10.592 2.41-18.275l1.771-14.785.002-.021-.004-.02c-3.569-18.53-5.771-40.73-20.145-75.652-3.356-8.154-8.213-21.781-7.58-31.697 1.598-25.049 1.088-24.849 6.158-60.439 2.641-18.538 4.835-39.419 7.414-61.326l-.262-.031z"/>
-          
-
-          
-      
-
-          
-
-
-    <!-- radial gradient has same color at constnnt distance from center,
-         regardless of direction-->
-	  <radialGradient id="fade" cx="0" cy="0" fx="0" fy="0" r="200" gradientUnits="userSpaceOnUse">
-	    <stop stop-color="#000" stop-opacity="1" offset="0" />
-      <!-- change offset to make faiding "tail" longer or shorter -->
-	    <stop stop-color="#000" stop-opacity="1" offset="0.6" />
-	    <stop stop-color="#000" stop-opacity="0" offset="1" />
-	  </radialGradient>
-
-
-
-  <use style="fill:none;stroke:#ccc;stroke-width:0;"
-       xlink:href="#loop-normal" />
-       
-
-       
-
-  <!-- outer group makes sure mask is applied after animateMotion -->
-  <g style="mask:url(#tail)">
-    <!-- circle with gradient radius -->
-    <circle style="fill:url(#fade);" cx="0" cy="0" r="5"> 
-    
-        <animate attributeName="r" from="0.9" to="25" dur="1s" begin="0s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" from="0.9" to="0" dur="1s" begin="0s" repeatCount="indefinite"/>
-    
-    
-      <animateMotion calcMode="linear"  id="a" dur="30s" repeatCount="indefinite" keyTimes="0;0.1;1" keyPoints="0;0.0;1" repeatCount="indefinite">
-	      <mpath xlink:href="#loop-normal"/>
-      </animateMotion>
-    </circle>
-  </g>
-  
- 
-    
- 
- 
-      <g
+	 <animate id="p1" attributeName="stroke-dashoffset" begin="1s;f1.end+0s" values="3000;0;3000" dur="50s" 
+	 calcMode="linear"/>
      
-     transform="matrix()">
+
+     
+
+
+</path>
+
+
+
+
+
+
+
+
+
+<path fill="url(#skyGradient)" d="M250.033 1.053l-7.414 61.32c-5.07 35.593-4.562 35.413-6.16 60.459-.639 10.018 4.237 23.65 7.598 31.816 14.356 34.881 16.557 57.034 20.127 75.578l-1.768 14.766-2.408 18.26c-1.944 10.61-3.025 20.039-3.025 20.039l.262.029s1.081-9.419 3.023-20.02c.429-2.339 1.471-10.592 2.41-18.275l1.771-14.785.002-.021-.004-.02c-3.569-18.53-5.771-40.73-20.145-75.652-3.356-8.154-8.213-21.781-7.58-31.697 1.598-25.049 1.088-24.849 6.158-60.439 2.641-18.538 4.835-39.419 7.414-61.326l-.262-.031z" fill="none" stroke="#000" stroke-width="3" stroke-dasharray="50" stroke-dashoffset="10">
+
+	 <animate id="p1" attributeName="stroke-dashoffset" begin="1s;f1.end+0s" values="-3000;0;-3000" dur="50s" 
+	 calcMode="linear"/>
+     
+
+     
+
      
      
-    <path style="fill:none;stroke-width:10;"
-       d="M250.033 1.053l-7.414 61.32c-5.07 35.593-4.562 35.413-6.16 60.459-.639 10.018 4.237 23.65 7.598 31.816 14.356 34.881 16.557 57.034 20.127 75.578l-1.768 14.766-2.408 18.26c-1.944 10.61-3.025 20.039-3.025 20.039l.262.029s1.081-9.419 3.023-20.02c.429-2.339 1.471-10.592 2.41-18.275l1.771-14.785.002-.021-.004-.02c-3.569-18.53-5.771-40.73-20.145-75.652-3.356-8.154-8.213-21.781-7.58-31.697 1.598-25.049 1.088-24.849 6.158-60.439 2.641-18.538 4.835-39.419 7.414-61.326l-.262-.031z" style="fill:none;stroke-width:100;">
-       
-       
-       
-             <animate dur="6s" values="#000000; #4e86b1; #d7d7d7; #000000" keyTimes="0; 0.5; 0.7; 1" attributeName="fill" repeatCount="indefinite" />
-  </path>
-       
-       
-  </g> 
-  
-  
-  
-          <circle style="fill:url(#fade);" cx="0" cy="0" r="5"> 
-    
-      <animateMotion calcMode="linear"  id="a" dur="30s" repeatCount="indefinite" keyTimes="0;0.1;1" keyPoints="0;0.0;1" repeatCount="indefinite">
-	      <mpath xlink:href="#loop-normal"/>
-      </animateMotion>
-    </circle> 
+     
+     
+
+</path>
+
+
+
+
+
+</svg>
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="258" height="47" viewBox="-50 50 451.5 82.25">
+
+
+
+<path  d="M24.604 53.866v8.572h-60.96v25.188h49v8.679h-49v25.188h60.96v8.573H-44.93v-76.2z" fill="none" stroke="#000" stroke-width="1" stroke-dasharray="10" stroke-dashoffset="100">
+
+	 <animate id="p1" attributeName="stroke-dashoffset" begin="0s;f1.end+0s" values="2000;0;2000" dur="300s" 
+	 calcMode="linear"/>
+     
+	 <animate id="f1" attributeName="fill" begin="p1.end-0s" values="white; white; white" dur="0.01s"  
+	 calcMode="linear" />
+
+</path>
 
 
 
