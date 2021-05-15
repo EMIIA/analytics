@@ -1,0 +1,20 @@
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="300px" height="200px" viewBox="0 0 300 200">
+
+
+<path id="p" stroke="#350" fill="none" stroke-width="5" d="M5,131.097c0,0,4-94,62-82s15,98,66,88	s1-92,44-95S228,71,233,90s30,27,34-0.102"/>
+
+
+<script> // вычисляем длину пути и присваиваем её параметрам
+   window.onload=function(){
+      var path = document.getElementById('p');
+      const length = path.getTotalLength();
+      path.style.strokeDasharray = length;
+      path.style.strokeDashoffset = length;
+   }
+</script>
+
+<style> /* анимируем путь по id */
+   #p { animation: strokeOffset 5s linear forwards; }
+   @keyframes strokeOffset { to { stroke-dashoffset: 0; } }
+</style>
+</svg>
