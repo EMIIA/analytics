@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="258" height="47" viewBox="-50 50 451.5 82.25">
+
+
+
+<path  d="M24.604 53.866v8.572h-60.96v25.188h49v8.679h-49v25.188h60.96v8.573H-44.93v-76.2z" fill="none" stroke="#3d85c67f" stroke-width="1" stroke-dasharray="20000" stroke-dashoffset="3000">
+
+	 <animate id="p1" attributeName="stroke-dashoffset" values="3000;0;3000" dur="350s" repeatCount="indefinite"
+	 calcMode="linear"/>
+     
+</path>
+
+
+
+<path  d="M24.604 53.866v8.572h-60.96v25.188h49v8.679h-49v25.188h60.96v8.573H-44.93v-76.2z" fill="none" stroke="#3d85c6cd" stroke-width="1" stroke-dasharray="20" stroke-dashoffset="130">
+
+	 <animate id="p1" attributeName="stroke-dashoffset" values="2000;0;2000" dur="280s" repeatCount="indefinite"
+	 calcMode="linear"/>
+     
+</path>
+
+
+<path  d="M24.604 53.866v8.572h-60.96v25.188h49v8.679h-49v25.188h60.96v8.573H-44.93v-76.2z" fill="none" stroke="#3d85c6ff" stroke-width="1" stroke-dasharray="10" stroke-dashoffset="150">
+
+	 <animate id="p1" attributeName="stroke-dashoffset" values="2000;0;2000" dur="260s" repeatCount="indefinite"
+	 />
+     
+</path>
+
+
+
+
+
+
+</svg>
