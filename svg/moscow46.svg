@@ -574,16 +574,6 @@
 
 
 
-
-        <circle  fill="#3d85c6" stroke="white" stroke-width="3" stroke-miterlimit="1"  cx="0" cy="0" r="10"> 
- 
-         <animateMotion calcMode="linear"  id="a" dur="30s"  repeatCount="indefinite"  
-        
-      path="M891.523,501.293c0,0-4.376-4.663-9.872-1.644
-		c-7.606,4.178-20.598,12.39-20.598,12.39s-8.921,7.591,2.848,8.539c5.109,0.411,25.117-0.091,26.355-7.47
-		C890.528,511.485,891.523,501.293,891.523,501.293z" />
-  
-  </circle>
   <circle cx="0" cy="0" fill="none" r="0" stroke="red" stroke-width="18">
   
     <animate attributeName="r" from="0.9" to="25" dur="1s" begin="0s" repeatCount="indefinite"/>
@@ -595,6 +585,18 @@
 		C890.528,511.485,891.523,501.293,891.523,501.293z" />
   
   </circle>
+        
+        
+        <circle  fill="#3d85c6" stroke="white" stroke-width="3" stroke-miterlimit="1"  cx="0" cy="0" r="10"> 
+ 
+         <animateMotion calcMode="linear"  id="a" dur="30s"  repeatCount="indefinite"  
+        
+      path="M891.523,501.293c0,0-4.376-4.663-9.872-1.644
+		c-7.606,4.178-20.598,12.39-20.598,12.39s-8.921,7.591,2.848,8.539c5.109,0.411,25.117-0.091,26.355-7.47
+		C890.528,511.485,891.523,501.293,891.523,501.293z" />
+  
+  </circle>
+
   
   
   
