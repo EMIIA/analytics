@@ -1162,7 +1162,7 @@
      
                            <circle cx="0" cy="0" fill="none" r="0" stroke="#ffd800" stroke-width="24">
   
-    <animate attributeName="r" from="0.9" to="25" dur="1s" begin="0s" repeatCount="indefinite"/>
+    <animate attributeName="r" from="0.9" to="30" dur="1s" begin="0s" repeatCount="indefinite"/>
     <animate attributeName="opacity" from="0.9" to="0" dur="1s" begin="0s" repeatCount="indefinite"/>
     
         <animateMotion calcMode="linear"  id="a" dur="0s"  repeatCount="indefinite"   
