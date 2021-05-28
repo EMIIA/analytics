@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="strelka.svg"
+   xml:space="preserve"
+   style="enable-background:new 0 0 13.125 13.125;"
+   viewBox="0 0 13.125 13.125"
+   y="0px"
+   x="0px"
+   id="Layer_3"
+   version="1.1"><metadata
+   id="metadata9"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs7" /><sodipodi:namedview
+   inkscape:current-layer="Layer_3"
+   inkscape:window-maximized="1"
+   inkscape:window-y="-11"
+   inkscape:window-x="-11"
+   inkscape:cy="1.4614228"
+   inkscape:cx="-3.7610514"
+   inkscape:zoom="16.380952"
+   showgrid="false"
+   id="namedview5"
+   inkscape:window-height="1046"
+   inkscape:window-width="1920"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0"
+   guidetolerance="10"
+   gridtolerance="10"
+   objecttolerance="10"
+   borderopacity="1"
+   bordercolor="#666666"
+   pagecolor="#ffffff" />
+<circle
+   r="14.053314"
+   cy="6.4301176"
+   cx="6.4307547"
+   id="path834"
+   style="fill:#ffffff;stroke:none;stroke-width:1.89337;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:markers fill stroke;fill-opacity:1" /><polygon
+   id="polygon2"
+   points="1.292,5.375 12.125,1.083 7.917,12   6.271,6.979 "
+   style="fill:none;stroke:#383838;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+</svg>
