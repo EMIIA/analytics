@@ -44,7 +44,7 @@
    cy="6.4301176"
    cx="6.4307547"
    id="path834"
-   style="fill:#ffffff;stroke:none;stroke-width:1.89337;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:markers fill stroke;fill-opacity:1" /><polygon
+   style="fill:#ffffff;stroke:#ffffff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:markers fill stroke;fill-opacity:1;stroke-opacity:1;stroke-dasharray:none" /><polygon
    id="polygon2"
    points="1.292,5.375 12.125,1.083 7.917,12   6.271,6.979 "
    style="fill:none;stroke:#383838;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
