@@ -217,6 +217,70 @@
          result="composite2"
          id="feComposite2245" />
     </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter2247-6">
+      <feFlood
+         flood-opacity="0.054902"
+         flood-color="rgb(56,56,56)"
+         result="flood"
+         id="feFlood2237-0" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite2239-3" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.3"
+         result="blur"
+         id="feGaussianBlur2241-9" />
+      <feOffset
+         dx="0"
+         dy="-1.38778e-16"
+         result="offset"
+         id="feOffset2243-1" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite2245-0" />
+    </filter>
+    <filter
+       id="filter2247-5"
+       inkscape:label="Drop Shadow"
+       style="color-interpolation-filters:sRGB">
+      <feFlood
+         id="feFlood2237-08"
+         result="flood"
+         flood-color="rgb(56,56,56)"
+         flood-opacity="0.054902" />
+      <feComposite
+         id="feComposite2239-1"
+         result="composite1"
+         operator="in"
+         in2="SourceGraphic"
+         in="flood" />
+      <feGaussianBlur
+         id="feGaussianBlur2241-8"
+         result="blur"
+         stdDeviation="0.3"
+         in="composite1" />
+      <feOffset
+         id="feOffset2243-0"
+         result="offset"
+         dy="-1.38778e-16"
+         dx="0" />
+      <feComposite
+         id="feComposite2245-07"
+         result="composite2"
+         operator="over"
+         in2="offset"
+         in="SourceGraphic" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -226,8 +290,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.7004265"
-     inkscape:cx="104.61568"
-     inkscape:cy="36.631233"
+     inkscape:cx="64.881815"
+     inkscape:cy="39.496516"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -266,7 +330,7 @@
        id="path1953-7"
        style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.0256719;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;paint-order:markers fill stroke;filter:url(#filter2247)" />
     <path
-       style="fill:#383838;fill-opacity:1;stroke:#383838;stroke-width:0.0690747;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#383838;fill-opacity:1;stroke:#383838;stroke-width:0.069;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 53.82216,147.68895 a 1.8276022,1.8276022 0 1 0 -0.392794,0.39308 h -2.8e-4 c 0.0084,0.0107 0.01743,0.0219 0.02755,0.0324 l 1.082502,1.0825 a 0.28122694,0.28122694 0 0 0 0.397855,-0.39757 l -1.082502,-1.08251 a 0.28313774,0.28313774 0 0 0 -0.03234,-0.0282 z m 0.07254,-1.08081 a 1.546433,1.546433 0 1 1 -3.092866,0 1.546433,1.546433 0 0 1 3.092866,0 z"
        id="path2968" />
   </g>

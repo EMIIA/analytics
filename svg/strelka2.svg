@@ -11,9 +11,9 @@
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    id="svg20953"
    version="1.1"
-   viewBox="0 0 10.575761 10.57576"
-   height="10.57576mm"
-   width="10.57576mm">
+   viewBox="0 0 12.576002 12.576"
+   height="12.576mm"
+   width="12.576mm">
   <defs
      id="defs20947">
     <marker
@@ -232,8 +232,8 @@
      showgrid="false"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="41.368738"
-     inkscape:cx="59.888868"
+     inkscape:cy="41.368745"
+     inkscape:cx="59.888871"
      inkscape:zoom="8.0616205"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -254,11 +254,12 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-46.344456,-140.49041)"
+     transform="translate(-46.344455,-140.49041)"
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
     <circle
+       transform="matrix(1.1891344,0,0,1.1891344,-8.7653313,-26.571571)"
        style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.0256719;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;paint-order:markers fill stroke;filter:url(#filter2247)"
        id="path1953-7"
        cx="51.632336"
@@ -266,7 +267,7 @@
        r="4.4065666" />
     <g
        id="g2300"
-       transform="matrix(0.26458333,0,0,0.26458333,41.579555,143.3179)">
+       transform="matrix(0.41548812,0,0,0.41548812,36.817792,142.78925)">
       <ellipse
          ry="0.97319096"
          rx="0.97319102"
