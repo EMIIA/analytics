@@ -186,7 +186,7 @@
          id="feComposite1199-1" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB"
+       style="color-interpolation-filters:sRGB;"
        inkscape:label="Drop Shadow"
        id="filter2247">
       <feFlood
@@ -214,8 +214,41 @@
          in="SourceGraphic"
          in2="offset"
          operator="over"
-         result="composite2"
+         result="fbSourceGraphic"
          id="feComposite2245" />
+      <feColorMatrix
+         id="feColorMatrix5587"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphicAlpha" />
+      <feFlood
+         in="fbSourceGraphic"
+         result="flood"
+         flood-color="rgb(56,56,56)"
+         flood-opacity="0.054902"
+         id="feFlood5589" />
+      <feComposite
+         result="composite1"
+         operator="in"
+         in="flood"
+         id="feComposite5591"
+         in2="fbSourceGraphic" />
+      <feGaussianBlur
+         result="blur"
+         stdDeviation="0.9"
+         in="composite1"
+         id="feGaussianBlur5593" />
+      <feOffset
+         result="offset"
+         dy="-1.38778e-16"
+         dx="0"
+         id="feOffset5595" />
+      <feComposite
+         result="composite2"
+         operator="over"
+         in="fbSourceGraphic"
+         id="feComposite5597"
+         in2="offset" />
     </filter>
     <filter
        style="color-interpolation-filters:sRGB"
@@ -289,9 +322,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.7004265"
-     inkscape:cx="64.881815"
-     inkscape:cy="39.496516"
+     inkscape:zoom="8.0616205"
+     inkscape:cx="0.51612204"
+     inkscape:cy="47.242042"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
