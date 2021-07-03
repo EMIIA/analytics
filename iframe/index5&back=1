@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html class="sl-root decks decks fullscreen">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+
+  <title></title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://analytics.emiia.ai/iframe/style.css">
+  
+  
+  
+  
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+      color: #383838;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: 'Roboto';
+    }
+    section {
+      display: flex;
+      flex-direction: column;
+
+      /* without this positioning, descendent positions may have undefined behvavior in browsers like Safari that need positioning up the entire hierarchy */
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    main {
+      flex: 1;
+      position: relative;
+      width: 100%;
+      background-color: #383838;
+    }
+    #canvas-container {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      transition: width 500ms, height 500ms; /* CANVAS_RESIZE_ANIMATION_TIME */
+    }
+    canvas:focus {
+      outline: none;
+    }
+  </style>
+  
+  
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+
+<div>
+
+        
+    <iframe id='iframe2' src="https://analytics.emiia.ai/iframe/index4.html" frameborder="0" style="overflow: hidden; height: 100%; width: 100%; position: absolute;"></iframe>
+        
+        
+        
+</div>
+
+
+
+
+
+
+
+<!-- partial -->
+
+</body>
+
+
+
+
+
+</html>
