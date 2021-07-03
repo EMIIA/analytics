@@ -1,6 +1,6 @@
 body {
   padding: 0em 0em;
-  background-color: #F8F9FA;
+  background-color: #383838;
 
   
   overflow-x: hidden;
@@ -10,7 +10,7 @@ body {
 iframe {
   display: block;
   width: 100%;
-  border: 0px solid #00A5DF;
+  border: 0px solid #383838;
   
   
     height: auto;
