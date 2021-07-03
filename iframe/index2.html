@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+
+  <title></title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://analytics.emiia.ai/iframe/style.css">
+  
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: 'Roboto';
+    }
+    section {
+      display: flex;
+      flex-direction: column;
+
+      /* without this positioning, descendent positions may have undefined behvavior in browsers like Safari that need positioning up the entire hierarchy */
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    main {
+      flex: 1;
+      position: relative;
+      width: 100%;
+      background-color: #444;
+    }
+    #canvas-container {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      transition: width 500ms, height 500ms; /* CANVAS_RESIZE_ANIMATION_TIME */
+    }
+    canvas:focus {
+      outline: none;
+    }
+  </style>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+
+<div>
+    <iframe id='iframe2' src="https://docs.google.com/presentation/d/1aqrqwtq_T76PEs2BzfnfPts8YjyAikD76oDPrx5Ny3g/edit?usp=sharing" frameborder="0" style="overflow: hidden; height: 100%;
+        width: 100%; position: absolute;"></iframe>
+        
+        
+        
+</div>
+
+
+
+
+
+
+
+<!-- partial -->
+
+</body>
+
+
+
+
+
+</html>
