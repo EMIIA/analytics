@@ -1,0 +1,24 @@
+body {
+  padding: 1em 2em;
+  background-color: #F4F4F6;
+  font-family: font-family: 'Roboto', sans-serif;
+  font: normal 100%/1.4 sans-serif;
+  color: #515477;
+  overflow-x: hidden;
+}
+
+h1, p {
+  text-align: center;
+}
+
+h1 {
+  margin: 0.2em 0 0 0;
+  font-weight: normal;
+}
+
+iframe {
+  display: block;
+  width: 100%;
+  height: 480px;
+  border: 1px solid #00A5DF;
+}
