@@ -49,8 +49,14 @@
 <!-- partial:index.partial.html -->
 
 
+<div>
+    <iframe id='iframe2' src="https://docs.google.com/presentation/d/1aqrqwtq_T76PEs2BzfnfPts8YjyAikD76oDPrx5Ny3g/edit" frameborder="0" style="overflow: hidden; height: 100%;
+        width: 100%; position: absolute;"></iframe>
+</div>
 
-<iframe src="https://docs.google.com/presentation/d/1aqrqwtq_T76PEs2BzfnfPts8YjyAikD76oDPrx5Ny3g/edit" allowfullscreen="true" allowtransparency="true" scrolling="no"></iframe>
+
+
+
 
 
 
@@ -59,47 +65,7 @@
 </body>
 
 
-<script>
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-  }
-</script>
 
-
-
-<script type="application/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-</script>
-
-<script type="application/javascript" src="/script/jquery.browser.js">
-</script>
-
-<script type="application/javascript" src="/script/jquery-iframe-auto-height.js">
-</script>
-
-<script type="application/javascript"> 
-  jQuery('iframe').iframeAutoHeight();
-  $(window).load(
-      function() {
-          jQuery('iframe').iframeAutoHeight();  
-      }
-  );
-
-  // for when content is not html e.g. a PDF
-  function setIframeHeight() {
-      $('.iframe_fullHeight').each(
-          function (i, item) {
-              item.height = $(document).height();
-          }
-      );
-  };
-
-  $(document).ready( function () {
-      setIframeHeight();
-  });
-  $(window).resize( function () {
-      setIframeHeight();
-  });
-</script> 
 
 
 </html>
