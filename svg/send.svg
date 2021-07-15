@@ -1,11 +1,5 @@
 <svg xmlns="https://www.w3.org/2000/svg" width="166.002" height="54.034" viewBox="0 0 43.921 14.296">
-  <style type="text/css">
-    <![CDATA[
-    .secondb { fill: transparent; transition: fill 0.10s; }
-    .secondb:hover { fill: #F8F9FA; }
 
-    ]]>
-  </style>
   
   <path class="secondb" d="M1.68.573h40.63c.575 0 1.038.463 1.038 1.038v11.005c0 .575-.463 1.038-1.038 1.038H1.68a1.036 1.036 0 0 1-1.038-1.038V1.611c0-.575.463-1.038 1.038-1.038z" fill="none" stroke="#8c8c8c" stroke-width=".120" stroke-linecap="round" stroke-linejoin="round"  paint-order="stroke fill markers"/>
   
