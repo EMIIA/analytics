@@ -1,0 +1,38 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 38 63" style="enable-background:new 0 0 38 63;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#3D85C6;}
+	.st1{fill:#F8F9FA;}
+</style>
+<g>
+	<path id="path1384-0-5" class="st0" d="M37.4,17.6c0.6,9.5-6,17.6-14.9,19.3c-0.3,0.1-0.7,0.3-0.9,0.5l-2.1,2.5
+		c-0.3,0.3-0.8,0.3-1.1,0l-2.1-2.5c-0.2-0.3-0.5-0.5-0.9-0.5C6.9,35.3,0.5,27.8,0.5,18.8C0.5,8.2,9.4-0.4,20.1,0.4
+		C29.4,0.9,36.8,8.4,37.4,17.6z"/>
+	<g id="layer1" inkscape:groupmode="layer" inkscape:label="Ð¡Ð»Ð¾Ð¹ 1">
+		<g id="g7219-3" transform="matrix(0.87027335,0,0,0.87027335,25.402062,17.57152)">
+			<g id="g1395-6-7" transform="matrix(0.26458333,0,0,0.26458333,-161.4599,82.149857)">
+				<g id="path1144_4_-6-57">
+					<g id="path1389-3-3">
+						<path class="st1" d="M557.8-284.7c-4.2,0-7.6-3.4-7.6-7.6v-15.3c0-4.2,3.4-7.6,7.6-7.6c4.2,0,7.6,3.4,7.6,7.6v15.3
+							C565.3-288.1,561.9-284.7,557.8-284.7z"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+	<path class="st1" d="M24.5,23.5c-1,0-1.7-0.8-1.7-1.7v-8.5c0-1,0.8-1.8,1.7-1.8c1,0,1.7,0.8,1.7,1.7v8.6
+		C26.3,22.7,25.5,23.5,24.5,23.5z"/>
+	<path class="st1" d="M18.9,23.3c-1,0-1.7-0.8-1.7-1.7v-6.1c0-1,0.8-1.7,1.7-1.7s1.7,0.8,1.7,1.7v6.1C20.7,22.5,19.9,23.3,18.9,23.3
+		z"/>
+</g>
+
+
+<animateTransform 
+		attributeName="transform"
+		type="translate"
+		values="0,0;0,16;0,0"
+		dur="4s"
+		repeatCount="indefinite"
+	/>
+
+</svg>
