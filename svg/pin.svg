@@ -37,7 +37,7 @@
     
               <circle cx="0" cy="0" fill="none" r="0" stroke="red" stroke-width="18">
   
-    <animate attributeName="r" from="0.9" to="15" dur="1s" begin="0s" repeatCount="indefinite"/>
+    <animate attributeName="r" from="0.9" to="21" dur="1s" begin="0s" repeatCount="indefinite"/>
     <animate attributeName="opacity" from="0.9" to="0" dur="1s" begin="0s" repeatCount="indefinite"/>
     
         <animateMotion calcMode="linear"  id="a" dur="25s" keyTimes="0;0.1;1" keyPoints="0;0.0;1" repeatCount="indefinite"   
@@ -127,7 +127,7 @@
 
     
     
-      <animateMotion style="text-align: center" calcMode="linear" dur="22s" repeatCount="indefinite" keyTimes="0;0.4;1" keyPoints="0;0.0;1">
+      <animateMotion style="text-align: center" calcMode="linear" dur="50s" repeatCount="indefinite" keyTimes="0;0.1;1" keyPoints="0;0.0;1">
                      
 	      <mpath xlink:href="#loop-normalb"/>
       </animateMotion>
@@ -160,7 +160,7 @@
 <!-- radial gradient has same color at constnnt distance from center,
          regardless of direction-->
 	  <radialGradient id="fadec" cx="0" cy="0" fx="0" fy="0" r="20" gradientUnits="userSpaceOnUse">
-	    <stop stop-color="#3d85c6" stop-opacity="1" offset="0" />
+	    <stop stop-color="#383838" stop-opacity="1" offset="0" />
 
 	  </radialGradient> 
       
@@ -182,7 +182,7 @@
     
 
 
-       <circle style="fill:url(#fadec);" fill="#3d85c6" stroke="white" stroke-width="3" stroke-miterlimit="1"  cx="0" cy="0" r="10">
+       <circle style="fill:url(#fadec);" fill="#383838" stroke="white" stroke-width="3" stroke-miterlimit="1"  cx="0" cy="0" r="10">
    
 
     
