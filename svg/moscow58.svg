@@ -865,7 +865,7 @@
 			<animate  accumulate="none" additive="replace" attributeName="opacity" begin="0s" calcMode="linear" dur="1s" fill="remove" from="2" repeatCount="indefinite" restart="always" to="0">
 			</animate>
 		
-			<animateMotion  accumulate="none" additive="replace" calcMode="linear" dur="0s" fill="remove" id="a" path="M1062.339,211.448c0.415,0,0.831,0.013,1.249,0.039c9.546,0.587,17.309,8.218,18.056,17.749v0     c0.353,4.501-0.867,8.994-3.436,12.65c-3.517,5.34-9.396,10.459-13.702,13.806c-0.629,0.489-1.384,0.734-2.138,0.734     c0,0-0.001,0-0.001,0c-0.754,0-1.508-0.245-2.137-0.733c-4.307-3.343-10.186-8.46-13.736-13.847     c-2.26-3.216-3.47-7.052-3.47-11.052c0-5.315,2.221-10.453,6.095-14.095C1053.537,196.097,1058.192,194.254,1063.135,194.254" repeatCount="indefinite" restart="always">
+			<animateMotion  accumulate="none" additive="replace" calcMode="linear" dur="0s" fill="remove" id="a" path="M1062.55,211.448c0.415,0,0.831,0.013,1.249,0.039c9.546,0.587,17.309,8.218,18.056,17.749v0     c0.353,4.501-0.867,8.994-3.436,12.65c-3.517,5.34-9.396,10.459-13.702,13.806c-0.629,0.489-1.384,0.734-2.138,0.734     c0,0-0.001,0-0.001,0c-0.754,0-1.508-0.245-2.137-0.733c-4.307-3.343-10.186-8.46-13.736-13.847     c-2.26-3.216-3.47-7.052-3.47-11.052c0-5.315,2.221-10.453,6.095-14.095C1053.537,196.097,1058.192,194.254,1063.135,194.254" repeatCount="indefinite" restart="always">
 			</animateMotion>
 		</circle>
         
