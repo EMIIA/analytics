@@ -160,7 +160,7 @@
 <!-- radial gradient has same color at constnnt distance from center,
          regardless of direction-->
 	  <radialGradient id="fadec" cx="0" cy="0" fx="0" fy="0" r="20" gradientUnits="userSpaceOnUse">
-	    <stop stop-color="#383838" stop-opacity="1" offset="0" />
+	    <stop stop-color="#8c8c8c" stop-opacity="1" offset="0" />
 
 	  </radialGradient> 
       
@@ -214,5 +214,4 @@
 
   
 </svg>
-
 
