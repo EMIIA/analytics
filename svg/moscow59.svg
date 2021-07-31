@@ -849,6 +849,8 @@
 		<polygon class="st3" points="788.5,463.6 795.6,464.7 810,522.1 772.9,504.7 		"/>
 		<polygon class="st3" points="748.8,502.5 707.1,487.1 763.7,393.3 781.9,396.3 787.6,407.3 		"/>
 		<circle class="st17" cx="0" cy="0" r="0">
+        
+        
 		
 			<animate  accumulate="none" additive="replace" attributeName="r" begin="0s" calcMode="linear" dur="1s" fill="remove" from="1" repeatCount="indefinite" restart="always" to="30">
 			</animate>
@@ -916,6 +918,10 @@
             
 		</circle>
 		<path class="st3" d="M424,741.8c10.2-1,23.3-1.9,37.7-2.4c42.5-1.5,67.5,4,67.5,4l0,0l59.8-72.8"/>
+        
+        
+        
+        
 		<polygon class="st2" points="924.8,838.7 904.7,603.8 861.3,579.4 882,808.4 		"/>
 		<polygon class="st1" points="904.7,603.8 924.8,586.6 941.3,825.1 924.8,838.7 		"/>
 		<polygon class="st3" points="861.3,579.4 904.7,603.8 924.8,586.6 879.8,563.5 		"/>
@@ -957,7 +963,7 @@
     
     
     
-       	<circle   fill="#8c8c8c" stroke="white" stroke-width="2" stroke-miterlimit="1" cx="0" cy="0" r="10">
+       	<circle   fill="#8c8c8c" stroke="white" stroke-width="3" stroke-miterlimit="1" cx="0" cy="0" r="10">
 	
 		<animateMotion  accumulate="none" additive="replace" calcMode="linear" dur="30s" fill="remove" id="a" path="M895.1,508.7c8.5,2.9-2,14.9-9.2,13c-8.4-2.2-22.8-7.4-23.7-7.8c-6.9-3.4-0.2-16.3,8.6-13.8 C873.8,500.9,887.3,506.1,895.1,508.7z" repeatCount="indefinite" restart="always">
 		</animateMotion>
