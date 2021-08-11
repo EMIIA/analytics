@@ -7,7 +7,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="strelka7.svg"
+   sodipodi:docname="strelka8.svg"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    id="svg20953"
    version="1.1"
@@ -283,7 +283,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -292,23 +292,9 @@
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
-    <circle
-       r="0.4043493"
-       style="fill:#383838;fill-opacity:1;stroke:#383838;stroke-width:0.122;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="path2265"
-       cx="48.845989"
-       cy="144.519" />
-    <circle
-       r="0.4043493"
-       cy="144.49736"
-       cx="50.130962"
-       id="path2265-8"
-       style="fill:#383838;fill-opacity:1;stroke:#383838;stroke-width:0.122;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
-    <circle
-       r="0.4043493"
-       style="fill:#383838;fill-opacity:1;stroke:#383838;stroke-width:0.122;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       id="path2265-8-3"
-       cx="51.414654"
-       cy="144.50789" />
+    <path
+       id="path1540"
+       style="fill:none;stroke:#383838;stroke-width:0.670999;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 49.53052,143.12607 0.808432,1.38797 0.516228,-0.73051 1.034891,1.49755 h -3.618466 z" />
   </g>
 </svg>
