@@ -35,7 +35,7 @@
     
     
     
-              <circle cx="0" cy="0" fill="none" r="0" stroke="red" stroke-width="20">
+              <circle cx="0" cy="0" fill="none" r="0" stroke="#f3000028" stroke-width="20">
   
     <animate attributeName="r" from="0.9" to="21" dur="1s" begin="0s" repeatCount="indefinite"/>
     <animate attributeName="opacity" from="0.9" to="0" dur="1s" begin="0s" repeatCount="indefinite"/>
