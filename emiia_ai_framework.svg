@@ -10,16 +10,16 @@
    inkscape:export-ydpi="879.80194"
    inkscape:export-xdpi="879.80194"
    inkscape:export-filename="C:\Users\vstar\Desktop\E24\Photo\emiia_analytics_logo_new.png"
-   viewBox="0 0 326.07006 70.816361"
+   viewBox="0 0 334.49166 70.816361"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    sodipodi:docname="emiia_ai_framework.svg"
    id="svg877"
    version="1.1"
    height="70.81636"
-   width="309.74747">
+   width="317.74747">
   <g
      id="g32886"
-     transform="matrix(1.0932653,0,0,1.0932653,-3.2818552,0.11888754)">
+     transform="matrix(1.12718,0,0,1.12718,-4.3054514,-2.4242559)">
     <path
        style="fill:none;fill-opacity:1;stroke:#383838;stroke-width:4.29172;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        class="st18"
@@ -50,7 +50,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -63,7 +63,7 @@
      inkscape:window-y="-11"
      inkscape:window-x="-11"
      inkscape:cy="93.174397"
-     inkscape:cx="243.02855"
+     inkscape:cx="346.78073"
      inkscape:zoom="2.1830866"
      fit-margin-bottom="0"
      fit-margin-right="0"
@@ -98,7 +98,7 @@
        id="tspan3691"
        sodipodi:role="line" /></text>
   <g
-     transform="matrix(1.0017384,0,0,1.0017384,25.428828,7.6972764)"
+     transform="matrix(1.0017384,0,0,1.0017384,34.638241,7.6972764)"
      style="font-size:60.6103px;line-height:1.25;font-family:sans-serif;fill:#383838;fill-opacity:1;stroke:none;stroke-width:0.631618;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="text835-3"
      aria-label="EMIIA.AI">
@@ -136,6 +136,7 @@
        d="M 292.60784,46.084866 V 2.4454509 h 4.90943 V 46.084866 Z" />
   </g>
   <g
+     transform="translate(9.2094126)"
      aria-label="FRAMEWORK &amp; LIBRARY"
      id="text32890"
      style="font-size:22.1528px;line-height:1.25;font-family:Orbitron;-inkscape-font-specification:Orbitron;fill:#383838;fill-opacity:1;stroke-width:1.27805">
