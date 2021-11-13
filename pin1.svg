@@ -10,7 +10,7 @@
      
 <path id="loop-normal" d="M29.64 141.583c.707-10.975-.038-34.092.58-55.61.042-1.486 4.19-9.012 12.354-9.37 18.472-.81 52.623-.173 71.818-.389 21.354-.24 14.96-10.195 15.091-14.487.348-11.399-3.21-26.814 6.74-26.847 41.397-.137 33.217.87 68.297.169-4.293 19.812 13.204 67.094-24.178 80.138-17.918 6.253-50.593 4.267-76.227 4.582-13.657.168-25.855.394-38.828 1.818-16.287 1.788 4.641 20.93-35.648 19.996 z"/>
     
-    
+    disput
     
 <!-- radial gradient has same color at constnnt distance from center,
          regardless of direction-->
@@ -35,7 +35,7 @@
     
    
     
-              <circle cx="0" cy="0" fill="none" r="0" stroke="white" stroke-width="20">
+              <circle cx="0" cy="0" fill="none" r="0" stroke="transparent" stroke-width="20">
   
     <animate attributeName="r" from="2.9" to="21" dur="1.9s" begin="0s" repeatCount="indefinite"/>
     <animate attributeName="opacity" from="1.9" to="0" dur="1.9s" begin="0s" repeatCount="indefinite"/>
