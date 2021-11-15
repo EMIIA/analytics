@@ -1,15 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="220" width="340" style="text-align: center">
-
-
-
-
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"   width="99.31" height="36.2" viewBox="-10 0 109.31 10.31" style="text-align: center">
 
 
 
 
 <defs>  
      
-<path id="loop-normalc" d="M 39 165 M 111 207 c -13.657 0.168 -25 0 -38 0 c -12 0 0 0 -28.885 0.769 z"/>
+<path id="loop-normalc" d="M68.37.87c2-.17-24.75,0-37.62,0-11.88,0,0,0-28.59.13Z"/>
     
     
     
@@ -55,7 +51,7 @@
     
     
         <animateMotion calcMode="linear"  dur="21s"   repeatCount="indefinite"   
-      path="M 39 165 M 111 207 c -13.657 0.168 -25 0 -38 0 c -12 0 0 0 -28.885 0.769 z" />
+      path="M68.37.87c2-.17-24.75,0-37.62,0-11.88,0,0,0-28.59.13Z" />
   
   
   </circle>
@@ -86,7 +82,7 @@
   
   <defs>  
      
-<path id="loop-normal" d="M 39 165 M 111 207 c -13.657 0.168 -25 0 -38 0 c -12 0 0 0 -28.885 0.769 z"/>
+<path id="loop-normal" d="M68.37.87c2-.17-24.75,0-37.62,0-11.88,0,0,0-28.59.13Z"/>
     
     disput
     
@@ -119,7 +115,7 @@
     <animate attributeName="opacity" from="1.9" to="0" dur="1.9s" begin="0s" repeatCount="indefinite"/>
     
         <animateMotion calcMode="linear"  id="a" dur="25s" keyTimes="0;0.1;1" keyPoints="0;0.0;1" repeatCount="indefinite"   
-      path="M 39 165 M 111 207 c -13.657 0.168 -25 0 -38 0 c -12 0 0 0 -28.885 0.769 z" />
+      path="M68.37.87c2-.17-24.75,0-37.62,0-11.88,0,0,0-28.59.13Z" />
   
   </circle>
 
@@ -142,7 +138,7 @@
     <animate attributeName="opacity" from="8" to="3" dur="2s" begin="0s" repeatCount="indefinite"/>
     
         <animateMotion calcMode="linear"  id="a" dur="25s" keyTimes="0;0.1;1" keyPoints="0;0.0;1" repeatCount="indefinite"   
-      path="M 39 165 M 111 207 c -13.657 0.168 -25 0 -38 0 c -12 0 0 0 -28.885 0.769 z" />
+      path="M68.37.87c2-.17-24.75,0-37.62,0-11.88,0,0,0-28.59.13Z" />
   
   </circle>
     
