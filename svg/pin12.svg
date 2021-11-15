@@ -1,0 +1,19 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  
+  
+  
+      <circle cx="40.5" cy="40.5" style="text-align: center"  width="3" height="3" fill="none" stroke="#fcfc0058" stroke-width="40">
+			
+				<animate accumulate="none" additive="replace" attributeName="r" begin="0s" calcMode="linear" dur="1s" fill="remove" from="1" repeatCount="indefinite" restart="always" to="12">
+				</animate>
+			
+				<animate accumulate="none" additive="replace" attributeName="opacity" begin="0s" calcMode="linear" dur="1s" fill="remove" from="2" repeatCount="indefinite" restart="always" to="0">
+				</animate>
+                </circle>
+  
+  
+  
+  <path d="M57.53,40.16A16.27,16.27,0,0,1,44.78,56a1.66,1.66,0,0,0-.95.58l-1.64,2.06a1.07,1.07,0,0,1-1.51.15l-.15-.15-1.64-2.06a1.66,1.66,0,0,0-.95-.58A16.16,16.16,0,1,1,57.52,40.16Z" style="fill: #30c900"/>
+  <path d="M48.75,33.78v.45a.35.35,0,0,1-.33.33H47.2v1.88h1a.35.35,0,0,1,.33.33v2a.35.35,0,0,1-.33.33H45.63a.3.3,0,0,1-.33-.33v-2a.35.35,0,0,1,.33-.33h1V34.56H40.8V45.73h1.82a.35.35,0,0,1,.33.33v1.49a.35.35,0,0,1-.33.33H36.8a.35.35,0,0,1-.33-.33V46a.35.35,0,0,1,.33-.33h1.56V34.56H35.18a.35.35,0,0,1-.33-.33v-.58c0-.19.13-.26.26-.33l3.31-1.43v-.52a.35.35,0,0,1,.33-.33h1.69a.35.35,0,0,1,.33.33v.52l7.6,1.49Q48.75,33.48,48.75,33.78Z" style="fill: #f8f9fa"/>
+  <path d="M36.28,36.38h-1.1a.35.35,0,0,1-.33-.33v-.78a.35.35,0,0,1,.33-.33h1.1a.35.35,0,0,1,.33.33v.78C36.6,36.31,36.48,36.38,36.28,36.38Z" style="fill: #f8f9fa"/>
+</svg>
