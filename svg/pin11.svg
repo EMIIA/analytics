@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="220" width="340" style="text-align: center">
+
+
+
+
+
+
+
+
+<defs>  
+     
+<path id="loop-normalc" d="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z"/>
+    
+    
+    
+<!-- radial gradient has same color at constnnt distance from center,
+         regardless of direction-->
+	  <radialGradient id="fadec" cx="0" cy="0" fx="0" fy="0" r="20" gradientUnits="userSpaceOnUse">
+	    <stop stop-color="#3d85c6" stop-opacity="1" offset="0" />
+
+	  </radialGradient> 
+      
+
+  </defs>
+  
+
+
+   
+    <use style="fill:none;stroke:#ccc;stroke-width:0;"
+       xlink:href="#loop-normalc" />
+
+  <!-- outer group makes sure mask is applied after animateMotion -->
+  <g style="mask:url(#tail)">
+    <!-- circle with gradient radius -->
+    
+
+
+       <circle style="fill:url(#fadec);" fill="#3d85c6" stroke="white" stroke-width="2" stroke-miterlimit="1"  cx="0" cy="0" r="7.5">
+   
+
+    
+      
+      <animateMotion style="text-align: center"  dur="21s" repeatCount="indefinite" >
+      
+ 
+                     
+	      <mpath xlink:href="#loop-normalc"/>
+      </animateMotion>
+    </circle>
+
+    <circle cx="0" cy="0" fill="none" r="10" stroke="#3d85c6" stroke-width="3">
+  
+    <animate attributeName="r" from="7" to="-3" dur="1.5s" begin="0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" from="7" to="3" dur="2s" begin="0s" repeatCount="indefinite"/>
+    
+    
+        <animateMotion calcMode="linear"  dur="21s"   repeatCount="indefinite"   
+      path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+  
+  
+  </circle>
+
+ 
+  </g>
+  
+  
+  
+  
+  
+
+
+  
+</svg>
