@@ -2,15 +2,7 @@
 <svg id="Layer_7" data-name="Layer 7" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" style="text-align: center">
   <title>Пин каска М</title>
   
-  
-    <circle cx="24.5" cy="24.5" style="text-align: center"  width="3" height="3" fill="none" stroke="#fcfc0058" stroke-width="30">
-			
-				<animate accumulate="none" additive="replace" attributeName="r" begin="0s" calcMode="linear" dur="1s" fill="remove" from="1" repeatCount="indefinite" restart="always" to="12">
-				</animate>
-			
-				<animate accumulate="none" additive="replace" attributeName="opacity" begin="0s" calcMode="linear" dur="1s" fill="remove" from="2" repeatCount="indefinite" restart="always" to="0">
-				</animate>
-                </circle>
+ 
   
   
   
