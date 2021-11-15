@@ -2,7 +2,7 @@
   
   
   
-      <circle cx="40.5" cy="40.5" style="text-align: center"  width="3" height="3" fill="none" stroke="#fcfc0058" stroke-width="40">
+      <circle cx="40.5" cy="40.5" style="text-align: center"  width="3" height="3" fill="none" stroke="#fcfc0058" stroke-width="35">
 			
 				<animate accumulate="none" additive="replace" attributeName="r" begin="0s" calcMode="linear" dur="1s" fill="remove" from="1" repeatCount="indefinite" restart="always" to="12">
 				</animate>
