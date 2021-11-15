@@ -9,7 +9,7 @@
 
 <defs>  
      
-<path id="loop-normalc" d="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z"/>
+<path id="loop-normalc" d="M 39 165 M 111 207 c -13.657 0.168 -25 0 -38 0 c -12 0 0 0 -28.885 0.769 z"/>
     
     
     
@@ -55,13 +55,105 @@
     
     
         <animateMotion calcMode="linear"  dur="21s"   repeatCount="indefinite"   
-      path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+      path="M 39 165 M 111 207 c -13.657 0.168 -25 0 -38 0 c -12 0 0 0 -28.885 0.769 z" />
   
   
   </circle>
 
  
   </g>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <defs>  
+     
+<path id="loop-normal" d="M 39 165 M 111 207 c -13.657 0.168 -25 0 -38 0 c -12 0 0 0 -28.885 0.769 z"/>
+    
+    disput
+    
+<!-- radial gradient has same color at constnnt distance from center,
+         regardless of direction-->
+	  <radialGradient id="fade" cx="0" cy="0" fx="0" fy="0" r="20" gradientUnits="userSpaceOnUse">
+	    <stop stop-color="#3d85c6" stop-opacity="1" offset="0" />
+
+	  </radialGradient> 
+      
+
+  </defs>
+  
+
+
+   
+  <use style="fill:none;stroke:#ccc;stroke-width:0;"
+       xlink:href="#loop-normal" />
+
+  <!-- outer group makes sure mask is applied after animateMotion -->
+  <g style="mask:url(#tail)">
+    <!-- circle with gradient radius -->
+    
+    
+   
+    
+              <circle cx="0" cy="0" fill="none" r="0" stroke="transparent" stroke-width="20">
+  
+    <animate attributeName="r" from="2.9" to="21" dur="1.9s" begin="0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" from="1.9" to="0" dur="1.9s" begin="0s" repeatCount="indefinite"/>
+    
+        <animateMotion calcMode="linear"  id="a" dur="25s" keyTimes="0;0.1;1" keyPoints="0;0.0;1" repeatCount="indefinite"   
+      path="M 39 165 M 111 207 c -13.657 0.168 -25 0 -38 0 c -12 0 0 0 -28.885 0.769 z" />
+  
+  </circle>
+
+    
+   <circle style="fill:url(#fade);" fill="#3d85c6" stroke="white" stroke-width="2" stroke-miterlimit="1"  cx="0" cy="0" r="7.5">
+   
+
+    
+    
+      <animateMotion style="text-align: center" calcMode="linear"  id="a" dur="25s" repeatCount="indefinite" keyTimes="0;0.1;1" keyPoints="0;0.0;1">
+                     
+	      <mpath xlink:href="#loop-normal"/>
+      </animateMotion>
+    </circle>
+    
+    
+                  <circle cx="0" cy="0" fill="none" r="1" stroke="#3d85c6" stroke-width="3">
+  
+    <animate attributeName="r" from="7" to="-3" dur="1s" begin="0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" from="8" to="3" dur="2s" begin="0s" repeatCount="indefinite"/>
+    
+        <animateMotion calcMode="linear"  id="a" dur="25s" keyTimes="0;0.1;1" keyPoints="0;0.0;1" repeatCount="indefinite"   
+      path="M 39 165 M 111 207 c -13.657 0.168 -25 0 -38 0 c -12 0 0 0 -28.885 0.769 z" />
+  
+  </circle>
+    
+
+ 
+  </g>
+  
+  
+  
+  
+  
   
   
   
