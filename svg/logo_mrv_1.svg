@@ -1,0 +1,97 @@
+<svg id="Layer_4" data-name="Layer 4" xmlns="http://www.w3.org/2000/svg" width="118.78mm" height="25.4mm" viewBox="0 0 336.7 72">
+  <title>EMIIA.AI MRV</title>
+  
+  
+  
+  <path d="M34.23,7.2a27.28,27.28,0,0,1,5,54.1A5,5,0,0,0,36.36,63l-2.13,2.53-1.85-2.21L32.12,63a5,5,0,0,0-2.92-1.71,27.28,27.28,0,0,1,5-54.09m0-5a32.28,32.28,0,0,0-5.95,64l3.33,4a3.43,3.43,0,0,0,5.25,0l3.33-4a32.28,32.28,0,0,0-6-64Z" style="fill: #383838"/>
+  
+  
+  
+  
+  
+  
+  
+  
+
+    <path d="M33.53,26.44a2.39,2.39,0,0,0-2.39,2.39h0V40.58A2.39,2.39,0,0,0,33.53,43h0a2.39,2.39,0,0,0,2.39-2.39h0V28.83a2.39,2.39,0,0,0-2.39-2.39Z" fill="#383838" >
+    
+    
+                            <animate  accumulate="none" additive="replace" attributeName="fill-opacity" begin="three.end+0.08s" calcMode="linear" dur="0.1ms" fill="remove" id="four" restart="always" values="0.5;1;0.5">
+		</animate>            
+
+	
+	<animate  accumulate="none" additive="replace" attributeName="fill-opacity" begin="two.end+0.05s" calcMode="linear" dur="500ms" fill="remove" id="three" restart="always" values="0.5;1;0.5">
+		</animate>
+        
+    
+	</path>
+
+                
+                
+
+  
+  
+  
+
+    <path id="2" d="M22.88,31.74a2.39,2.39,0,0,0-2.39,2.39h0v6.73a2.39,2.39,0,0,0,2.39,2.39h0a2.39,2.39,0,0,0,2.39-2.39h0V34.12a2.39,2.39,0,0,0-2.39-2.39h0Z" style="fill: #383838">
+    
+
+                   <animate  accumulate="none" additive="replace" attributeName="fill-opacity" begin="one.end+0.05s" calcMode="linear" dur="500ms" fill="remove" id="two" restart="always" values="0.5;1;0.5">
+		</animate>             
+        
+           
+        </path>
+    
+
+  
+  
+  
+
+    <path id="3" d="M44.35,22.24A2.39,2.39,0,0,0,42,24.62h0V41a2.39,2.39,0,0,0,2.39,2.39h0A2.39,2.39,0,0,0,46.74,41h0V24.62a2.39,2.39,0,0,0-2.39-2.39Z" style="fill: #383838">
+    
+ 
+
+                 <animate  accumulate="none" additive="replace" attributeName="fill-opacity" begin="0s;four.end+0.05s" calcMode="linear" dur="500ms" fill="remove" id="one" restart="always" values="0.5;1;0.5">
+		</animate>   
+                
+        
+        </path>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <g id="emiia.ai">
+  
+    <path d="M126.07,12.35v5H90.76V31.9h28.39v5H90.76V51.46h35.31v5H85.73V12.35Z" style="fill: #383838"/>
+    <path d="M156,34.17l18.35-21.83h6.81V56.49h-5V18L156,42,135.82,18v38.5h-5V12.35h6.81Z" style="fill: #383838"/>
+    <path d="M187.75,56.49V12.35h5V56.49Z" style="fill: #383838"/>
+    <path d="M201.23,56.49V12.35h5V56.49Z" style="fill: #383838"/>
+    <path d="M222.15,12.35h29.47A7.33,7.33,0,0,1,259,19.7V56.49h-5V40.36H219.81V56.49h-5V19.7a7.33,7.33,0,0,1,7.37-7.36Zm-2.34,23H254V19.75a2.28,2.28,0,0,0-.7-1.67,2.3,2.3,0,0,0-1.68-.7H222.2a2.3,2.3,0,0,0-1.68.7,2.28,2.28,0,0,0-.7,1.67Z" style="fill: #383838"/>
+       
+   <path d="M270.82,51.46v5h-5v-5Z" style="fill: #383838"/>
+    <path d="M286.52,12.35H316a7.33,7.33,0,0,1,7.37,7.36V56.49h-5V40.36H284.18V56.49h-5V19.7a7.33,7.33,0,0,1,7.37-7.36Zm-2.34,23h34.15V19.75a2.28,2.28,0,0,0-.7-1.67,2.3,2.3,0,0,0-1.68-.7H286.57a2.3,2.3,0,0,0-1.68.7,2.28,2.28,0,0,0-.7,1.67Z" style="fill: #383838"/>
+    <path d="M330.35,56.49V12.35h5V56.49Z" style="fill: #383838"/>
+  </g>
+  
+  
+
+  
+  
+</svg>
