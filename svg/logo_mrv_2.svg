@@ -18,13 +18,7 @@
 
     <path d="M33.53,26.44a2.39,2.39,0,0,0-2.39,2.39h0V40.58A2.39,2.39,0,0,0,33.53,43h0a2.39,2.39,0,0,0,2.39-2.39h0V28.83a2.39,2.39,0,0,0-2.39-2.39Z" fill="#383838" >
     
-    
-                            <animate  accumulate="none" additive="replace" attributeName="fill-opacity" begin="three.end+0.08s" calcMode="linear" dur="0.1ms" fill="remove" id="four" restart="always" values="0.5;1;0.5">
-		</animate>            
-
-	
-	<animate  accumulate="none" additive="replace" attributeName="fill-opacity" begin="two.end+0.05s" calcMode="linear" dur="500ms" fill="remove" id="three" restart="always" values="0.5;1;0.5">
-		</animate>
+  
         
     
 	</path>
@@ -38,9 +32,7 @@
 
     <path id="2" d="M22.88,31.74a2.39,2.39,0,0,0-2.39,2.39h0v6.73a2.39,2.39,0,0,0,2.39,2.39h0a2.39,2.39,0,0,0,2.39-2.39h0V34.12a2.39,2.39,0,0,0-2.39-2.39h0Z" style="fill: #383838">
     
-
-                   <animate  accumulate="none" additive="replace" attributeName="fill-opacity" begin="one.end+0.05s" calcMode="linear" dur="500ms" fill="remove" id="two" restart="always" values="0.5;1;0.5">
-		</animate>             
+         
         
            
         </path>
@@ -53,9 +45,7 @@
     <path id="3" d="M44.35,22.24A2.39,2.39,0,0,0,42,24.62h0V41a2.39,2.39,0,0,0,2.39,2.39h0A2.39,2.39,0,0,0,46.74,41h0V24.62a2.39,2.39,0,0,0-2.39-2.39Z" style="fill: #383838">
     
  
-
-                 <animate  accumulate="none" additive="replace" attributeName="fill-opacity" begin="0s;four.end+0.05s" calcMode="linear" dur="500ms" fill="remove" id="one" restart="always" values="0.5;1;0.5">
-		</animate>   
+ 
                 
         
         </path>
